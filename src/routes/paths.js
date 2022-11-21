@@ -24,5 +24,6 @@ export const PATH_PAGE = {
   smartRoot: '/smart-root',
   smartWaterlevel: '/smart-waterlevel',
   smartFarm: '/smart-farm',
-  smartValves: '/smart-valves'
+  smartValves: '/smart-valves',
+  airMoles:'/air-moles'
 };
