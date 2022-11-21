@@ -38,6 +38,7 @@ const menuConfig = [
           { title: 'SmartFarm', path: PATH_PAGE.smartFarm },
           { title: 'SmartValves', path: PATH_PAGE.smartValves },
           { title: 'SmartWaterlevel', path: PATH_PAGE.smartWaterlevel },
+          { title: 'AirMoles', path: PATH_PAGE.smartWaterlevel },
         ],
       },
       {

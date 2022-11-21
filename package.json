@@ -22,7 +22,7 @@
   "browserslist": [
     "defaults",
     "not ie 11"
-],
+  ],
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.19.3",
     "@emailjs/browser": "^3.9.1",

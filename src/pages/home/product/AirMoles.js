@@ -1,8 +1,9 @@
 // @mui
 import { styled } from '@mui/material/styles';
+import { Divider } from '@mui/material';
 // components
-import Page from '../../components/Page';
-import { AboutHero, AboutWhat, AboutVision, AboutWhy } from '../../sections/home/about';
+import Page from '../../../components/Page';
+import { AirMolesSlider, AirMolesWhat } from '../../../sections/home/product/airmoles';
 
 // ----------------------------------------------------------------------
 
@@ -15,18 +16,17 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-export default function About() {
+export default function AirMoles() {
   return (
-    <Page title="Hakkımızda">
+    <Page title="AirMoles">
       <RootStyle>
-        <AboutHero />
-
-        <AboutWhat />
-
-        <AboutWhy />
-
-        <AboutVision />
+        <AirMolesSlider />
         
+        <AirMolesWhat />
+        
+        {/* <AirMolesImage /> */}
+
+        <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 40 }} />
       </RootStyle>
     </Page>
   );

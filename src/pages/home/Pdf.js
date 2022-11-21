@@ -23,7 +23,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 }));
 // ----------------------------------------------------------------------
 
-export default function Video() {
+export default function Brochure() {
   return (
     <Page title="Broşür">
       <RootStyle>

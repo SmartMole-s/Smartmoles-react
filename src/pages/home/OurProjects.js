@@ -18,7 +18,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function OurProjects() {
   return (
-    <Page title="Our Projects">
+    <Page title="Projelerimiz">
       <RootStyle>
         <OurProjectsHero />
 

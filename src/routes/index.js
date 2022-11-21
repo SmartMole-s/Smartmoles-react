@@ -58,6 +58,7 @@ export default function Router() {
         { path: 'smart-waterlevel', element: <SmartWaterlevel />},
         { path: 'smart-farm', element: <SmartFarm />},
         { path: 'smart-valves', element: <SmartValves />},
+        { path: 'air-moles', element: <AirMoles />},
       ],
     },
     { path: '*', element: <Navigate to="/404" replace /> },
@@ -88,6 +89,7 @@ const SmartRoot = Loadable(lazy(() => import('../pages/home/product/SmartRoot'))
 const SmartWaterlevel = Loadable(lazy(() => import('../pages/home/product/SmartWaterlevel')));
 const SmartFarm = Loadable(lazy(() => import('../pages/home/product/SmartFarm')));
 const SmartValves = Loadable(lazy(() => import('../pages/home/product/SmartValves')));
+const AirMoles = Loadable(lazy(() => import('../pages/home/product/AirMoles')));
 
 // Gallery
 const Gallery = Loadable(lazy(() => import('../pages/home/gallery/Gallery')));

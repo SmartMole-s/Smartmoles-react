@@ -29,7 +29,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 
 export default function HomePage() {
   return (
-    <Page title="The starting point for your next project">
+    <Page title="SmartMole's Tarım Teknolojileri">
       <RootStyle>
         <HomeSlider />
         <ContentStyle>

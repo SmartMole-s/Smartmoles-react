@@ -11,7 +11,7 @@ import { MotionContainer, TextAnimate, varFade, varBounce } from '../../../../co
 const RootStyle = styled('div')(({ theme }) => ({
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  backgroundImage: 'linear-gradient(#00000059, #0000008a),url(/static/slider/valves.jpg)',
+  backgroundImage: 'linear-gradient(#00000059, #0000008a),url(/static/slider/airmoles-slider.jpeg)',
   padding: theme.spacing(10, 0),
   [theme.breakpoints.up('md')]: {
     height: 560,
@@ -30,19 +30,19 @@ const ContentStyle = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-export default function ValvesSlider() {
+export default function AirMolesSlider() {
   return (
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
         <ContentStyle>
-          <TextAnimate text="SmartValves" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
+          <TextAnimate text="AirMoles" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="Sulama &nbsp; vanalarınızı &nbsp; doğru " sx={{ mr: 2, typography: 'h4' }} />
+            <TextAnimate text="Hava &nbsp; şartlarının &nbsp; bitkilerinizi" sx={{ mr: 2, typography: 'h4' }} />
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="yönettiğinize &nbsp; emin &nbsp; misiniz?" sx={{ mb: 2, mr: 2, typography: 'h4' }} />
+            <TextAnimate text="nasıl &nbsp; etkilediğini &nbsp; biliyor &nbsp; musunuz?" sx={{ mb: 2, mr: 2, typography: 'h4' }} />
           </Box>
           <m.div variants={varBounce().inUp}>
             <Button
