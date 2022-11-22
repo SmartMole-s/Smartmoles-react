@@ -66,7 +66,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'seralar'}
                     title={'Seralar'}
-                    cover={'/static/images/greenhouse/1.jpg'}
+                    cover={'/static/images/sera.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -88,7 +88,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'aycicegi'}
                     title={'Ayçiçeği'}
-                    cover={'/static/images/aycicegi/aycicegi1.jpg'}
+                    cover={'/static/images/aycicegi.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -99,7 +99,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'bag'}
                     title={'Bağ'}
-                    cover={'/static/images/bag/bag01.jpg'}
+                    cover={'/static/images/bag.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -110,7 +110,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'ceviz'}
                     title={'Ceviz'}
-                    cover={'/static/images/ceviz/ceviz1.jpg'}
+                    cover={'/static/images/ceviz.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -121,7 +121,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'cim'}
                     title={'Çim'}
-                    cover={'/static/images/cim/cim01.jpg'}
+                    cover={'/static/images/cim.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -132,7 +132,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'elma'}
                     title={'Elma'}
-                    cover={'/static/images/elma/elm1.jpg'}
+                    cover={'/static/images/elma.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -143,7 +143,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'hurma'}
                     title={'Hurma'}
-                    cover={'/static/images/hurma/hurma001.jpg'}
+                    cover={'/static/images/hurma.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -154,7 +154,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'kiraz'}
                     title={'Kiraz'}
-                    cover={'/static/images/kiraz/kirazpompa.jpg'}
+                    cover={'/static/images/kiraz.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -165,7 +165,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'leylandi'}
                     title={'Leylandi'}
-                    cover={'/static/images/leylandi/leylandi.jpg'}
+                    cover={'/static/images/leylandi.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -176,7 +176,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'misir'}
                     title={'Mısır'}
-                    cover={'/static/images/misir/misir1.jpg'}
+                    cover={'/static/images/misir.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -187,7 +187,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'muz'}
                     title={'Muz'}
-                    cover={'/static/images/muz/muz1.jpg'}
+                    cover={'/static/images/muz.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -198,7 +198,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'yonca'}
                     title={'Yonca'}
-                    cover={'/static/images/yonca/yonca01.jpg'}
+                    cover={'/static/images/yonca.jpeg'}
                   />
                 </Card>
               </HoverStyle>
@@ -209,7 +209,7 @@ export default function Gallery() {
                   <GalleryMain
                     pathname={'zeytin'}
                     title={'Zeytin'}
-                    cover={'/static/images/zeytin/zeytin01.jpg'}
+                    cover={'/static/images/zeytin.jpeg'}
                   />
                 </Card>
               </HoverStyle>

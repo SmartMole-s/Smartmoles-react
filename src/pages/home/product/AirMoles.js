@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Divider } from '@mui/material';
 // components
 import Page from '../../../components/Page';
-import { AirMolesSlider, AirMolesWhat } from '../../../sections/home/product/airmoles';
+import { AirMolesSlider, AirMolesWhat, AirMolesImage } from '../../../sections/home/product/airmoles';
 
 // ----------------------------------------------------------------------
 
@@ -24,7 +24,7 @@ export default function AirMoles() {
         
         <AirMolesWhat />
         
-        {/* <AirMolesImage /> */}
+        <AirMolesImage />
 
         <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 40 }} />
       </RootStyle>

@@ -41,7 +41,7 @@ export default function AboutWhat() {
                 <Grid item xs={6}>
                   <MotionInView variants={varFade().inUp}>
                     <Image
-                      src="/static/growtech/growtech-fuar-smartmoles-7.jpg"
+                      src="/static/images/growtech/growtech-fuar-smartmoles-7.jpg"
                       ratio="3/4"
                       sx={{
                         borderRadius: 2,

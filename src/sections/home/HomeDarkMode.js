@@ -4,10 +4,14 @@ import { Grid, Box, Tooltip, Container, Button ,Typography} from '@mui/material'
 // components
 import Image from '../../components/Image';
 import { varFade } from '../../components/animate';
+// hooks
+import useResponsive from '../../hooks/useResponsive';
 
 // ----------------------------------------------------------------------
 
 export default function HomeDarkMode() {
+  const isDesktop = useResponsive('up', 'md');
+
   return (
     <>
       <Grid container justifyContent="center" alignItems='center'>
@@ -34,11 +38,13 @@ export default function HomeDarkMode() {
           {/* <SloganStyle sx={{ padding: '28% 5%', color: '#000' }}>
             <Typist>tarımsal faaliyetlerinize<br></br> değer katıyoruz</Typist>
           </SloganStyle> */}
+          {isDesktop && (
            <m.div variants={varFade().inRight}  >
               <Typography variant="h2" sx={{ px:'10%'}}>
               Siber Fiziksel Teknoloji Ürünlerimizi İnceleyin
               </Typography>
             </m.div>
+            )}
         </Grid>
         <Grid item sm={12} md={6}>
           <Box
