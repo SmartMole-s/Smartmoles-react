@@ -1,9 +1,10 @@
 // react
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 // @mui
 import { Button, Typography, TextField, Stack } from '@mui/material';
 // components
 import { MotionInView, varFade } from '../../../components/animate';
+import { SuccessAlert } from '../../../components/alerts';
 // emaljs
 import emailjs from '@emailjs/browser';
 
@@ -12,9 +13,17 @@ import emailjs from '@emailjs/browser';
 export default function ContactForm() {
   const form = useRef();
 
+  const alertState = (title, description, descriptionStrong) => {
+    return (
+      <SuccessAlert title={`${title}`} description={`${description}`} descriptionStrong={`${descriptionStrong}`} />
+    );
+  };
+
+  const [isSuccess, setIsSuccess] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setIsSuccess(true);
     emailjs.sendForm('service_z59cdzc', 'template_hoing1q', form.current, 'UBZ9lm5WEFl_pIG6K').then(
       (result) => {
         console.log(result.text);
@@ -37,25 +46,29 @@ export default function ContactForm() {
       <form ref={form} onSubmit={sendEmail}>
         <Stack spacing={3}>
           <MotionInView variants={varFade().inUp}>
-            <TextField name="user_name" fullWidth label="Ad Soyad" />
+            <TextField name="user_name" fullWidth label="Ad Soyad" required />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            <TextField name="user_email" fullWidth label="Email" />
+            <TextField name="user_email" fullWidth label="Email" required />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            <TextField fullWidth label="Konu" />
+            <TextField fullWidth label="Konu" required />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            <TextField name="message" fullWidth label="Mesajınız." multiline rows={4} />
+            <TextField name="message" fullWidth label="Mesajınız" multiline rows={4} required />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            <Button type="submit" value="Send" size="large" variant="contained">
-              Gönder
-            </Button>
+            {!isSuccess ? (
+              alertState('Başarılı!', 'Formunuz bize ulaşmıştır.', 'En kısa sürede sizinle iletişime geçilecektir.')
+            ) : (
+              <Button type="submit" value="Send" size="large" variant="contained">
+                Gönder
+              </Button>
+            )}
           </MotionInView>
         </Stack>
       </form>
