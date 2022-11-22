@@ -62,7 +62,7 @@ export default function ContactForm() {
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            {!isSuccess ? (
+            {isSuccess ? (
               alertState('Başarılı!', 'Formunuz bize ulaşmıştır.', 'En kısa sürede sizinle iletişime geçilecektir.')
             ) : (
               <Button type="submit" value="Send" size="large" variant="contained">

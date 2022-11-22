@@ -125,7 +125,7 @@ export default function VendorForm() {
         </Grid>
 
         <Grid container item>
-          {!isSuccess ? (
+          {isSuccess ? (
             alertState(
               'Başarılı!',
               'Bayilik başvurunuz bize ulaşmıştır.',
