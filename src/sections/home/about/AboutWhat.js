@@ -27,6 +27,7 @@ export default function AboutWhat() {
   const theme = useTheme();
 
   const isDesktop = useResponsive('up', 'md');
+  const isMobile = useResponsive('down', 'md');
 
   const isLight = theme.palette.mode === 'light';
   const shadow = `-40px 40px 80px ${alpha(isLight ? theme.palette.grey[500] : theme.palette.common.black, 0.48)}`;
@@ -35,7 +36,7 @@ export default function AboutWhat() {
     <RootStyle>
       <Container>
         <Grid container spacing={3}>
-          {isDesktop && (
+          {isMobile && (
             <Grid item xs={12} md={6} lg={7} sx={{ pr: { md: 7 } }}>
               <Grid container spacing={3} alignItems="flex-end">
                 <Grid item xs={6}>
@@ -109,7 +110,7 @@ export default function AboutWhat() {
                 <br />
                 <strong>Ömer Yuluğ</strong>
                 <br />
-                Ziraat Yüksek Mühendisi
+                CEO /Ziraat Yüksek Mühendisi
               </Typography>
             </MotionInView>
           </Grid>
