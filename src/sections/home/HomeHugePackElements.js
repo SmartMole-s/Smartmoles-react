@@ -72,7 +72,7 @@ export default function HomeHugePackElements() {
   const isLight = theme.palette.mode === 'light';
   const isRTL = theme.direction === 'rtl';
   const { translate } = useLocales();
-  
+
   const screenLeftAnimate = variantScreenLeft;
   const screenCenterAnimate = variantScreenCenter;
   const screenRightAnimate = variantScreenRight;
@@ -91,8 +91,8 @@ export default function HomeHugePackElements() {
 
               <MotionInView variants={varFade().inUp}>
                 <Typography variant="h2" sx={{ mb: 3 }}>
-                {translate('homehug.title')} <br />
-                {translate('homehug.title2')}
+                {translate('HomeHuge.title')} <br />
+                {translate('HomeHuge.title2')}
                 </Typography>
               </MotionInView>
 
@@ -103,7 +103,7 @@ export default function HomeHugePackElements() {
                     color: isLight ? 'text.secondary' : 'common.white',
                   }}
                 >
-                  {translate('homehug.desc')}
+                  {translate('HomeHuge.desc')}
                 </Typography>
               </MotionInView>
 
@@ -115,7 +115,7 @@ export default function HomeHugePackElements() {
                   href="/projelerimiz"
                   
                 >
-                  {translate('homehug.button')}
+                  {translate('HomeHuge.button')}
                 </Button>
               </MotionInView>
             </ContentStyle>

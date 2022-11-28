@@ -66,13 +66,13 @@ export default function HomeSlider() {
                   SmartMole's
                 </Typography>{' '}
                 <br />
-                {translate('homeslider.title')} <br />
-                {translate('homeslider.title2')} <br />
+                {translate('HomeSlider.title')} <br />
+                {translate('HomeSlider.title2')} <br />
               </Typography>
             </m.div>
 
             <m.div variants={varFade().inRight}>
-              <Typography sx={{ color: 'common.white' }}>{translate('homeslider.desc')}</Typography>
+              <Typography sx={{ color: 'common.white' }}>{translate('HomeSlider.desc')}</Typography>
             </m.div>
 
             <m.div variants={varFade().inRight}>
@@ -84,7 +84,7 @@ export default function HomeSlider() {
                 to={PATH_PAGE.smartCapillarity}
                 startIcon={<Iconify icon={'eva:flash-fill'} width={20} height={20} />}
               >
-                {translate('homeslider.button')}
+                {translate('HomeSlider.button')}
               </Button>
             </m.div>
           </ContentStyle>
