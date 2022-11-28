@@ -1,6 +1,26 @@
 {
-  "demo": {
-    "title": "English",
-    "introduction": "English Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  "HomeSlider": {
+    "title": "Those who cannot manage",
+    "title2": "Water cannot protect their soil.",
+    "desc":"With our brands and high technology we are working day and night with all our efforts for more productive, profitable, growing and happy farmers.",
+    "button":"Check out our award winning project"
+  },
+  "HomeHook": {
+    "title": "Those who cannot manage",
+    "title2": "Water cannot protect their soil.",
+    "desc":"With our brands and high technology we are working day and night with all our efforts for more productive, profitable, growing and happy farmers.",
+    "button":"Check out our award winning project"
   }
+ 
+
+
+
+
+
+
+
+
+
+
+
 }
