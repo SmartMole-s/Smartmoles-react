@@ -2,20 +2,29 @@
   "HomeSlider": {
     "title": "Those Who Cannot Manage",
     "title2": "Water Cannot Protect Their Soil.",
-    "desc":"With our brands and high technology we are working day and night with all our efforts for more productive, profitable, growing and happy farmers.",
-    "button":"Check out our award winning project"
+    "desc": "With our brands and high technology we are working day and night with all our efforts for more productive, profitable, growing and happy farmers.",
+    "button": "Check out our award winning project"
   },
   "HomeHuge": {
-    "title": "Those who cannot manage",
-    "title2": "Water cannot protect their soil.",
-    "desc":"With our brands and high technology we are working day and night with all our efforts for more productive, profitable, growing and happy farmers.",
-    "button":"Check out our award winning project"
+    "title": "There Is Artificial Intelligence",
+    "title2": "in The Root Of Work.",
+    "desc": "With our understanding that puts human and nature at the center we know and solve your problems in the most effective way in the management of your irrigation systems supported by artificial intelligence.",
+    "button": "Our Projects"
+  },
+  "HomeSlogan": {
+    "title": "We know that the truth needs be seen to beat the habits that are thought to be right."
+  },
+  "HomeDark": {
+    "title": "View Our Cyber Physical Products"
+  },
+  "HomeBanner": {
+    "title": "SmartMole's Technologies offer artificial intelligence supported solutions that can work independently and integrated with each other."
+  },
+  "HomeAdv": {
+    "title": "Would You Like To Be",
+    "title2": "Our Dealer?",
+    "button": "Dealer Application Form"
   }
- 
-
-
-
-
 
 
 
