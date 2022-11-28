@@ -4,6 +4,8 @@ import { Box, Grid, Button, Container, Typography } from '@mui/material';
 // components
 import Image from '../../components/Image';
 import { MotionInView, varFade } from '../../components/animate';
+//hooks
+import useLocales from '../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -69,7 +71,8 @@ export default function HomeHugePackElements() {
   const theme = useTheme();
   const isLight = theme.palette.mode === 'light';
   const isRTL = theme.direction === 'rtl';
-
+  const { translate } = useLocales();
+  
   const screenLeftAnimate = variantScreenLeft;
   const screenCenterAnimate = variantScreenCenter;
   const screenRightAnimate = variantScreenRight;
@@ -88,8 +91,8 @@ export default function HomeHugePackElements() {
 
               <MotionInView variants={varFade().inUp}>
                 <Typography variant="h2" sx={{ mb: 3 }}>
-                İşin Kökünde <br />
-                Yapay Zeka Var
+                {translate('homehug.title')} <br />
+                {translate('homehug.title2')}
                 </Typography>
               </MotionInView>
 
@@ -100,7 +103,7 @@ export default function HomeHugePackElements() {
                     color: isLight ? 'text.secondary' : 'common.white',
                   }}
                 >
-                  Sulama sistemlerinizin, yapay zekâ destekli olarak yönetiminde, merkeze insanı ve doğayı koyan anlayışımızla çözüm bekleyen sorunlarınızı biliyor ve en etkili şekilde çözüyoruz.
+                  {translate('homehug.desc')}
                 </Typography>
               </MotionInView>
 
@@ -112,7 +115,7 @@ export default function HomeHugePackElements() {
                   href="/projelerimiz"
                   
                 >
-                  Projelerimiz
+                  {translate('homehug.button')}
                 </Button>
               </MotionInView>
             </ContentStyle>

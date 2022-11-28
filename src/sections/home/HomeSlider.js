@@ -11,7 +11,6 @@ import { MotionContainer, varFade } from '../../components/animate';
 //hooks
 import useLocales from '../../hooks/useLocales';
 
-
 // ----------------------------------------------------------------------
 
 const RootStyle = styled(m.div)(({ theme }) => ({
@@ -50,7 +49,6 @@ const HeroOverlayStyle = styled(m.img)({
   position: 'absolute',
 });
 
-
 // ----------------------------------------------------------------------
 
 export default function HomeSlider() {
@@ -58,11 +56,7 @@ export default function HomeSlider() {
   return (
     <MotionContainer>
       <RootStyle>
-        <HeroOverlayStyle
-          alt="overlay"
-          src="/static/slider/banner.jpg"
-          variants={varFade().in}
-        />
+        <HeroOverlayStyle alt="overlay" src="/static/slider/banner.jpg" variants={varFade().in} />
 
         <Container>
           <ContentStyle>
@@ -70,18 +64,17 @@ export default function HomeSlider() {
               <Typography variant="h2" sx={{ color: 'common.white' }}>
                 <Typography component="span" variant="h1" sx={{ color: 'primary.main' }}>
                   SmartMole's
-                </Typography> <br />
-              Suyunu Yönetemeyen <br />
-              Toprağını Koruyamaz <br /> 
+                </Typography>{' '}
+                <br />
+                {translate('homeslider.title')} <br />
+                {translate('homeslider.title2')} <br />
               </Typography>
             </m.div>
 
             <m.div variants={varFade().inRight}>
-              <Typography sx={{ color: 'common.white' }}>
-                Markalarımız, yüksek teknolojimiz ve tüm çabamızla daha verimli, daha kazançlı topraklar, gelişen, büyüyen, mutlu çiftçiler için gece gündüz çalışıyoruz.
-              </Typography>
+              <Typography sx={{ color: 'common.white' }}>{translate('homeslider.desc')}</Typography>
             </m.div>
-      
+
             <m.div variants={varFade().inRight}>
               <Button
                 sx={{ marginTop: '40px' }}
@@ -89,13 +82,11 @@ export default function HomeSlider() {
                 variant="contained"
                 component={RouterLink}
                 to={PATH_PAGE.smartCapillarity}
-                startIcon={<Iconify icon={'eva:flash-fill'} width={20} height={20} 
-                />}
+                startIcon={<Iconify icon={'eva:flash-fill'} width={20} height={20} />}
               >
-                Ödüllü Projemizi İncele
+                {translate('homeslider.button')}
               </Button>
             </m.div>
-
           </ContentStyle>
         </Container>
       </RootStyle>
