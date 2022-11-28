@@ -30,5 +30,16 @@
     "title": "Teknoloji",
     "title2": "Dünyasına",
     "title3": "Hoşgeldiniz"
+  },
+  "AboutWhat": {
+    "desc1": "Bizler 1997'den beri Yuluğ Mühendislik çatısı altında Türkiye ve Dünya'nın birçok ülkesinde sulama sistemleri projeleri ve uygulamaları yapan bir ekibiz. Yuluğ Mühendislik olarak Ege Üniversitesi Teknoloji Geliştirme Bölgesinde SmartMole's Su Yönetimi Teknolojisi markasıyla ARGE çalışmalarımızı sürdürüyoruz.",
+    "strong1": "Bu yola çıkış nedenimiz;",
+    "desc2": " Görüyorduk ki; basınçlı sulama sistemleri tarımsal ve peyzaj alanlarında, adeta yüzey sulama yapar gibi kullanılmaktaydı. Bu sürdürülemez israfın, sebebiyet verdiği kirlilik ve çölleşmenin engellenmesi ise mevcut teknoloji ve yaklaşımlarla mümkün değildi. Bu gidişata dur diyebilmek için geliştirdiğimiz ürünlerimiz, işletmelerinize kârlılık ve bereket getirecek bir altın anahtardır. %97,34 oranında yerli ve millî imkânlarla üretilen siber fiziksel teknolojimiz CE ve RoHS belgelendirmesi ile görüleceği üzere çevre ve kullanıcı dostudur. Su kaynaklarının %75'ine yakınını sulamada kullandığımız düşünülürse, azalan ve kirlenen su kaynaklarını ve toprağı, tarım yaptığımız havzalarda korumak hepimizin gelecek kuşaklara borcudur. Bu anlayışla, ilginize teşekkür eder, yollarımızın kesişmesinden duyduğum mutluluğu ifade etmek isterim.",
+    "strong2":"Saygılarımla,",
+    "strong3":"Ömer Yuluğ",
+    "end":"CEO /Ziraat Yüksek Mühendisi"
+  },
+  "AboutWhy": {
+    "title": "SmartMole's Teknolojilerinin 5 Temel Mottosu!"
   }
 }

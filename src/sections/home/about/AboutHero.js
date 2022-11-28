@@ -38,11 +38,13 @@ export default function AboutHero() {
           <TextAnimate text="Smart Mole's" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title')+ " &nbsp; " + translate('AboutHero.title2') } />
+            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title')} />
+            &nbsp;
+            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title2')} />
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate sx={{ typography: 'h3' }} text="Hoşgeldiniz" />
+            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title3')}/>
           </Box>
         </ContentStyle>
       </Container>

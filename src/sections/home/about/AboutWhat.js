@@ -7,6 +7,8 @@ import { fPercent } from '../../../utils/formatNumber';
 // components
 import Image from '../../../components/Image';
 import { MotionInView, varFade } from '../../../components/animate';
+//hooks
+import useLocales from '../../../hooks/useLocales'
 
 // ----------------------------------------------------------------------
 
@@ -23,7 +25,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function AboutWhat() {
   const theme = useTheme();
-
+  const { translate } = useLocales(); 
   const isLight = theme.palette.mode === 'light';
   const shadow = `-40px 40px 80px ${alpha(isLight ? theme.palette.grey[500] : theme.palette.common.black, 0.48)}`;
 
@@ -79,7 +81,7 @@ export default function AboutWhat() {
                 sx={{
                   color: (theme) => (theme.palette.mode === 'light' ? 'text.secondary' : 'common.white'),
                 }}
-              >
+                >
                 Bizler 1997'den beri Yuluğ Mühendislik çatısı altında Türkiye ve Dünya'nın birçok ülkesinde sulama
                 sistemleri projeleri ve uygulamaları yapan bir ekibiz. <b>Yuluğ Mühendislik</b> olarak, Ege Üniversitesi
                 Teknoloji Geliştirme Bölgesinde SmartMole's Su Yönetimi Teknolojisi markasıyla <b>ARGE</b>{' '}
