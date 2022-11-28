@@ -2,9 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 //
+import trLocales from './tr.json';
 import enLocales from './en.json';
-import deLocales from './de.json';
-import frLocales from './fr.json';
 
 // ----------------------------------------------------------------------
 
@@ -13,12 +12,11 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
+      tr: { translations: trLocales },
       en: { translations: enLocales },
-      de: { translations: deLocales },
-      fr: { translations: frLocales }
     },
-    lng: localStorage.getItem('i18nextLng') || 'en',
-    fallbackLng: 'en',
+    lng: localStorage.getItem('i18nextLng') || 'tr',
+    fallbackLng: 'tr',
     debug: false,
     ns: ['translations'],
     defaultNS: 'translations',

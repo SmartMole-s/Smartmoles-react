@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 // @mui
 import { styled, useTheme } from '@mui/material/styles';
-import { Box, AppBar, Toolbar, Container } from '@mui/material';
+import { Box, AppBar, Toolbar, Container, Stack } from '@mui/material';
 // hooks
 import useOffSetTop from '../../hooks/useOffSetTop';
 import useResponsive from '../../hooks/useResponsive';
@@ -15,6 +15,8 @@ import Logo from '../../components/Logo';
 import MenuDesktop from './MenuDesktop';
 import MenuMobile from './MenuMobile';
 import navConfig from './MenuConfig';
+import LanguagePopover from './LanguagePopover';
+
 
 // ----------------------------------------------------------------------
 
@@ -78,15 +80,10 @@ export default function MainHeader() {
           <Box sx={{ flexGrow: 1 }} />
 
           {isDesktop && <MenuDesktop isOffset={isOffset} isHome={isHome} navConfig={navConfig} />}
-            
-          {/* <Button
-            variant="contained"
-            target="_blank"
-            rel="noopener"
-            href={PATH_DASHBOARD.root}
-          >
-            Admin Paneli
-          </Button> */}
+
+          <Stack direction="row" alignItems="center" spacing={{ xs: 0.5, sm: 1.5 }}>
+            <LanguagePopover />
+          </Stack>
 
           {!isDesktop && <MenuMobile isOffset={isOffset} isHome={isHome} navConfig={navConfig} />}
         </Container>

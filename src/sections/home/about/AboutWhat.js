@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 // @mui
 import { alpha, useTheme, styled } from '@mui/material/styles';
 import { Box, Grid, Container, Typography, LinearProgress } from '@mui/material';
-// hooks
-import useResponsive from '../../../hooks/useResponsive';
 // utils
 import { fPercent } from '../../../utils/formatNumber';
 // components
@@ -26,8 +24,6 @@ const RootStyle = styled('div')(({ theme }) => ({
 export default function AboutWhat() {
   const theme = useTheme();
 
-  const isMobile = useResponsive('down', 'md');
-
   const isLight = theme.palette.mode === 'light';
   const shadow = `-40px 40px 80px ${alpha(isLight ? theme.palette.grey[500] : theme.palette.common.black, 0.48)}`;
 
@@ -35,43 +31,41 @@ export default function AboutWhat() {
     <RootStyle>
       <Container>
         <Grid container spacing={3}>
-          {isMobile && (
-            <Grid item xs={12} md={6} lg={7} sx={{ pr: { md: 7 } }}>
-              <Grid container spacing={3} alignItems="flex-end">
-                <Grid item xs={6}>
-                  <MotionInView variants={varFade().inUp}>
-                    <Image
-                      src="/static/images/growtech/growtech-fuar-smartmoles-7.jpg"
-                      ratio="3/4"
-                      sx={{
-                        borderRadius: 2,
-                        boxShadow: shadow,
-                        marginBottom: 5,
-                      }}
-                    />
-                    <Image src="/static/hakkimizda/hakkimizda-donanim.jpg" ratio="1/1" sx={{ borderRadius: 2 }} />
-                  </MotionInView>
-                </Grid>
-                <Grid item xs={6}>
-                  <MotionInView variants={varFade().inUp}>
-                    <Image
-                      src="/static/hakkimizda/hakkimizda-tarla.jpg"
-                      ratio="1/1"
-                      sx={{ borderRadius: 2, marginBottom: 5 }}
-                    />
-                    <Image
-                      src="/static/hakkimizda/hakkimizda-yazilim.jpg"
-                      ratio="3/4"
-                      sx={{
-                        borderRadius: 2,
-                        boxShadow: shadow,
-                      }}
-                    />
-                  </MotionInView>
-                </Grid>
+          <Grid item xs={12} md={6} lg={7} sx={{ pr: { md: 7 } }}>
+            <Grid container spacing={3} alignItems="flex-end">
+              <Grid item xs={6}>
+                <MotionInView variants={varFade().inUp}>
+                  <Image
+                    src="/static/images/growtech/growtech-fuar-smartmoles-7.jpg"
+                    ratio="3/4"
+                    sx={{
+                      borderRadius: 2,
+                      boxShadow: shadow,
+                      marginBottom: 5,
+                    }}
+                  />
+                  <Image src="/static/hakkimizda/hakkimizda-donanim.jpg" ratio="1/1" sx={{ borderRadius: 2 }} />
+                </MotionInView>
+              </Grid>
+              <Grid item xs={6}>
+                <MotionInView variants={varFade().inUp}>
+                  <Image
+                    src="/static/hakkimizda/hakkimizda-tarla.jpg"
+                    ratio="1/1"
+                    sx={{ borderRadius: 2, marginBottom: 5 }}
+                  />
+                  <Image
+                    src="/static/hakkimizda/hakkimizda-yazilim.jpg"
+                    ratio="3/4"
+                    sx={{
+                      borderRadius: 2,
+                      boxShadow: shadow,
+                    }}
+                  />
+                </MotionInView>
               </Grid>
             </Grid>
-          )}
+          </Grid>
 
           <Grid item xs={12} md={6} lg={5}>
             <MotionInView variants={varFade().inRight}>

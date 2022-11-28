@@ -8,6 +8,9 @@ import { PATH_PAGE } from '../../routes/paths';
 // components
 import Iconify from '../../components/Iconify';
 import { MotionContainer, varFade } from '../../components/animate';
+//hooks
+import useLocales from '../../hooks/useLocales';
+
 
 // ----------------------------------------------------------------------
 
@@ -51,6 +54,7 @@ const HeroOverlayStyle = styled(m.img)({
 // ----------------------------------------------------------------------
 
 export default function HomeSlider() {
+  const { translate } = useLocales();
   return (
     <MotionContainer>
       <RootStyle>
