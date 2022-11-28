@@ -54,6 +54,7 @@ export default function LanguagePopover() {
               selected={option.value === currentLang.value}
               onClick={() => {
                 onChangeLang(option.value);
+                window.location.reload();
                 handleClose();
               }}
             >
