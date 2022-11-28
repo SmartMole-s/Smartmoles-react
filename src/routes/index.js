@@ -53,6 +53,7 @@ export default function Router() {
         { path: 'yazili-basin/:name', element: <MediaPicDetail />},
         { path: 'gorsel-basin', element: <MediaVideo />},
         { path: 'brosur', element: <Pdf />},
+        { path: 'fiyat-listesi', element: <PriceList />},
         { path: 'smart-capillarity', element: <SmartCapillarity />},
         { path: 'smart-root', element: <SmartRoot />},
         { path: 'smart-waterlevel', element: <SmartWaterlevel />},
@@ -73,6 +74,7 @@ const HomePage = Loadable(lazy(() => import('../pages/home/Home')));
 const About = Loadable(lazy(() => import('../pages/home/About')));
 const Contact = Loadable(lazy(() => import('../pages/home/Contact')));
 const Pdf = Loadable(lazy(() => import('../pages/home/Pdf')));
+const PriceList = Loadable(lazy(() => import('../pages/home/PriceList')));
 const OurProjects = Loadable(lazy(() => import('../pages/home/OurProjects')));
 const Faqs = Loadable(lazy(() => import('../pages/home/Faqs')));
 const Vendor = Loadable(lazy(() => import('../pages/home/Vendor')));

@@ -13,6 +13,7 @@ export const PATH_PAGE = {
   gallery: '/galeri',
   video: '/video',
   pdf: '/brosur',
+  priceListPdf: '/fiyat-listesi',
   ourprojects: '/projelerimiz',
   mediaPic: '/yazili-basin',
   mediaPicDetail: '/yazili-basin-detay',

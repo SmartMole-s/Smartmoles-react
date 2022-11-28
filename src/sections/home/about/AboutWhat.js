@@ -26,7 +26,6 @@ const RootStyle = styled('div')(({ theme }) => ({
 export default function AboutWhat() {
   const theme = useTheme();
 
-  const isDesktop = useResponsive('up', 'md');
   const isMobile = useResponsive('down', 'md');
 
   const isLight = theme.palette.mode === 'light';

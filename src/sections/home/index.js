@@ -9,3 +9,4 @@ export { default as HomeHugePackElements } from './HomeHugePackElements';
 export { default as HomeProductSlider } from '../home/HomeProductSlider';
 export { default as HomeBannerFooter } from '../home/HomeBannerFooter';
 export { default as Pdf } from '../home/Pdf';
+export { default as PriceListPdf } from '../home/PriceListPdf';
