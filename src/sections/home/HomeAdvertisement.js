@@ -5,6 +5,8 @@ import { Button, Box, Container, Typography } from '@mui/material';
 // components
 import Image from '../../components/Image';
 import { MotionInView, varFade } from '../../components/animate';
+//hooks
+import useLocales from '../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -28,6 +30,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function HomeAdvertisement() {
+  const { translate } = useLocales();
   return (
     <Container>
       <ContentStyle>
@@ -56,8 +59,8 @@ export default function HomeAdvertisement() {
         >
           <MotionInView variants={varFade().inDown} sx={{ color: 'common.white', mb: 5 }}>
             <Typography variant="h2">
-              Bayimiz Olmak
-              <br />İster misiniz?
+            {translate('HomeAdv.title')}
+              <br />{translate('HomeAdv.title2')}
             </Typography>
           </MotionInView>
           <MotionInView variants={varFade().inDown}>
@@ -75,7 +78,7 @@ export default function HomeAdvertisement() {
                 '&:hover': { bgcolor: 'grey.300' },
               }}
             >
-              Bayi Başvuru Formu
+              {translate('HomeAdv.button')}
             </Button>
           </MotionInView>
         </Box>

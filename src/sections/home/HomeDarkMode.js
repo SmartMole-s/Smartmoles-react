@@ -6,12 +6,13 @@ import Image from '../../components/Image';
 import { varFade } from '../../components/animate';
 // hooks
 import useResponsive from '../../hooks/useResponsive';
+import useLocales from '../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
 export default function HomeDarkMode() {
   const isDesktop = useResponsive('up', 'md');
-
+  const { translate } = useLocales();
   return (
     <>
       <Grid container justifyContent="center" alignItems='center'>
@@ -41,7 +42,9 @@ export default function HomeDarkMode() {
           {isDesktop && (
            <m.div variants={varFade().inRight}  >
               <Typography variant="h2" sx={{ px:'10%'}}>
-              Siber Fiziksel Teknoloji Ürünlerimizi İnceleyin
+              {translate('HomeDark.title')}
+              <br></br>
+              {translate('HomeDark.title2')}
               </Typography>
             </m.div>
             )}

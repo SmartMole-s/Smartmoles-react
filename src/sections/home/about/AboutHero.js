@@ -3,14 +3,14 @@ import { styled } from '@mui/material/styles';
 import { Box, Container } from '@mui/material';
 // components
 import { MotionContainer, TextAnimate, varFade } from '../../../components/animate';
-
+//hooks
+import useLocales from '../../../hooks/useLocales';
 // ----------------------------------------------------------------------
 
 const RootStyle = styled('div')(({ theme }) => ({
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  backgroundImage:
-    'url(/static/slider/hakkimizda.jpg)',
+  backgroundImage: 'url(/static/slider/hakkimizda.jpg)',
   padding: theme.spacing(10, 0),
   [theme.breakpoints.up('md')]: {
     height: 560,
@@ -30,6 +30,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function AboutHero() {
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
@@ -37,13 +38,11 @@ export default function AboutHero() {
           <TextAnimate text="Smart Mole's" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-             <TextAnimate sx={{typography:'h3'}} text="Teknoloji &nbsp; Dünyasına "/> 
+            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title')+ " &nbsp; " + translate('AboutHero.title2') } />
           </Box>
-
           <br />
-
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-             <TextAnimate sx={{typography:'h3'}} text="Hoşgeldiniz"/> 
+            <TextAnimate sx={{ typography: 'h3' }} text="Hoşgeldiniz" />
           </Box>
         </ContentStyle>
       </Container>

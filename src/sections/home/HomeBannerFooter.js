@@ -4,6 +4,8 @@ import { Grid, Container, Typography } from '@mui/material';
 // components
 import Image from '../../components/Image';
 import { MotionInView, varFade } from '../../components/animate';
+//hooks
+import useLocales from '../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -30,7 +32,8 @@ const ContentStyle = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-export default function HomeDarkMode() {
+export default function HomeBannerFooter() {
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container sx={{ position: 'relative' }}>
@@ -63,7 +66,7 @@ export default function HomeDarkMode() {
 
               <MotionInView variants={varFade().inUp}>
                 <Typography variant="h5" sx={{ color: 'common.white', mb: 5 , textShadow:'2px 2px 4px #000'}}>
-                    SmartMole's teknolojileri birbiriyle entegre ve bağımsız çalışabilen <b>yapay zekâ</b> destekli çözümler sunar.
+                {translate('HomeBanner.title')}
                 </Typography>
               </MotionInView>
             </ContentStyle>

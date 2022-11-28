@@ -1,9 +1,10 @@
 // @mui
 import { styled } from '@mui/material/styles';
 import { Box, Container, Typography } from '@mui/material';
-
 // components
 import { MotionInView, varFade } from '../../components/animate';
+//hooks
+import useLocales from '../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -20,6 +21,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function HomeSlogan() {
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container>
@@ -31,7 +33,7 @@ export default function HomeSlogan() {
 
             <MotionInView variants={varFade().inDown}>
               <Typography variant='h4' sx={{ mt: 3, mb: 5, color: 'text.secondary' }}>
-                Doğru sanılan alışkanlıkları yenmek için, gerçeği görmeniz gerektiğini biliyoruz.
+              {translate('HomeSlogan.title')}
               </Typography>
             </MotionInView>
           </Box>

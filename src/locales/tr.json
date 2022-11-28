@@ -10,5 +10,25 @@
     "title2": "Yapay Zeka Var",
     "desc": "Sulama sistemlerinizin, yapay zekâ destekli olarak yönetiminde, merkeze insanı ve doğayı koyan anlayışımızla çözüm bekleyen sorunlarınızı biliyor ve en etkili şekilde çözüyoruz.",
     "button": "Projelerimiz"
+  },
+  "HomeSlogan": {
+    "title": "Doğru sanılan alışkanlıkları yenmek için, gerçeği görmeniz gerektiğini biliyoruz."
+  },
+  "HomeDark": {
+    "title": "Siber Fiziksel Teknoloji",
+    "title2": "Ürünlerimizi İnceleyin"
+  },
+  "HomeBanner": {
+    "title": "SmartMole's teknolojileri birbiriyle entegre ve bağımsız çalışabilen yapay zekâ destekli çözümler sunar."
+  },
+  "HomeAdv": {
+    "title": "Bayimiz Olmak",
+    "title2": "İster misiniz?",
+    "button": "Bayi Başvuru Formu"
+  },
+  "AboutHero": {
+    "title": "Teknoloji",
+    "title2": "Dünyasına",
+    "title3": "Hoşgeldiniz"
   }
 }
