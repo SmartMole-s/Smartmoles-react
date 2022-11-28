@@ -8,7 +8,6 @@ import { fPercent } from '../../../utils/formatNumber';
 import Image from '../../../components/Image';
 import { MotionInView, varFade } from '../../../components/animate';
 //hooks
-import useLocales from '../../../hooks/useLocales'
 
 // ----------------------------------------------------------------------
 
@@ -25,7 +24,6 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function AboutWhat() {
   const theme = useTheme();
-  const { translate } = useLocales(); 
   const isLight = theme.palette.mode === 'light';
   const shadow = `-40px 40px 80px ${alpha(isLight ? theme.palette.grey[500] : theme.palette.common.black, 0.48)}`;
 
