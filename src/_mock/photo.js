@@ -68,6 +68,12 @@ export const photos = [
     {id:'62', categoryId:'ceviz', src: '/static/images/ceviz/ceviz2.jpg', alt: 'Tarım Alanları' },
     {id:'63', categoryId:'ceviz', src: '/static/images/ceviz/ceviz3.jpg', alt: 'Tarım Alanları' },
     {id:'64', categoryId:'ceviz', src: '/static/images/ceviz/ceviz4.jpg', alt: 'Tarım Alanları' },
+    {id:'83', categoryId:'ceviz', src: '/static/images/ceviz/cevizpompa.jpg', alt: 'Tarım Alanları' },
+    {id:'111', categoryId:'ceviz', src: '/static/images/ceviz/ceviz028.jpg', alt: 'Tarım Alanları' },
+    {id:'112', categoryId:'ceviz', src: '/static/images/ceviz/ceviz029.jpg', alt: 'Tarım Alanları' },
+    {id:'113', categoryId:'ceviz', src: '/static/images/ceviz/ceviz030.jpg', alt: 'Tarım Alanları' },
+    {id:'114', categoryId:'ceviz', src: '/static/images/ceviz/ceviz031.jpg', alt: 'Tarım Alanları' },
+    {id:'127', categoryId:'ceviz', src: '/static/images/ceviz/ceviz5.jpg', alt: 'Tarım Alanları' },
 
     {id:'65', categoryId:'cim', src: '/static/images/cim/cim01.jpg', alt: 'Tarım Alanları' },
     {id:'66', categoryId:'cim', src: '/static/images/cim/cim02.jpg', alt: 'Tarım Alanları' },
@@ -90,7 +96,6 @@ export const photos = [
     {id:'81', categoryId:'hurma', src: '/static/images/hurma/hurma013.jpg', alt: 'Tarım Alanları' },
     {id:'82', categoryId:'hurma', src: '/static/images/hurma/hurma014.jpg', alt: 'Tarım Alanları' },
 
-    {id:'83', categoryId:'kiraz', src: '/static/images/kiraz/kirazpompa.jpg', alt: 'Tarım Alanları' },
     {id:'84', categoryId:'kiraz', src: '/static/images/kiraz/kiraz001.jpg', alt: 'Tarım Alanları' },
     {id:'85', categoryId:'kiraz', src: '/static/images/kiraz/kiraz002.jpg', alt: 'Tarım Alanları' },
     {id:'86', categoryId:'kiraz', src: '/static/images/kiraz/kiraz003.jpg', alt: 'Tarım Alanları' },
@@ -118,10 +123,6 @@ export const photos = [
     {id:'108', categoryId:'kiraz', src: '/static/images/kiraz/kiraz025.jpg', alt: 'Tarım Alanları' },
     {id:'109', categoryId:'kiraz', src: '/static/images/kiraz/kiraz026.jpg', alt: 'Tarım Alanları' },
     {id:'110', categoryId:'kiraz', src: '/static/images/kiraz/kiraz027.jpg', alt: 'Tarım Alanları' },
-    {id:'111', categoryId:'kiraz', src: '/static/images/kiraz/kiraz028.jpg', alt: 'Tarım Alanları' },
-    {id:'112', categoryId:'kiraz', src: '/static/images/kiraz/kiraz029.jpg', alt: 'Tarım Alanları' },
-    {id:'113', categoryId:'kiraz', src: '/static/images/kiraz/kiraz030.jpg', alt: 'Tarım Alanları' },
-    {id:'114', categoryId:'kiraz', src: '/static/images/kiraz/kiraz031.jpg', alt: 'Tarım Alanları' },
     {id:'115', categoryId:'kiraz', src: '/static/images/kiraz/kiraz032.jpg', alt: 'Tarım Alanları' },
     {id:'116', categoryId:'kiraz', src: '/static/images/kiraz/kiraz033.jpg', alt: 'Tarım Alanları' },
 
@@ -132,6 +133,12 @@ export const photos = [
     {id:'120', categoryId:'misir', src: '/static/images/misir/misir3.jpg', alt: 'Tarım Alanları' },
 
     {id:'121', categoryId:'muz', src: '/static/images/muz/muz1.jpg', alt: 'Tarım Alanları' },
+    {id:'128', categoryId:'muz', src: '/static/images/muz/muz2.jpg', alt: 'Tarım Alanları' },
+    {id:'129', categoryId:'muz', src: '/static/images/muz/muz3.jpg', alt: 'Tarım Alanları' },
+    {id:'130', categoryId:'muz', src: '/static/images/muz/muz4.jpg', alt: 'Tarım Alanları' },
+    {id:'131', categoryId:'muz', src: '/static/images/muz/muz5.jpg', alt: 'Tarım Alanları' },
+    {id:'132', categoryId:'muz', src: '/static/images/muz/muz6.jpg', alt: 'Tarım Alanları' },
+    {id:'133', categoryId:'muz', src: '/static/images/muz/muz7.jpg', alt: 'Tarım Alanları' },
 
     {id:'122', categoryId:'yonca', src: '/static/images/yonca/yonca01.jpg', alt: 'Tarım Alanları' },
     {id:'123', categoryId:'yonca', src: '/static/images/yonca/yonca02.jpg', alt: 'Tarım Alanları' },

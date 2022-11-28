@@ -7,6 +7,10 @@ import { MotionInView, varFade } from '../../../components/animate';
 
 const CATEGORIES = [
   {
+    icon: '/static/project/tarimbakanlik.png',
+    href: '#',
+  },
+  {
     icon: '/static/project/ozlem.jpg',
     href: '#',
   },
