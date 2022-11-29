@@ -3,6 +3,8 @@ import { styled } from '@mui/material/styles';
 import { Box, Container } from '@mui/material';
 // components
 import { MotionContainer, TextAnimate, varFade } from '../../../components/animate';
+//hooks
+import useLocales from '../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -30,6 +32,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function VideoSlider() {
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
@@ -37,7 +40,7 @@ export default function VideoSlider() {
           <TextAnimate text="SmartMole's" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white'}}>
-            <TextAnimate sx={{typography:'h3'}} text="Video&nbsp;Galerisi"/>
+            <TextAnimate sx={{typography:'h3'}} text={translate('Video.title')}/>
           </Box>
         </ContentStyle>
       </Container>

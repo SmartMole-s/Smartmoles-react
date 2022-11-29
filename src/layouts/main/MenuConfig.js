@@ -19,7 +19,7 @@ const menuConfig = [
   },
   {
     title: 'Menüler',
-    titleEn:'Menus',
+    titleEn:'Menu',
     path: '/pages',
     icon: <Iconify icon={'eva:file-fill'} {...ICON_SIZE} />,
     children: [

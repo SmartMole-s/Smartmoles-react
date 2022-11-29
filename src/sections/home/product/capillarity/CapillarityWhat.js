@@ -5,6 +5,8 @@ import { Grid, Container, Typography } from '@mui/material';
 import useResponsive from '../../../../hooks/useResponsive';
 // components
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -21,7 +23,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function CapillarityWhat() {
   const isDesktop = useResponsive('up', 'md');
-
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container>
@@ -51,12 +53,10 @@ export default function CapillarityWhat() {
                   color: (theme) => (theme.palette.mode === 'light' ? 'text.secondary' : 'common.white'),
                 }}
               >
-                Sulama sırasında ve sonrasında toprak profilinde <b>su hareketlerini ve nem miktarını</b> birlikte
-                görebileceğiniz Dünya'daki tek patentli teknolojidir.
+                {translate('SmartCapillarityWhat.desc')}
                 <br></br>
                 <br></br>
-                <strong>Kapiller su hareketini izleyen Dünya'daki tek teknoloji</strong>
-                {/* <b>Smart</b>Capillarity özellikleri; */}
+                <strong>{translate('SmartCapillarityWhat.desc2')}</strong>
               </Typography>
             </MotionInView>
           </Grid>

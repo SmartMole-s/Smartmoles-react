@@ -3,10 +3,13 @@ import { Box, Container, Typography, Grid } from '@mui/material';
 // components
 import Image from '../../../../components/Image';
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
 export default function CapillarityImage() {
+  const { translate } = useLocales();
   return (
     <Container sx={{ mt: 10 }}>
       <Grid container justifyContent="center">
@@ -30,20 +33,18 @@ export default function CapillarityImage() {
         <Grid item sm={12} md={6} sx={{ paddingLeft: '20px' }}>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="h4" sx={{ textAlign: 'center!important' }}>
-              SmartCapillarity özellikleri
+            {translate('SmartCapillarityImage.title')}
             </Typography>
           </MotionInView>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="body1" sx={{ textAlign: 'left', lineHeight: '1.8' }}>
-              <br></br>• Hem nem hem de kapiller su hareketini toprak içerisinde gerçek zamanlı tespit edebilme.
-              <br></br>• Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini yapay zeka
-              destekli yönetme imkanı.
-              <br></br>• Kablosuz haberleşme.
-              <br></br>• Bulunduğu yerde kendini kalibre edebilme yeteneği.
-              <br></br>• Yatay ve dikey yönde eklenebilir sensör modulü teknolojisi.
-              <br></br>• Bir sensör modulünde 32 adet matris yapıda kapiller hareket sensörü bir adet yüksek
-              hassasiyette nem sensörü ile büyük veri sağlanır.
-              <br></br>• Opsiyonel mesaj uyarı servisi.
+              <br></br>• {translate('SmartCapillarityImage.li1')}
+              <br></br>• {translate('SmartCapillarityImage.li2')}
+              <br></br>• {translate('SmartCapillarityImage.li3')}
+              <br></br>• {translate('SmartCapillarityImage.li4')}
+              <br></br>• {translate('SmartCapillarityImage.li5')}
+              <br></br>• {translate('SmartCapillarityImage.li6')}
+              <br></br>• {translate('SmartCapillarityImage.li7')}
             </Typography>
           </MotionInView>
         </Grid>
@@ -67,13 +68,12 @@ export default function CapillarityImage() {
         <Grid item xs={12} sm={8}>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="body2" sx={{ textAlign: 'center!important' }}>
-              Toprak içerisindeki kapiller su hareketlerini gördüğünüzde sulama yönteminiz ne olursa olsun kontrol
-              sizde.
+            {translate('SmartCapillarityImage.p1')}
               <br></br>
             </Typography>
             <Typography variant="body1" sx={{ textAlign: 'center' }}>
               <br></br>
-              <b>Doğayı korurken kazanmak mümkün!</b>
+              <b>{translate('SmartCapillarityImage.p2')}!</b>
             </Typography>
           </MotionInView>
         </Grid>

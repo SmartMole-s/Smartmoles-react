@@ -1,12 +1,12 @@
 // @mui
 import { Card, Container, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
-
 // components
 import Page from '../../../components/Page';
-
 // sections
 import { GalleryMain, GallerySlider } from '../../../sections/home/gallery';
+//hooks
+import useLocales from '../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -29,13 +29,15 @@ const HoverStyle = styled('div')(() => ({
 // ----------------------------------------------------------------------
 
 export default function Gallery() {
+  const { translate } = useLocales();
+  const lang = localStorage.getItem('i18nextLng');
   return (
     <Page title="Fotoğraf">
       <RootStyle>
         <GallerySlider />
         <Container sx={{ my: 10 }}>
         <Typography variant="h3" sx={{ my: 8, textAlign: 'center' }}>
-          Fotoğraf Galerisi
+        {translate('Gallery.title')}
         </Typography>
           <Grid container spacing={10}>
             <Grid item xs={12} md={6}>
@@ -43,7 +45,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'growtech-fuari'}
-                    title={'Growtech Fuarı'}
+                    title={lang==='tr'?'Growtech Fuarı':'Growtech'}
                     cover={'/static/images/growtech/Growtech-2.jpg'}
                   />
                 </Card>
@@ -54,7 +56,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'peyzaj-alanlari'}
-                    title={'Peyzaj Alanları'}
+                    title={lang==='tr'?'Peyzaj Alanları':'Peysage Areas'}
                     cover={'/static/images/peysage/1.jpg'}
                   />
                 </Card>
@@ -65,7 +67,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'seralar'}
-                    title={'Seralar'}
+                    title={lang==='tr'?'Seralar':'Greenhouses'}
                     cover={'/static/images/sera.jpeg'}
                   />
                 </Card>
@@ -76,7 +78,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'tarim-alanlari'}
-                    title={'Tarım Alanları'}
+                    title={lang==='tr'?'Tarım Alanları':'Farming Areas'}
                     cover={'/static/images/farm/smartmoles-2.jpg'}
                   />
                 </Card>
@@ -87,7 +89,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'aycicegi'}
-                    title={'Ayçiçeği'}
+                    title={lang==='tr'?'Ayçiçeği':'Sunflower'}
                     cover={'/static/images/aycicegi.jpeg'}
                   />
                 </Card>
@@ -98,7 +100,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'bag'}
-                    title={'Bağ'}
+                    title={lang==='tr'?'Bağ':'Vineyard'}
                     cover={'/static/images/bag.jpeg'}
                   />
                 </Card>
@@ -109,7 +111,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'ceviz'}
-                    title={'Ceviz'}
+                    title={lang==='tr'?'Ceviz':'Walnut'}
                     cover={'/static/images/ceviz.jpeg'}
                   />
                 </Card>
@@ -120,7 +122,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'cim'}
-                    title={'Çim'}
+                    title={lang==='tr'?'Çim':'Grass'}
                     cover={'/static/images/cim.jpeg'}
                   />
                 </Card>
@@ -131,7 +133,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'elma'}
-                    title={'Elma'}
+                    title={lang==='tr'?'Elma':'Apple'}
                     cover={'/static/images/elma.jpeg'}
                   />
                 </Card>
@@ -142,7 +144,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'hurma'}
-                    title={'Hurma'}
+                    title={lang==='tr'?'Hurma':'Date'}
                     cover={'/static/images/hurma.jpeg'}
                   />
                 </Card>
@@ -153,7 +155,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'kiraz'}
-                    title={'Kiraz'}
+                    title={lang==='tr'?'Kiraz':'Cherry'}
                     cover={'/static/images/kiraz.jpeg'}
                   />
                 </Card>
@@ -164,7 +166,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'leylandi'}
-                    title={'Leylandi'}
+                    title={lang==='tr'?'Leylandi':'Leyland'}
                     cover={'/static/images/leylandi.jpeg'}
                   />
                 </Card>
@@ -175,7 +177,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'misir'}
-                    title={'Mısır'}
+                    title={lang==='tr'?'Mısır':'Corn'}
                     cover={'/static/images/misir.jpeg'}
                   />
                 </Card>
@@ -186,7 +188,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'muz'}
-                    title={'Muz'}
+                    title={lang==='tr'?'Muz':'Banana'}
                     cover={'/static/images/muz.jpeg'}
                   />
                 </Card>
@@ -197,7 +199,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'yonca'}
-                    title={'Yonca'}
+                    title={lang==='tr'?'Yonca':'Clover'}
                     cover={'/static/images/yonca.jpeg'}
                   />
                 </Card>
@@ -208,7 +210,7 @@ export default function Gallery() {
                 <Card>
                   <GalleryMain
                     pathname={'zeytin'}
-                    title={'Zeytin'}
+                    title={lang==='tr'?'Zeytin':'Olives'}
                     cover={'/static/images/zeytin.jpeg'}
                   />
                 </Card>

@@ -141,14 +141,16 @@
     "src":"/static/pdf/brosur-ingilizce.pdf"
   },
   "SmartCapillaritySlider":{
-    "title":"Do you know where",
-    "title2":"you are irrigating?",
+    "title":"Do You Know Where",
+    "title2":"You Are Irrigating?",
     "button":"Get a Quote"
   },
   "SmartCapillarityWhat":{
-    "desc":"It is the only patented technology in the world where water movements are monitored in real-time along with the amount of moisture in the soil profile during and after irrigation."
+    "desc":"It is the only patented technology in the world where water movements are monitored in real-time along with the amount of moisture in the soil profile during and after irrigation.",
+    "desc2":"The only technology in the world that monitors capillarity water movement"
   },
   "SmartCapillarityImage":{
+    "title":"SmartCapillarity Features",
     "li1":"Real-time detection of both moisture and capillarity water movement in the soil.",
     "li2":"The possibilty of artificial intelligence-supported management of the irrigation system with high sensitivity according to the moisture and water movements in the soil.",
     "li3":"Wireless Communication.",
@@ -160,12 +162,23 @@
     "p2":"It is possible to win while protecting nature."
   },
   "SmartRootSlider":{
-    "title":"Are You Sure The Effective Root Zone is ",
-    "title2":"where you think it is?",
+    "title":"Are you sure the effective",
+    "title2":"root zone is where",
+    "title3":"where you think it is?",
     "button":"Get a Quote"
   },
   "SmartRootWhat":{
-    "desc":"It is the only patented technology in the world where water movements are monitored in real-time along with the amount of moisture in the soil profile during and after irrigation."
+    "desc":"SmartRoot, is a high-tech cyber-physical system developed for the determination of the effective root zone of plants underfield conditions.",
+    "desc2":"The effective root zone is the root zone where 70-80% of water and fertilizer are used. SmartRoot technology facilitates the differentiation of this region from other root regions of the plant and shares the location of the effective root region with high accuracy with the user."
+  },
+  "SmartRootImage":{
+    "desc":"Theoretical root depth assumptions and wrong approaches that are thought to be correct cause irreversible damages such as irrigation of the wrong area, excessive irrigation, salt accumulation, desertification in the soil, nitrate pollution from the ground water.",
+    "desc2":"The location of effective rootzone is known with high accuracy with SmartRoot and only meeting of water and fertilizer in the effective zone will lead to profit.",
+    "desc3":"Highly accurate mapping of the effective root zone provides maximum benefit in all your agricultural activities. It guides the management of the area where there is effective root zone is developing.",
+    "desc4":"Knowing the effective root zone with high accuracy significantly reduces your fertilizer use; or it ensures that the used fertilizer stays in the area where it is useful for the plant. Therefore, the giving fertilizer is not wasted by washing down along with preventing nitrate pollution in the groundwater.",
+    "desc5":"To increase irrigation efficiency, the effective root zone should be known and only the known zone should be irrigated.",
+    "desc6":"Know where the red line is. Don't waste water. Don't waste fertilizer!..",
+    "desc7":"The data is evaluated by artificial intelligence and the information can be accessed of the effective root zone with high accuracy"
   }
   
 

@@ -1,12 +1,12 @@
 // @mui
 import { Card, Container, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
-
 // components
 import Page from '../../../components/Page';
-
 // sections
 import { VideoMain, VideoSlider } from '../../../sections/home/video';
+//hooks
+import useLocales from '../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -20,13 +20,14 @@ const RootStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function Video() {
+  const { translate } = useLocales();
   return (
     <Page title="Video Galerisi">
       <RootStyle>
         <VideoSlider />
         <Container sx={{ my: 10 }}>
         <Typography variant="h3" sx={{ my: 8, textAlign: 'center' }}>
-          Video Galerisi
+          {translate('Video.title')}
         </Typography>
           <Grid container spacing={10}>
             <Grid item xs={12} md={6}>

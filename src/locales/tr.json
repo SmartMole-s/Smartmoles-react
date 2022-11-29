@@ -138,5 +138,44 @@
   },
   "Pdf":{
     "src":"/static/pdf/brosur.pdf"
+  },
+  "SmartCapillaritySlider":{
+    "title":"Nereyi Suladığınızı",
+    "title2":"Biliyor musunuz?",
+    "button":"Fiyat Teklifi Al"
+  },
+  "SmartCapillarityWhat":{
+    "desc":"Sulama sırasında ve sonrasında toprak profilinde su hareketlerini ve nem miktarını birlikte görebileceğiniz Dünya'daki tek patentli teknolojidir.",
+    "desc2":"Kapiller su hareketini izleyen Dünya'daki tek teknoloji"
+  },
+  "SmartCapillarityImage":{
+    "title":"SmartCapillarity Özellikleri",
+    "li1":"Hem nem hem de kapiller su hareketini toprak içerisinde gerçek zamanlı tespit edebilme.",
+    "li2":"Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini yapay zeka destekli yönetme imkanı.",
+    "li3":"Kablosuz haberleşme.",
+    "li4":"Bulunduğu yerde kendini kalibre edebilme yeteneği.",
+    "li5":"Yatay ve dikey yönde eklenebilir sensör modulü teknolojisi.",
+    "li6":"Bir sensör modulünde 32 adet matris yapıda kapiller hareket sensörü bir adet yüksek hassasiyette nem sensörü ile büyük veri sağlanır.",
+    "li7":"Opsiyonel mesaj uyarı servisi.",
+    "p1":"Toprak içerisindeki kapiller su hareketlerini gördüğünüzde sulama yönteminiz ne olursa olsun kontrol sizde.",
+    "p2":"Doğayı korurken kazanmak mümkün!"
+  },
+  "SmartRootSlider":{
+    "title":"Etkili kök bölgesinin ",
+    "title2":"düşündüğünüz yerde",
+    "title3":"olduğundan emin misiniz?",
+    "button":"Fiyat Teklifi Al"
+  },
+  "SmartRootWhat":{
+    "desc":"SmartRoot, bitkilerin etkili kök bölgesi adı verilen bölgenin tarla koşullarında tespitinin yapılması için geliştirilmiş yüksek teknolojiye sahip siber fiziksel bir sistemdir.",
+    "desc2":"Etkili kök bölgesi, su ve gübrenin %70 - 80 kullanıldığı kök bölgesidir. Bu bölgenin bitkinin diğer kök bölgelerinden ayrımının yapılmasını kolaylaştıran SmartRoot teknolojisi etkili kök bölgesinin yerini kullanıcı ile yüksek doğrulukta paylaşır."
+  },
+  "SmartRootImage":{
+    "desc":"Teorik kök derinliği kabullenmeleri ve doğru sanılan hatalı yaklaşımlar, yanlış bölgenin sulanmasına, aşırı sulamaya, tuz birikimine, toprakta çölleşmeye, taban suyunda nitrat kirliliği olmaz üzere dönülmesi zor zararlara neden olur.",
+    "desc2":"SmartRoot ile etkili kök bölgenizin konumunu yüksek doğrulukta bildiğinizde sadece bu bölgenin su ve gübre ile buluşması size kazanç sağlayacaktır.",
+    "desc3":"Etkili kök bölgesinin yüksek doğrulukta haritalanması tüm zirai faaliyetlerinizde maksimum fayda sağlar. Etkili kök bölgesi gelişiminin olduğu alanın yönetilmesinde kılavuzluk yapar.",
+    "desc4":"Etkili kök bölgesinin yüksek doğrulukta bilinmesi, gübre kullanımınızı ciddi oranda azaltır. Ya da kullanılan gübrenin bitkiye yarayışlı bölgede kalmasını sağlar. Böylece atılan gübre yıkanarak hem boşa gitmez hem de yeraltı sularında nitrat kirliliği engellenir.",
+    "desc5":"Sulama randımanını artırmak istiyorsanız etkili kök bölgesinin nerede olduğunu bilmeli ve sadece bu bölgeyi sulamalısınız."
   }
+  
 }

@@ -9,6 +9,7 @@ import { SuccessAlert } from '../../../components/alerts';
 import emailjs from '@emailjs/browser';
 //hooks
 import useLocales from '../../../hooks/useLocales';
+
 // ----------------------------------------------------------------------
 
 export default function ContactForm() {
@@ -39,9 +40,7 @@ export default function ContactForm() {
     <Stack spacing={5}>
       <MotionInView variants={varFade().inUp}>
         <Typography variant="h3">{translate('Contact.title2')}</Typography>
-        <Typography variant="body2">
-        {translate('Contact.desc')}
-        </Typography>
+        <Typography variant="body2">{translate('Contact.desc')}</Typography>
       </MotionInView>
       <form ref={form} onSubmit={sendEmail}>
         <Stack spacing={3}>
@@ -66,7 +65,7 @@ export default function ContactForm() {
               alertState('Başarılı!', 'Formunuz bize ulaşmıştır.', 'En kısa sürede sizinle iletişime geçilecektir.')
             ) : (
               <Button type="submit" value="Send" size="large" variant="contained">
-                {translate('Contact.send')}
+                {translate('Contact.button')}
               </Button>
             )}
           </MotionInView>
