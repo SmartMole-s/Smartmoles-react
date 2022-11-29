@@ -111,13 +111,13 @@
   },
   "Main": {
     "title": "Home Page",
-    "title2": "menus",
+    "title2": "Menus",
     "title3": "Communication",
     "menu1": "Institutional",
     "menu2": "Our products",
     "menu3": "Gallery",
     "menu4": "News",
-    "menu1a": "about us",
+    "menu1a": "About Us",
     "menu1b": "Our projects",
     "menu1c": "Dealership Application",
     "menu1d": "Brochure",
@@ -139,5 +139,35 @@
   },
   "Pdf":{
     "src":"/static/pdf/brosur-ingilizce.pdf"
+  },
+  "SmartCapillaritySlider":{
+    "title":"Do you know where",
+    "title2":"you are irrigating?",
+    "button":"Get a Quote"
+  },
+  "SmartCapillarityWhat":{
+    "desc":"It is the only patented technology in the world where water movements are monitored in real-time along with the amount of moisture in the soil profile during and after irrigation."
+  },
+  "SmartCapillarityImage":{
+    "li1":"Real-time detection of both moisture and capillarity water movement in the soil.",
+    "li2":"The possibilty of artificial intelligence-supported management of the irrigation system with high sensitivity according to the moisture and water movements in the soil.",
+    "li3":"Wireless Communication.",
+    "li4":"The ability to self-calibrate where it is located.",
+    "li5":"Modular sensor module technology that can be added in horizontal and vertical directions.",
+    "li6":"Big data is provided with 32 capillarity motion sensors in a matrix structure and one high-sensitivity moisture sensor in a sensor module.",
+    "li7":"Optional message alert service.",
+    "p1":"When the capillarity movements are monitored in the soil profile, you are in control no matter what the irrigation method is.",
+    "p2":"It is possible to win while protecting nature."
+  },
+  "SmartRootSlider":{
+    "title":"Are You Sure The Effective Root Zone is ",
+    "title2":"where you think it is?",
+    "button":"Get a Quote"
+  },
+  "SmartRootWhat":{
+    "desc":"It is the only patented technology in the world where water movements are monitored in real-time along with the amount of moisture in the soil profile during and after irrigation."
   }
+  
+
+
 }
