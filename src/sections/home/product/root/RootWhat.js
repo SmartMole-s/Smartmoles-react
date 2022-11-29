@@ -5,6 +5,8 @@ import { Grid, Container, Typography } from '@mui/material';
 import useResponsive from '../../../../hooks/useResponsive';
 // components
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -21,7 +23,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function RootWhat() {
   const isDesktop = useResponsive('up', 'md');
-
+  const { translate } = useLocales(); 
   return (
     <RootStyle>
       <Container>
@@ -50,13 +52,10 @@ export default function RootWhat() {
                   color: (theme) => (theme.palette.mode === 'light' ? 'text.secondary' : 'common.white'),
                 }}
               >
-                <b>Smart</b>Root, bitkilerin etkili kök bölgesi adı verilen bölgenin tarla koşullarında tespitinin
-                yapılması için geliştirilmiş yüksek teknolojiye sahip <b>siber fiziksel bir sistemdir.</b>
+                {translate('SmartRootWhat.desc')}
                 <br></br>
                 <br></br>
-                Etkili kök bölgesi, su ve gübrenin %70 - 80 kullanıldığı kök bölgesidir. Bu bölgenin bitkinin diğer kök
-                bölgelerinden ayrımının yapılmasını kolaylaştıran <b>Smart</b>Root teknolojisi etkili kök bölgesinin
-                yerini kullanıcı ile yüksek doğrulukta paylaşır.
+                {translate('SmartRootWhat.desc2')}
               </Typography>
             </MotionInView>
           </Grid>

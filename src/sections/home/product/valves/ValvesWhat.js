@@ -5,6 +5,8 @@ import { Grid, Container, Typography } from '@mui/material';
 import useResponsive from '../../../../hooks/useResponsive';
 // components
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -21,7 +23,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function FarmWhat() {
   const isDesktop = useResponsive('up', 'md');
-
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container>
@@ -50,19 +52,13 @@ export default function FarmWhat() {
                   color: (theme) => (theme.palette.mode === 'light' ? 'text.secondary' : 'common.white'),
                 }}
               >
-                Bitkinin ihtiyaç duyduğu suyun, doğal yağışlarla karşılanamayan kısmının, yapay yollarla bitkinin etkili
-                kök bölgesine verilmesidir.
+                {translate('SmartValveWhat.desc')}
                 <br />
                 <br />
-                <b>Bu tanıma uygun işletilen bir sulama sistemine sahipseniz sürdürülebilir tarım yapabilirsiniz...</b>
+                <b>{translate('SmartValveWhat.desc2')}</b>
                 <br />
                 <br />
-                Vanalarınızın yönetiminde akıllı kablosuz çözümlerle yanınızdayız. Yerel bilgisayarınızdan ya da bulut
-                tabanlı Dünya'nın her yerinden sulama sisteminizi yönetebilirsiniz. Zaman ayarlı ya da sensör verilerine
-                göre yapay zeka desteği ile suluyoruz. Su dağıtım şebekeleri tarlalar ve peyzaj alanları dağınık halde
-                vana gruplarından oluşabilmekte ve bunların yönetimi zorluklar içermekte ve gereksiz maliyetlere neden
-                olmaktadır. Sanal ortamda tüm parçalı üretim alanlarınızı tek bir merkezden SmartValve teknolojisi ile
-                yönetebilirsiniz.
+                {translate('SmartValveWhat.desc3')}
                 {/* Tek merkezden kontrol */}
                 {/* Sulama sistemi kablosuz yönetim alternatifleri
                 - Manuel yönetim

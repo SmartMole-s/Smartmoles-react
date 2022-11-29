@@ -3,10 +3,13 @@ import { Box, Container, Typography, Grid } from '@mui/material';
 // components
 import Image from '../../../../components/Image';
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
 export default function RootImage() {
+  const { translate } = useLocales();
   return (
     <Container sx={{ mt: 10 }}>
       <Box
@@ -22,29 +25,17 @@ export default function RootImage() {
       <Grid container justifyContent="center">
         <Grid item xs={12} sm={8}>
           <MotionInView variants={varFade().inUp}>
-            <Typography variant="body" sx={{ textAlign: 'center'}}>      
-              <b>Teorik kök derinliği kabullenmeleri ve doğru sanılan hatalı yaklaşımlar,</b> yanlış bölgenin
-              sulanmasına, aşırı sulamaya, tuz birikimine, toprakta çölleşmeye, taban suyunda nitrat kirliliği olmaz
-              üzere dönülmesi zor zararlara neden olur.
-            </Typography>
-          </MotionInView>
-        </Grid>
-      </Grid>
-      <Grid container justifyContent="center">
-        <Grid item xs={12} sm={8}>
-          <MotionInView variants={varFade().inUp}>
             <Typography variant="body" sx={{ textAlign: 'center' }}>
-              <b>SmartRoot</b> ile etkili kök bölgenizin konumunu yüksek doğrulukta bildiğinizde sadece bu bölgenin su
-              ve gübre ile buluşması size <b>kazanç sağlayacaktır.</b>
+              {translate('SmartRootImage.desc')}
               <br></br>
               <br></br>
-              Etkili kök bölgesinin yüksek doğrulukta haritalanması tüm zirai faaliyetlerinizde maksimum fayda sağlar.
-              Etkili kök bölgesi gelişiminin olduğu alanın yönetilmesinde kılavuzluk yapar.
+              {translate('SmartRootImage.desc2')}
               <br></br>
               <br></br>
-              <b>Etkili kök bölgesinin</b> yüksek doğrulukta bilinmesi, gübre kullanımınızı ciddi oranda azaltır. Ya da
-              kullanılan gübrenin bitkiye yarayışlı bölgede kalmasını sağlar. Böylece atılan gübre yıkanarak hem boşa
-              gitmez hem de yeraltı sularında nitrat kirliliği engellenir.
+              {translate('SmartRootImage.desc3')}
+              <br></br>
+              <br></br>
+              {translate('SmartRootImage.desc4')}
             </Typography>
           </MotionInView>
         </Grid>
@@ -64,11 +55,10 @@ export default function RootImage() {
         <Grid item xs={12} sm={8}>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="body1" sx={{ textAlign: 'center' }}>
-              Sulama randımanını artırmak istiyorsanız etkili kök bölgesinin nerede olduğunu bilmeli ve sadece bu
-              bölgeyi sulamalısınız.
+            {translate('SmartRootImage.desc5')}
               <br></br>
               <br></br>
-              <strong>Kırmızı çizginin yerini görün, suyu ve gübreyi boşa harcamayın!..</strong>
+              <strong>{translate('SmartRootImage.desc6')}</strong>
             </Typography>
           </MotionInView>
         </Grid>
@@ -88,11 +78,10 @@ export default function RootImage() {
         <Grid item xs={12} sm={8}>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="body1" sx={{ textAlign: 'center!important' }}>
-              Veriler yapay zeka tarafından değerlendirilir ve etkili kök bölgesinin bilgisine yüksek doğrulukta
-              erişebilirsiniz.
+            {translate('SmartRootImage.desc7')}
               <br></br>
               <br></br>
-              <strong>Etkili kök derinliğinizin yerini öğrendiğinizde yüzünüz gülecek ve kazanacaksınız...</strong>
+              <strong>{translate('SmartRootImage.desc8')}</strong>
             </Typography>
           </MotionInView>
         </Grid>

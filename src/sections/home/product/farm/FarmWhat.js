@@ -5,6 +5,8 @@ import { Grid, Container, Typography } from '@mui/material';
 import useResponsive from '../../../../hooks/useResponsive';
 // components
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -21,7 +23,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function FarmWhat() {
   const isDesktop = useResponsive('up', 'md');
-
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container>
@@ -50,19 +52,17 @@ export default function FarmWhat() {
                   color: (theme) => (theme.palette.mode === 'light' ? 'text.secondary' : 'common.white'),
                 }}
               >
-                Günümüzde sürdürülebilirlik için küçük ölçekli ve büyük ölçekli çiftliklerde sensörler ve otomasyonlarla
-                proseslerin iyileştirilmesi gerekmektedir.
+                {translate('SmartFarmWhat.desc')}
                 <br />
                 <br />
                 <b>
-                  Firmamızın uzman mühendisleri sizlere özel çözümler sunmakta ve kişiye özel talep edilen yazılım ve
-                  donanımsal teknolojileri geliştirebilmektedir.
+                {translate('SmartFarmWhat.desc2')}
                 </b>
                 <br />
                 <br />
-                Sorunlarınızı ve hayallerinizi bizimle paylaşabilirsiniz!.. Tarımsal işletmenize akıl katacak teknolojik
-                çözümleri birlikte ele alabilir veya sadece size özel çözümleri beraber geliştirebiliriz. Hayallerinizle
-                gelin, işletmenize değer katalım.
+                {translate('SmartFarmWhat.desc3')}
+                <br />
+                {translate('SmartFarmWhat.desc4')}
               </Typography>
             </MotionInView>
           </Grid>

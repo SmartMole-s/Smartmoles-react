@@ -3,10 +3,13 @@ import { Box, Container, Typography, Grid } from '@mui/material';
 // components
 import Image from '../../../../components/Image';
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
 export default function FarmImage() {
+  const { translate } = useLocales();
   return (
     <Container sx={{ mt: 10 }}>
       <Box
@@ -28,7 +31,8 @@ export default function FarmImage() {
         <Grid item xs={12} sm={8}>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="body" sx={{ textAlign: 'center' }}>
-            SmartValve's tek merkezden saha bulunan vanaların kontrolünü yapay zeka ile yöneten bir sistemdir. Arazinin özelliklerine göre lokal ya da bulut tabanlı sistem alternatifleri sunan SmartValve's sadece vanayı açıp kapatan bir sistem değildir. <br/><br/> 
+            {translate('SmartValveImage.desc')}
+             <br/><br/> 
             </Typography>
           </MotionInView>
         </Grid>
@@ -53,7 +57,7 @@ export default function FarmImage() {
         <Grid item xs={12} sm={8}>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="body" sx={{ textAlign: 'center' }}>
-            Her vana kontrol ünitesi, bulunduğu alanın sıcaklık ve nem bilgilerini vererek mikroklima veri ağının kurulmasını sağlar. Aynı zamanda vana önlerindeki basınçları kontrol ederek işletme basıncı bilgisini ve hatlarda kaçak olup olmadığını bilmenizi sağlar. 
+            {translate('SmartValveImage.desc2')} 
             </Typography>
           </MotionInView>
         </Grid>

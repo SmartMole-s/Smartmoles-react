@@ -71,7 +71,6 @@
     "place16": "Geographical Region You Want to Buy Franchise",
     "place17": "Other Dealerships You Own, If Any",
     "button": "Send"
-    
   },
   "Gallery": {
     "title": "Photo Gallery",
@@ -132,55 +131,101 @@
     "menu4a": "Printed Press",
     "menu4b": "Visual Press"
   },
-  "Footer":{
-    "title":"SmartMole's is a brand of Yulug Engineering.",
-    "address":"Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir",
-    "copyright":"All rights reserved."
+  "Footer": {
+    "title": "SmartMole's is a brand of Yulug Engineering.",
+    "address": "Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir",
+    "copyright": "All rights reserved."
   },
-  "Pdf":{
-    "src":"/static/pdf/brosur-ingilizce.pdf"
+  "Pdf": {
+    "src": "/static/pdf/brosur-ingilizce.pdf"
   },
-  "SmartCapillaritySlider":{
-    "title":"Do You Know Where",
-    "title2":"You Are Irrigating?",
-    "button":"Get a Quote"
+  "SmartCapillaritySlider": {
+    "title": "Do You Know Where",
+    "title2": "You Are Irrigating?",
+    "button": "Get a Quote"
   },
-  "SmartCapillarityWhat":{
-    "desc":"It is the only patented technology in the world where water movements are monitored in real-time along with the amount of moisture in the soil profile during and after irrigation.",
-    "desc2":"The only technology in the world that monitors capillarity water movement"
+  "SmartCapillarityWhat": {
+    "desc": "It is the only patented technology in the world where water movements are monitored in real-time along with the amount of moisture in the soil profile during and after irrigation.",
+    "desc2": "The only technology in the world that monitors capillarity water movement"
   },
-  "SmartCapillarityImage":{
-    "title":"SmartCapillarity Features",
-    "li1":"Real-time detection of both moisture and capillarity water movement in the soil.",
-    "li2":"The possibilty of artificial intelligence-supported management of the irrigation system with high sensitivity according to the moisture and water movements in the soil.",
-    "li3":"Wireless Communication.",
-    "li4":"The ability to self-calibrate where it is located.",
-    "li5":"Modular sensor module technology that can be added in horizontal and vertical directions.",
-    "li6":"Big data is provided with 32 capillarity motion sensors in a matrix structure and one high-sensitivity moisture sensor in a sensor module.",
-    "li7":"Optional message alert service.",
-    "p1":"When the capillarity movements are monitored in the soil profile, you are in control no matter what the irrigation method is.",
-    "p2":"It is possible to win while protecting nature."
+  "SmartCapillarityImage": {
+    "title": "SmartCapillarity Features",
+    "li1": "Real-time detection of both moisture and capillarity water movement in the soil.",
+    "li2": "The possibilty of artificial intelligence-supported management of the irrigation system with high sensitivity according to the moisture and water movements in the soil.",
+    "li3": "Wireless Communication.",
+    "li4": "The ability to self-calibrate where it is located.",
+    "li5": "Modular sensor module technology that can be added in horizontal and vertical directions.",
+    "li6": "Big data is provided with 32 capillarity motion sensors in a matrix structure and one high-sensitivity moisture sensor in a sensor module.",
+    "li7": "Optional message alert service.",
+    "p1": "When the capillarity movements are monitored in the soil profile, you are in control no matter what the irrigation method is.",
+    "p2": "It is possible to win while protecting nature."
   },
-  "SmartRootSlider":{
-    "title":"Are you sure the effective",
-    "title2":"root zone is where",
-    "title3":"where you think it is?",
-    "button":"Get a Quote"
+  "SmartRootSlider": {
+    "title": "Are you sure the effective",
+    "title2": "root zone is where",
+    "title3": "where you think it is?",
+    "button": "Get a Quote"
   },
-  "SmartRootWhat":{
-    "desc":"SmartRoot, is a high-tech cyber-physical system developed for the determination of the effective root zone of plants underfield conditions.",
-    "desc2":"The effective root zone is the root zone where 70-80% of water and fertilizer are used. SmartRoot technology facilitates the differentiation of this region from other root regions of the plant and shares the location of the effective root region with high accuracy with the user."
+  "SmartRootWhat": {
+    "desc": "SmartRoot, is a high-tech cyber-physical system developed for the determination of the effective root zone of plants underfield conditions.",
+    "desc2": "The effective root zone is the root zone where 70-80% of water and fertilizer are used. SmartRoot technology facilitates the differentiation of this region from other root regions of the plant and shares the location of the effective root region with high accuracy with the user."
   },
-  "SmartRootImage":{
-    "desc":"Theoretical root depth assumptions and wrong approaches that are thought to be correct cause irreversible damages such as irrigation of the wrong area, excessive irrigation, salt accumulation, desertification in the soil, nitrate pollution from the ground water.",
-    "desc2":"The location of effective rootzone is known with high accuracy with SmartRoot and only meeting of water and fertilizer in the effective zone will lead to profit.",
-    "desc3":"Highly accurate mapping of the effective root zone provides maximum benefit in all your agricultural activities. It guides the management of the area where there is effective root zone is developing.",
-    "desc4":"Knowing the effective root zone with high accuracy significantly reduces your fertilizer use; or it ensures that the used fertilizer stays in the area where it is useful for the plant. Therefore, the giving fertilizer is not wasted by washing down along with preventing nitrate pollution in the groundwater.",
-    "desc5":"To increase irrigation efficiency, the effective root zone should be known and only the known zone should be irrigated.",
-    "desc6":"Know where the red line is. Don't waste water. Don't waste fertilizer!..",
-    "desc7":"The data is evaluated by artificial intelligence and the information can be accessed of the effective root zone with high accuracy"
+  "SmartRootImage": {
+    "desc": "Theoretical root depth assumptions and wrong approaches that are thought to be correct cause irreversible damages such as irrigation of the wrong area, excessive irrigation, salt accumulation, desertification in the soil, nitrate pollution from the ground water.",
+    "desc2": "The location of effective rootzone is known with high accuracy with SmartRoot and only meeting of water and fertilizer in the effective zone will lead to profit.",
+    "desc3": "Highly accurate mapping of the effective root zone provides maximum benefit in all your agricultural activities. It guides the management of the area where there is effective root zone is developing.",
+    "desc4": "Knowing the effective root zone with high accuracy significantly reduces your fertilizer use; or it ensures that the used fertilizer stays in the area where it is useful for the plant. Therefore, the giving fertilizer is not wasted by washing down along with preventing nitrate pollution in the groundwater.",
+    "desc5": "To increase irrigation efficiency, the effective root zone should be known and only the known zone should be irrigated.",
+    "desc6": "Know where the red line is. Don't waste water. Don't waste fertilizer!..",
+    "desc7": "The data is evaluated by artificial intelligence and the information can be accessed of the effective root zone with high accuracy.",
+    "desc8": "You will smile and win when you know exactly where the effective root depth is..."
+  },
+  "SmartFarmSlider": {
+    "title": "Smart solutions",
+    "title2": "especially just for you!",
+    "button": "Get a Quote"
+  },
+  "SmartFarmWhat": {
+    "desc": "Today, it is necessary to improve processes with sensors and automation in small-scale and large-scale farms for sustainability.",
+    "desc2": "Our expert engineers offer you special solutions and can develop customized software and hardware technologies.",
+    "desc3": "Share your problems in the field and dreams with us!",
+    "desc4": "We can develop technological solutions together that will add intelligence into your agricultural business, or we can develop special custom solutions just for you. Share your dreams and let's add value to your business"
+  },
+  "SmartFarmImage": {
+    "title": "Join SmartMole's for a better world, better future...",
+    "desc": "With our brands and high technology we are working day and night with all our efforts for more productive, profitable, growing and happy farmers.",
+    "desc2": "Protecting future means protecting water and soil. To win and earn together our doors are always open to partners who will set their heart on this path with us."
+  },
+  "SmartValveSlider": {
+    "title": "Are you sure you are managing",
+    "title2": "your irrigation valves correctly?",
+    "button": "Get a Quote"
+  },
+  "SmartValveWhat": {
+    "desc": "The needed amount of water of the plant cannot be met by natural precipitation and is given to the effective root zone of the plant artificially.",
+    "desc2": "If there is an irrigation system operated in accordance with this definition then, agriculture can be sustainable!..",
+    "desc3": "We are by your side with smart wireless solutions in the management of your valves. Manage your irrigation system from a local computer or manage with cloud-based anywhere in the world. We irrigate with artificial intelligence support according to timer or sensor data. Water distribution networks may consist of dispersed valve groups in fields and landspace areas, and their management includes difficulties and causes unnecessary costs. All partial production fields can be managed remotely in a virtual platform from a single center with SmartValve's technology."
+  },
+  "SmartValveImage": {
+    "desc": "SmartValve's is a system that controls valves in field from a single center with artificial intelligence. SmartValve's is not just a system that turns on and off valves, it also offers local or cloud-based system alternatives according to the characteristics of the field.",
+    "desc2": "Each valve control unit provides temperature and moisture information of the area where it is located and provides the establishment of a microclimate data network. It also checks the pressures in front of the valves, notifying the end user the operating pressure whether there are leaks in the pipelines."
+  },
+  "SmartWaterlevelSlider": {
+    "title": "If drainage conditions are poor, ",
+    "title2": "desired benefit from agricultural",
+    "title3": "production cannot be seen!",
+    "button": "Fiyat Teklifi Al"
+  },
+  "SmartWaterlevelWhat": {
+    "desc": "SmartWaterLevel product identifies the problem and helps to take the necessary measures in order to study and solve the drainage problem areas and make them suitable for agriculture.",
+    "desc2": "SmartWaterLevel is a robotic system that manages the groundwater level in all irrigated areas.",
+    "desc3": "With SmartWaterLevel technology, it is possible to conduct groundwater level surveys in a basin/field/park and garden, as well as detecting the amount of water used by each plant from the groundwater in real time, with artificial intelligence technology, it is possible to operate the irrigation system only to complete the remaining amount."
+  },
+  "SmartWaterlevelImage": {
+    "desc": "Taban suyu seviyenize göre projenizi sağlıklı yönetmeniz için Etüt-İzleme ve sulama sistemi yönetim hizmetlerimizle yanınızdayız. Kök bölgesine taban suyundan gelen su ile sulama suyu miktarı arasındaki ilişkiyi kuruyoruz. Kapiller yükselmeyi takip edebiliyor ve etüt verilerine göre alınması gereken önlemleri beraber kararlaştırıyoruz. Taban suyu seviyesinin bilinmesi, hem drenaj sorununun net olarak tanımlanabilmesi hem de sulama ve gübreleme işlemlerinin kirliliğe ve israfa yol açmadan yapılabilmesi için gerekmektedir. Taban suyu seviyesine bağlı olarak toprak profilinde taban suyundan zemine doğru kapiller hareket ile nem yükselir.",
+    "desc2": "Bitkilerin oksijensiz kalması ve kurumasına eden olan saturasyondaki toprak koşulları drenaj yapılmasını gerektirmektedir. Klasik drenaj anlayışında bitki, kök bölgesinden daha derine, mümkün olamıyorsa etkili kök bölgesi seviyesinde fazla su drene edilmeye çalışılır. Park ve bahçelerde ya da tarımsal üretimin yapıldığı bir tarlada/havzada drenaj sorunu çözümlendikten sonra sulama suyu ihtiyacı bitkiye verilir.",
+    "desc3": "Ancak çoğu bölgede bitkiler ihtiyaç duydukları sulama suyu ihtiyacını drene edilen/edilmeyen taban suyundan karşılar. Ancak ne kadar miktarda bitki su ihtiyacının taban suyundan karşılanabildiğini tespit edebilen bir teknoloji olmadığından ayrıca gereğinden fazla sulama yapılır. Sulama ile beraber taban suyu iyice şişer ve/veya taban suyuna sulama suyu içerisindeki gübre ve kimyasal maddelerle beraber karışır. Azot yıkanması gerçekleşerek ciddi bir gübre israfı ve yeraltı suyu ortaya çıkar.",
+    "desc4": "Park ve bahçelerde yada tarımsal üretimin yapıldığı bir tarlada/havzada drenaj sorunu çözümlendikten sonra sulama suyu ihtiyacı bitkiye verilir. Ancak çoğu bölgede bitkiler ihtiyaç duydukları sulama suyu ihtiyacını drene edilen/edilmeyen taban suyundan karşılar. Ancak ne kadar miktarda bitki su ihtiyacının taban suyundan karşılanabildiğini tespit edebilen bir teknoloji olmadığından ayrıca gereğinden fazla sulama yapılır. Sulama ile beraber taban suyu iyice şişer ve/vaya taban suyuna sulama suyu içerisindeki gübre ve kimyasal maddelerle beraber karışır. Azot yıkanması gerçekleşerek ciddi bir gübre ısrafı ve yer altı suyu kirliliği ortaya çıkar.",
+    "desc5": "Sahip olduğumuz SmartWaterLevel teknolojisi ile bu sorun gerekli gözlemler yapılarak çözümlenebilmektedir. Hem bir havzada/tarlada/park ve bahçede taban suyu seviyesi etüdü yapabilmekte hemde her bitkinin gerçek zamanlı olarak taban suyundan kullandığı su miktarını tespit ederek yapay zeka teknolojisi ile sulama sistemini sadece kalan miktarı tamamlamak üzere çalıştırmak mümkün olabilmektedir.SmartWaterLevel taban suyu seviyesini gerçek zamanlı olarak izleyebilen akıllı bir robot sistemdir."
   }
-  
-
-
 }

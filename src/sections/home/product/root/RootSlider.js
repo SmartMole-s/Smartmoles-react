@@ -5,6 +5,8 @@ import { Box, Container, Button } from '@mui/material';
 // components
 import Iconify from '../../../../components/Iconify';
 import { MotionContainer, TextAnimate, varFade, varBounce } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -31,6 +33,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function RootSlider() {
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
@@ -38,15 +41,15 @@ export default function RootSlider() {
           <TextAnimate text="SmartRoot" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="Etkili &nbsp; kök &nbsp; bölgesinin" sx={{ mr: 2, typography: 'h4' }} />
+            <TextAnimate text={translate('SmartRootSlider.title')} sx={{ mr: 2, typography: 'h4' }} />
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="düşündüğünüz &nbsp; yerde" sx={{ mr: 2, typography: 'h4' }} />
+            <TextAnimate text={translate('SmartRootSlider.title2')} sx={{ mr: 2, typography: 'h4' }} />
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="olduğundan &nbsp; emin &nbsp; misiniz?" sx={{ mb: 2, mr: 2, typography: 'h4' }} />
+            <TextAnimate text={translate('SmartRootSlider.title3')} sx={{ mb: 2, mr: 2, typography: 'h4' }} />
           </Box>
 
           <m.div variants={varBounce().inUp}>
@@ -57,7 +60,7 @@ export default function RootSlider() {
               variant="contained"
               startIcon={<Iconify icon={'eva:flash-fill'} width={20} height={20} />}
             >
-              Fiyat Teklifi Al
+              {translate('SmartRootSlider.button')}
             </Button>
           </m.div>
         </ContentStyle>

@@ -5,6 +5,8 @@ import { Box, Container, Button } from '@mui/material';
 // components
 import Iconify from '../../../../components/Iconify';
 import { MotionContainer, TextAnimate, varFade, varBounce } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -31,6 +33,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function WaterlevelSlider() {
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
@@ -38,15 +41,15 @@ export default function WaterlevelSlider() {
           <TextAnimate text="SmartWaterlevel" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="Drenaj &nbsp; koşullarınız &nbsp; iyi &nbsp; değilse" sx={{ mr: 2, typography: 'h4' }} />
+            <TextAnimate text={translate('SmartWaterlevelSlider.title')} sx={{ mr: 2, typography: 'h4' }} />
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="tarımsal &nbsp; üretiminizden &nbsp; istenen" sx={{ mr: 2, typography: 'h4' }} />
+            <TextAnimate text={translate('SmartWaterlevelSlider.title2')} sx={{ mr: 2, typography: 'h4' }} />
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="faydayı &nbsp; göremezsiniz &nbsp; !" sx={{ mb: 2, mr: 2, typography: 'h4' }} />
+            <TextAnimate text={translate('SmartWaterlevelSlider.title2')} sx={{ mb: 2, mr: 2, typography: 'h4' }} />
           </Box>
           <m.div variants={varBounce().inUp}>
             <Button
@@ -56,7 +59,7 @@ export default function WaterlevelSlider() {
               variant="contained"
               startIcon={<Iconify icon={'eva:flash-fill'} width={20} height={20} />}
             >
-              Fiyat Teklifi Al
+              {translate('SmartWaterlevelSlider.button')}
             </Button>
           </m.div>
         </ContentStyle>

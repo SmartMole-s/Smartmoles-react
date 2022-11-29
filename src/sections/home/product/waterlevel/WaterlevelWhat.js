@@ -5,6 +5,8 @@ import { Grid, Container, Typography } from '@mui/material';
 import useResponsive from '../../../../hooks/useResponsive';
 // components
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -21,7 +23,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function WaterlevelWhat() {
   const isDesktop = useResponsive('up', 'md');
-
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container>
@@ -50,18 +52,13 @@ export default function WaterlevelWhat() {
                   color: (theme) => (theme.palette.mode === 'light' ? 'text.secondary' : 'common.white'),
                 }}
               >
-                <b>Drenaj sorunlu</b> bölgelerin etüdü, çözümü ve tarıma elverişli hale getirilmesi amacıyla{' '}
-                <b>Smart</b>WaterLevel ürünü, sorunu tespit eder ve sonrasında gerekli tedbirleri almanızda yardımcı
-                olur.
+                {translate('SmartWaterlevelWhat.desc')}
                 <br></br>
                 <br></br>
-                <b>Smart</b>WaterLevel tüm sulanan alanlarda taban suyu seviyesini yöneten robot bir sistemdir.
+                {translate('SmartWaterlevelWhat.desc2')}
                 <br></br>
                 <br></br>
-                <b>Smart</b>WaterLevel teknolojisi ile hem bir havzada/tarlada/park ve bahçede taban suyu seviyesi etüdü
-                yapabilmekte hem de her bitkinin gerçek zamanlı olarak taban suyundan kullandığı su miktarını tespit
-                ederek, yapay zekâ teknolojisi ile sulama sistemini sadece kalan miktarı tamamlamak üzere çalıştırmak
-                mümkün olabilmektedir.
+                {translate('SmartWaterlevelWhat.desc3')}
               </Typography>
             </MotionInView>
           </Grid>

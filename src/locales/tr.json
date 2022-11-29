@@ -131,51 +131,101 @@
     "menu4a": "Yazılı Basın",
     "menu4b": "Görsel Basın"
   },
-  "Footer":{
-    "title":"SmartMole's bir Yuluğ Mühendislik markasıdır.",
-    "address":"Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir",
-    "copyright":"Tüm hakları saklıdır."
+  "Footer": {
+    "title": "SmartMole's bir Yuluğ Mühendislik markasıdır.",
+    "address": "Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir",
+    "copyright": "Tüm hakları saklıdır."
   },
-  "Pdf":{
-    "src":"/static/pdf/brosur.pdf"
+  "Pdf": {
+    "src": "/static/pdf/brosur.pdf"
   },
-  "SmartCapillaritySlider":{
-    "title":"Nereyi Suladığınızı",
-    "title2":"Biliyor musunuz?",
-    "button":"Fiyat Teklifi Al"
+  "SmartCapillaritySlider": {
+    "title": "Nereyi Suladığınızı",
+    "title2": "Biliyor musunuz?",
+    "button": "Fiyat Teklifi Al"
   },
-  "SmartCapillarityWhat":{
-    "desc":"Sulama sırasında ve sonrasında toprak profilinde su hareketlerini ve nem miktarını birlikte görebileceğiniz Dünya'daki tek patentli teknolojidir.",
-    "desc2":"Kapiller su hareketini izleyen Dünya'daki tek teknoloji"
+  "SmartCapillarityWhat": {
+    "desc": "Sulama sırasında ve sonrasında toprak profilinde su hareketlerini ve nem miktarını birlikte görebileceğiniz Dünya'daki tek patentli teknolojidir.",
+    "desc2": "Kapiller su hareketini izleyen Dünya'daki tek teknoloji"
   },
-  "SmartCapillarityImage":{
-    "title":"SmartCapillarity Özellikleri",
-    "li1":"Hem nem hem de kapiller su hareketini toprak içerisinde gerçek zamanlı tespit edebilme.",
-    "li2":"Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini yapay zeka destekli yönetme imkanı.",
-    "li3":"Kablosuz haberleşme.",
-    "li4":"Bulunduğu yerde kendini kalibre edebilme yeteneği.",
-    "li5":"Yatay ve dikey yönde eklenebilir sensör modulü teknolojisi.",
-    "li6":"Bir sensör modulünde 32 adet matris yapıda kapiller hareket sensörü bir adet yüksek hassasiyette nem sensörü ile büyük veri sağlanır.",
-    "li7":"Opsiyonel mesaj uyarı servisi.",
-    "p1":"Toprak içerisindeki kapiller su hareketlerini gördüğünüzde sulama yönteminiz ne olursa olsun kontrol sizde.",
-    "p2":"Doğayı korurken kazanmak mümkün!"
+  "SmartCapillarityImage": {
+    "title": "SmartCapillarity Özellikleri",
+    "li1": "Hem nem hem de kapiller su hareketini toprak içerisinde gerçek zamanlı tespit edebilme.",
+    "li2": "Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini yapay zeka destekli yönetme imkanı.",
+    "li3": "Kablosuz haberleşme.",
+    "li4": "Bulunduğu yerde kendini kalibre edebilme yeteneği.",
+    "li5": "Yatay ve dikey yönde eklenebilir sensör modulü teknolojisi.",
+    "li6": "Bir sensör modulünde 32 adet matris yapıda kapiller hareket sensörü bir adet yüksek hassasiyette nem sensörü ile büyük veri sağlanır.",
+    "li7": "Opsiyonel mesaj uyarı servisi.",
+    "p1": "Toprak içerisindeki kapiller su hareketlerini gördüğünüzde sulama yönteminiz ne olursa olsun kontrol sizde.",
+    "p2": "Doğayı korurken kazanmak mümkün!"
   },
-  "SmartRootSlider":{
-    "title":"Etkili kök bölgesinin ",
-    "title2":"düşündüğünüz yerde",
-    "title3":"olduğundan emin misiniz?",
-    "button":"Fiyat Teklifi Al"
+  "SmartRootSlider": {
+    "title": "Etkili kök bölgesinin ",
+    "title2": "düşündüğünüz yerde",
+    "title3": "olduğundan emin misiniz?",
+    "button": "Fiyat Teklifi Al"
   },
-  "SmartRootWhat":{
-    "desc":"SmartRoot, bitkilerin etkili kök bölgesi adı verilen bölgenin tarla koşullarında tespitinin yapılması için geliştirilmiş yüksek teknolojiye sahip siber fiziksel bir sistemdir.",
-    "desc2":"Etkili kök bölgesi, su ve gübrenin %70 - 80 kullanıldığı kök bölgesidir. Bu bölgenin bitkinin diğer kök bölgelerinden ayrımının yapılmasını kolaylaştıran SmartRoot teknolojisi etkili kök bölgesinin yerini kullanıcı ile yüksek doğrulukta paylaşır."
+  "SmartRootWhat": {
+    "desc": "SmartRoot, bitkilerin etkili kök bölgesi adı verilen bölgenin tarla koşullarında tespitinin yapılması için geliştirilmiş yüksek teknolojiye sahip siber fiziksel bir sistemdir.",
+    "desc2": "Etkili kök bölgesi, su ve gübrenin %70 - 80 kullanıldığı kök bölgesidir. Bu bölgenin bitkinin diğer kök bölgelerinden ayrımının yapılmasını kolaylaştıran SmartRoot teknolojisi etkili kök bölgesinin yerini kullanıcı ile yüksek doğrulukta paylaşır."
   },
-  "SmartRootImage":{
-    "desc":"Teorik kök derinliği kabullenmeleri ve doğru sanılan hatalı yaklaşımlar, yanlış bölgenin sulanmasına, aşırı sulamaya, tuz birikimine, toprakta çölleşmeye, taban suyunda nitrat kirliliği olmaz üzere dönülmesi zor zararlara neden olur.",
-    "desc2":"SmartRoot ile etkili kök bölgenizin konumunu yüksek doğrulukta bildiğinizde sadece bu bölgenin su ve gübre ile buluşması size kazanç sağlayacaktır.",
-    "desc3":"Etkili kök bölgesinin yüksek doğrulukta haritalanması tüm zirai faaliyetlerinizde maksimum fayda sağlar. Etkili kök bölgesi gelişiminin olduğu alanın yönetilmesinde kılavuzluk yapar.",
-    "desc4":"Etkili kök bölgesinin yüksek doğrulukta bilinmesi, gübre kullanımınızı ciddi oranda azaltır. Ya da kullanılan gübrenin bitkiye yarayışlı bölgede kalmasını sağlar. Böylece atılan gübre yıkanarak hem boşa gitmez hem de yeraltı sularında nitrat kirliliği engellenir.",
-    "desc5":"Sulama randımanını artırmak istiyorsanız etkili kök bölgesinin nerede olduğunu bilmeli ve sadece bu bölgeyi sulamalısınız."
+  "SmartRootImage": {
+    "desc": "Teorik kök derinliği kabullenmeleri ve doğru sanılan hatalı yaklaşımlar, yanlış bölgenin sulanmasına, aşırı sulamaya, tuz birikimine, toprakta çölleşmeye, taban suyunda nitrat kirliliği olmaz üzere dönülmesi zor zararlara neden olur.",
+    "desc2": "SmartRoot ile etkili kök bölgenizin konumunu yüksek doğrulukta bildiğinizde sadece bu bölgenin su ve gübre ile buluşması size kazanç sağlayacaktır.",
+    "desc3": "Etkili kök bölgesinin yüksek doğrulukta haritalanması tüm zirai faaliyetlerinizde maksimum fayda sağlar. Etkili kök bölgesi gelişiminin olduğu alanın yönetilmesinde kılavuzluk yapar.",
+    "desc4": "Etkili kök bölgesinin yüksek doğrulukta bilinmesi, gübre kullanımınızı ciddi oranda azaltır. Ya da kullanılan gübrenin bitkiye yarayışlı bölgede kalmasını sağlar. Böylece atılan gübre yıkanarak hem boşa gitmez hem de yeraltı sularında nitrat kirliliği engellenir.",
+    "desc5": "Sulama randımanını artırmak istiyorsanız etkili kök bölgesinin nerede olduğunu bilmeli ve sadece bu bölgeyi sulamalısınız.",
+    "desc6": "Kırmızı çizginin yerini görün, suyu ve gübreyi boşa harcamayın!..",
+    "desc7": "Veriler yapay zeka tarafından değerlendirilir ve etkili kök bölgesinin bilgisine yüksek doğrulukta erişebilirsiniz.",
+    "desc8": "Etkili kök derinliğinizin yerini öğrendiğinizde yüzünüz gülecek ve kazanacaksınız..."
+  },
+  "SmartFarmSlider": {
+    "title": "Size özel",
+    "title2": "akılcı çözümler",
+    "button": "Fiyat Teklifi Al"
+  },
+  "SmartFarmWhat": {
+    "desc": "Günümüzde sürdürülebilirlik için küçük ölçekli ve büyük ölçekli çiftliklerde sensörler ve otomasyonlarla proseslerin iyileştirilmesi gerekmektedir.",
+    "desc2": "Firmamızın uzman mühendisleri sizlere özel çözümler sunmakta ve kişiye özel talep edilen yazılım ve donanımsal teknolojileri geliştirebilmektedir.",
+    "desc3": "Sorunlarınızı ve hayallerinizi bizimle paylaşabilirsiniz!..",
+    "desc4": "Tarımsal işletmenize akıl katacak teknolojik çözümleri birlikte ele alabilir veya sadece size özel çözümleri beraber geliştirebiliriz. Hayallerinizle gelin, işletmenize değer katalım."
+  },
+  "SmartFarmImage": {
+    "title": "Haydi Daha Güzel Bir Dünya İçin Akıllı Köstebeklere Katılın...",
+    "desc": "Markalarımız, yüksek teknolojimiz ve tüm çabamızla daha verimli, daha kazançlı topraklar, gelişen, büyüyen, mutlu çiftçiler için gece gündüz çalışıyoruz.",
+    "desc2": "Yarınlarımızı korumak demek, suyumuzu ve toprağımızı korumak demektedir. Bu yola bizimle birlikte gönül verecek partnerlere kapımız her zaman açıktır, kazanmak ve kazandırmak için."
+  },
+  "SmartValveSlider": {
+    "title": "Sulama vanalarınızı doğru",
+    "title2": "yönettiğinize emin misiniz?",
+    "button": "Fiyat Teklifi Al"
+  },
+  "SmartValveWhat": {
+    "desc": "Today, it is necessary to improve processes with sensors and automation in small-scale and large-scale farms for sustainability.",
+    "desc2": "Our expert engineers offer you special solutions and can develop customized software and hardware technologies.",
+    "desc3": "Share your problems in the field and dreams with us!"
+  },
+  "SmartValveImage": {
+    "desc": "SmartValve's tek merkezden saha bulunan vanaların kontrolünü yapay zeka ile yöneten bir sistemdir. Arazinin özelliklerine göre lokal ya da bulut tabanlı sistem alternatifleri sunan SmartValve's sadece vanayı açıp kapatan bir sistem değildir.",
+    "desc2": "Her vana kontrol ünitesi, bulunduğu alanın sıcaklık ve nem bilgilerini vererek mikroklima veri ağının kurulmasını sağlar. Aynı zamanda vana önlerindeki basınçları kontrol ederek işletme basıncı bilgisini ve hatlarda kaçak olup olmadığını bilmenizi sağlar."
+  },
+  "SmartWaterlevelSlider": {
+    "title": "Etkili kök bölgesinin ",
+    "title2": "düşündüğünüz yerde",
+    "title3": "olduğundan emin misiniz?",
+    "button": "Fiyat Teklifi Al"
+  },
+  "SmartWaterlevelWhat": {
+    "desc": "Drenaj sorunlu bölgelerin etüdü, çözümü ve tarıma elverişli hale getirilmesi amacıyla SmartWaterLevel ürünü, sorunu tespit eder ve sonrasında gerekli tedbirleri almanızda yardımcı olur.",
+    "desc2": "SmartWaterLevel tüm sulanan alanlarda taban suyu seviyesini yöneten robot bir sistemdir.",
+    "desc3": "SmartWaterLevel teknolojisi ile hem bir havzada/tarlada/park ve bahçede taban suyu seviyesi etüdü yapabilmekte hem de her bitkinin gerçek zamanlı olarak taban suyundan kullandığı su miktarını tespit ederek, yapay zekâ teknolojisi ile sulama sistemini sadece kalan miktarı tamamlamak üzere çalıştırmak mümkün olabilmektedir."
+  },
+  "SmartWaterlevelImage": {
+    "desc": "Taban suyu seviyenize göre projenizi sağlıklı yönetmeniz için Etüt-İzleme ve sulama sistemi yönetim hizmetlerimizle yanınızdayız. Kök bölgesine taban suyundan gelen su ile sulama suyu miktarı arasındaki ilişkiyi kuruyoruz. Kapiller yükselmeyi takip edebiliyor ve etüt verilerine göre alınması gereken önlemleri beraber kararlaştırıyoruz. Taban suyu seviyesinin bilinmesi, hem drenaj sorununun net olarak tanımlanabilmesi hem de sulama ve gübreleme işlemlerinin kirliliğe ve israfa yol açmadan yapılabilmesi için gerekmektedir. Taban suyu seviyesine bağlı olarak toprak profilinde taban suyundan zemine doğru kapiller hareket ile nem yükselir.",
+    "desc2": "Bitkilerin oksijensiz kalması ve kurumasına eden olan saturasyondaki toprak koşulları drenaj yapılmasını gerektirmektedir. Klasik drenaj anlayışında bitki, kök bölgesinden daha derine, mümkün olamıyorsa etkili kök bölgesi seviyesinde fazla su drene edilmeye çalışılır. Park ve bahçelerde ya da tarımsal üretimin yapıldığı bir tarlada/havzada drenaj sorunu çözümlendikten sonra sulama suyu ihtiyacı bitkiye verilir.",
+    "desc3": "Ancak çoğu bölgede bitkiler ihtiyaç duydukları sulama suyu ihtiyacını drene edilen/edilmeyen taban suyundan karşılar. Ancak ne kadar miktarda bitki su ihtiyacının taban suyundan karşılanabildiğini tespit edebilen bir teknoloji olmadığından ayrıca gereğinden fazla sulama yapılır. Sulama ile beraber taban suyu iyice şişer ve/veya taban suyuna sulama suyu içerisindeki gübre ve kimyasal maddelerle beraber karışır. Azot yıkanması gerçekleşerek ciddi bir gübre israfı ve yeraltı suyu ortaya çıkar.",
+    "desc4": "Park ve bahçelerde yada tarımsal üretimin yapıldığı bir tarlada/havzada drenaj sorunu çözümlendikten sonra sulama suyu ihtiyacı bitkiye verilir. Ancak çoğu bölgede bitkiler ihtiyaç duydukları sulama suyu ihtiyacını drene edilen/edilmeyen taban suyundan karşılar. Ancak ne kadar miktarda bitki su ihtiyacının taban suyundan karşılanabildiğini tespit edebilen bir teknoloji olmadığından ayrıca gereğinden fazla sulama yapılır. Sulama ile beraber taban suyu iyice şişer ve/vaya taban suyuna sulama suyu içerisindeki gübre ve kimyasal maddelerle beraber karışır. Azot yıkanması gerçekleşerek ciddi bir gübre ısrafı ve yer altı suyu kirliliği ortaya çıkar.",
+    "desc5": "Sahip olduğumuz SmartWaterLevel teknolojisi ile bu sorun gerekli gözlemler yapılarak çözümlenebilmektedir. Hem bir havzada/tarlada/park ve bahçede taban suyu seviyesi etüdü yapabilmekte hemde her bitkinin gerçek zamanlı olarak taban suyundan kullandığı su miktarını tespit ederek yapay zeka teknolojisi ile sulama sistemini sadece kalan miktarı tamamlamak üzere çalıştırmak mümkün olabilmektedir.SmartWaterLevel taban suyu seviyesini gerçek zamanlı olarak izleyebilen akıllı bir robot sistemdir."
   }
-  
 }

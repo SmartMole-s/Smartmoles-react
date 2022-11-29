@@ -5,6 +5,8 @@ import { Box, Container, Button } from '@mui/material';
 // components
 import Iconify from '../../../../components/Iconify';
 import { MotionContainer, TextAnimate, varFade, varBounce } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -30,6 +32,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function FarmSlider() {
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
@@ -37,11 +40,11 @@ export default function FarmSlider() {
           <TextAnimate text="SmartFarm" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="Size &nbsp; özel" sx={{ mr: 2, typography: 'h3' }} />
+            <TextAnimate text={translate('SmartFarmSlider.title')} sx={{ mr: 2, typography: 'h3' }} />
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="akılcı &nbsp; çözümler!" sx={{ mb: 2, mr: 2, typography: 'h3' }} />
+            <TextAnimate text={translate('SmartFarmSlider.title2')} sx={{ mb: 2, mr: 2, typography: 'h3' }} />
           </Box>
           <m.div variants={varBounce().inUp}>
             <Button
@@ -51,7 +54,7 @@ export default function FarmSlider() {
               variant="contained"
               startIcon={<Iconify icon={'eva:flash-fill'} width={20} height={20} />}
             >
-              Fiyat Teklifi Al
+              {translate('SmartFarmSlider.button')}
             </Button>
           </m.div>
         </ContentStyle>
