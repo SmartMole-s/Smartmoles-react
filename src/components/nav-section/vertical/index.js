@@ -28,6 +28,7 @@ NavSectionVertical.propTypes = {
 };
 
 export default function NavSectionVertical({ navConfig, isCollapse = false, ...other }) {
+  const lang = localStorage.getItem('i18nextLng');
   return (
     <Box {...other}>
       {navConfig.map((group) => (
@@ -39,7 +40,7 @@ export default function NavSectionVertical({ navConfig, isCollapse = false, ...o
               }),
             }}
           >
-            {group.subheader}
+            {lang === 'tr' ? group.subheader : group.subheaderEn}
           </ListSubheaderStyle>
 
           {group.items.map((list) => (

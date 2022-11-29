@@ -39,7 +39,7 @@
     "end": "CEO / Agr. Eng. MSc / Chairman"
   },
   "AboutWhy": {
-    "title": "SmartMole's Teknolojilerinin 5 Temel Mottosu!",
+    "title": "5 Basic Mottos of SmartMole's Technologies!",
     "motto1": "Protect Nature",
     "motto2": "Decrease Operating Expenses",
     "motto3": "Increase Yield",
@@ -53,8 +53,8 @@
     "title": "Would You Like to be",
     "title2": "Our Dealer?",
     "title3": "Fill in the form below to become our dealer.",
-    "place1": "company title",
-    "place2": "authorized person name and surname",
+    "place1": "Company Name",
+    "place2": "Authorized Person Name and Surname",
     "place3": "Company Phone",
     "place4": "Phone (GSM)",
     "place5": "E-Mail",
@@ -69,7 +69,9 @@
     "place14": "fields of activity",
     "place15": "Your references",
     "place16": "Geographical Region You Want to Buy Franchise",
-    "place17": "Other Dealerships You Own, If Any"
+    "place17": "Other Dealerships You Own, If Any",
+    "button": "Send"
+    
   },
   "Gallery": {
     "title": "Photo Gallery",
@@ -98,7 +100,7 @@
     "title2": "We in the Media"
   },
   "Contact": {
-    "title": "Communication",
+    "title": "Contact",
     "title2": "Contact Us",
     "desc": "You can contact us via the contact form. After the forms you send are reviewed by our customer representative, you will be returned as soon as possible.",
     "place1": "Name Surname",
@@ -131,16 +133,11 @@
     "menu4b": "Visual Press"
   },
   "Footer":{
-    "title":"SmartMole's is a brand of Yulug Mühendislik.",
+    "title":"SmartMole's is a brand of Yulug Engineering.",
     "address":"Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir",
     "copyright":"All rights reserved."
+  },
+  "Pdf":{
+    "src":"/static/pdf/brosur-ingilizce.pdf"
   }
-
-
-
-
-
-
-
-
 }

@@ -7,35 +7,45 @@ import { PATH_PAGE } from '../../routes/paths';
 // components
 import Logo from '../../components/Logo';
 import SocialsButton from '../../components/SocialsButton';
+//hooks
+import useLocales from '../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
 const LINKS = [
   {
     headline: "SmartMole's",
+    headlineEn: "SmartMole's",
     children: [
-      { name: 'Hakkımızda', href: PATH_PAGE.about },
-      { name: 'Fotoğraf Galerisi', href: PATH_PAGE.gallery },
-      { name: 'Video Galerisi', href: PATH_PAGE.video },
-      { name: 'Haberler', href: PATH_PAGE.mediaPic },
-      { name: 'İletişim', href: PATH_PAGE.contact },
+      { name: 'Hakkımızda', nameEn: 'About Us', href: PATH_PAGE.about },
+      { name: 'Fotoğraf Galerisi', nameEn: 'Photo Gallery', href: PATH_PAGE.gallery },
+      { name: 'Video Galerisi', nameEn: 'Video Gallery', href: PATH_PAGE.video },
+      { name: 'Haberler', nameEn: 'News', href: PATH_PAGE.mediaPic },
+      { name: 'İletişim', nameEn: 'Contact', href: PATH_PAGE.contact },
     ],
   },
   {
     headline: 'ÜRÜNLERİMİZ',
+    headlineEn: 'PRODUCTS',
     children: [
-      { name: 'SmartCapillarity', href: PATH_PAGE.smartCapillarity },
-      { name: 'SmartRoot', href: PATH_PAGE.smartRoot },
-      { name: 'SmartFarm', href: PATH_PAGE.smartFarm },
-      { name: 'SmartValves', href: PATH_PAGE.smartValves },
-      { name: 'SmartWaterlevel', href: PATH_PAGE.smartWaterlevel },
+      { name: 'SmartCapillarity', nameEn: 'SmartCapillarity', href: PATH_PAGE.smartCapillarity },
+      { name: 'SmartRoot', nameEn: 'SmartRoot', href: PATH_PAGE.smartRoot },
+      { name: 'SmartFarm', nameEn: 'SmartFarm', href: PATH_PAGE.smartFarm },
+      { name: 'SmartValves', nameEn: 'SmartValves', href: PATH_PAGE.smartValves },
+      { name: 'SmartWaterlevel', nameEn: 'SmartWaterlevel', href: PATH_PAGE.smartWaterlevel },
     ],
   },
   {
     headline: 'İLETİŞİM',
+    headlineEn: 'CONTACT',
     children: [
-      { name: 'info@smartmoles.com', href: '#' },
-      { name: `Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir`, href: '#' },    ],
+      { name: 'info@smartmoles.com', nameEn: 'info@smartmoles.com', href: '#' },
+      {
+        name: `Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir`,
+        nameEn: `Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir`,
+        href: '#',
+      },
+    ],
   },
 ];
 
@@ -47,8 +57,9 @@ const RootStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function MainFooter() {
-const currentDate = new Date().getFullYear();
-
+  const currentDate = new Date().getFullYear();
+  const { translate } = useLocales();
+  const lang = localStorage.getItem('i18nextLng');
   return (
     <RootStyle>
       <Divider />
@@ -62,8 +73,8 @@ const currentDate = new Date().getFullYear();
             <Logo sx={{ mx: { xs: 'auto', md: 'inherit' } }} />
           </Grid>
           <Grid item xs={8} md={3}>
-            <Typography variant="subtitle2" sx={{ pr: { md: 5 } , textAlign:'center'}}>
-             SmartMole's bir Yuluğ Mühendislik markasıdır.
+            <Typography variant="subtitle2" sx={{ pr: { md: 5 }, textAlign: 'center' }}>
+              {translate('Footer.title')}
             </Typography>
 
             <Stack
@@ -76,15 +87,11 @@ const currentDate = new Date().getFullYear();
           </Grid>
 
           <Grid item xs={12} md={7}>
-            <Stack
-              spacing={5}
-              direction={{ xs: 'column', md: 'row' }}
-              justifyContent="space-between"
-            >
+            <Stack spacing={5} direction={{ xs: 'column', md: 'row' }} justifyContent="space-between">
               {LINKS.map((list) => (
                 <Stack key={list.headline} spacing={2}>
                   <Typography component="p" variant="overline">
-                    {list.headline}
+                    {lang === 'tr' ? list.headline : list.headlineEn}
                   </Typography>
                   {list.children.map((link) => (
                     <Link
@@ -95,7 +102,7 @@ const currentDate = new Date().getFullYear();
                       component={RouterLink}
                       sx={{ display: 'block' }}
                     >
-                      {link.name}
+                      {lang === 'tr' ? link.name : link.nameEn}
                     </Link>
                   ))}
                 </Stack>
@@ -114,7 +121,7 @@ const currentDate = new Date().getFullYear();
             textAlign: { xs: 'center', md: 'left' },
           }}
         >
-          © {currentDate} Tüm hakları saklıdır.
+          © {currentDate} {translate('Footer.copyright')}
         </Typography>
       </Container>
     </RootStyle>

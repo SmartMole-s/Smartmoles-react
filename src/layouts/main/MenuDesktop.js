@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
-import { m } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { NavLink as RouterLink, useLocation } from 'react-router-dom';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Box, Link, Grid, List, Stack, Popover, ListItem, ListSubheader, CardActionArea } from '@mui/material';
+import { Box, Link, Grid, List, Stack, Popover, ListItem, ListSubheader } from '@mui/material';
 // components
 import Iconify from '../../components/Iconify';
 
@@ -45,7 +44,6 @@ MenuDesktop.propTypes = {
 export default function MenuDesktop({ isOffset, isHome, navConfig }) {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
-
   useEffect(() => {
     if (open) {
       handleClose();
@@ -118,8 +116,8 @@ MenuDesktopItem.propTypes = {
 };
 
 function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
-  const { title, path, children } = item;
-
+  const { titleEn, title, path, children } = item;
+  const lang = localStorage.getItem('i18nextLng');
   if (children) {
     return (
       <>
@@ -134,7 +132,7 @@ function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
             ...(isOpen && { opacity: 0.48 }),
           }}
         >
-          {title}
+          {lang === 'tr' ? title : titleEn}
           <Iconify
             icon={isOpen ? 'eva:arrow-ios-upward-fill' : 'eva:arrow-ios-downward-fill'}
             sx={{ ml: 0.5, width: 16, height: 16 }}
@@ -161,12 +159,12 @@ function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
             },
           }}
         >
-          <Grid container spacing={3} sx={{justifyContent: 'space-around'}}>
+          <Grid container spacing={3} sx={{ justifyContent: 'space-around' }}>
             {children.map((list) => {
-              const { subheader, items } = list;
+              const { subheader, subheaderEn, items } = list;
 
               return (
-                <Grid style={{paddingLeft:0}} key={subheader} item xs={12} md={subheader === 'Dashboard' ? 6 : 2}>
+                <Grid style={{ paddingLeft: 0 }} key={subheader} item xs={12} md={subheader === 'Dashboard' ? 6 : 2}>
                   <List disablePadding>
                     <ListSubheader
                       disableSticky
@@ -179,7 +177,7 @@ function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
                         typography: 'overline',
                       }}
                     >
-                      <IconBullet type="subheader" /> {subheader}
+                      <IconBullet type="subheader" /> {lang === 'tr' ? subheader : subheaderEn}
                     </ListSubheader>
 
                     {items.map((item) => (
@@ -195,33 +193,8 @@ function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
                           },
                         }}
                       >
-                        {item.title === 'Dashboard' ? (
-                          <CardActionArea
-                            sx={{
-                              py: 5,
-                              px: 10,
-                              borderRadius: 2,
-                              color: 'primary.main',
-                              bgcolor: 'background.neutral',
-                            }}
-                          >
-                            <Box
-                              component={m.img}
-                              whileTap="tap"
-                              whileHover="hover"
-                              variants={{
-                                hover: { scale: 1.02 },
-                                tap: { scale: 0.98 },
-                              }}
-                              src="https://minimal-assets-api.vercel.app/assets/illustrations/illustration_dashboard.png"
-                            />
-                          </CardActionArea>
-                        ) : (
-                          <>
-                            <IconBullet />
-                            {item.title}
-                          </>
-                        )}
+                        <IconBullet />
+                        {lang === 'tr' ? item.title : item.titleEn}
                       </ListItemStyle>
                     ))}
                   </List>
@@ -231,22 +204,6 @@ function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
           </Grid>
         </Popover>
       </>
-    );
-  }
-
-  if (title === 'Documentation') {
-    return (
-      <LinkStyle
-        href={path}
-        target="_blank"
-        rel="noopener"
-        sx={{
-          ...(isHome && { color: 'common.white' }),
-          ...(isOffset && { color: 'text.primary' }),
-        }}
-      >
-        {title}
-      </LinkStyle>
     );
   }
 
@@ -263,7 +220,7 @@ function MenuDesktopItem({ item, isHome, isOpen, isOffset, onOpen, onClose }) {
         },
       }}
     >
-      {title}
+      {lang === 'tr' ? title : titleEn}
     </LinkStyle>
   );
 }

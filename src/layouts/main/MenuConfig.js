@@ -13,52 +13,59 @@ const ICON_SIZE = {
 const menuConfig = [
   {
     title: 'Ana Sayfa',
+    titleEn:'HomePage',
     icon: <Iconify icon={'eva:home-fill'} {...ICON_SIZE} />,
     path: '/',
   },
   {
     title: 'Menüler',
+    titleEn:'Menus',
     path: '/pages',
     icon: <Iconify icon={'eva:file-fill'} {...ICON_SIZE} />,
     children: [
       {
         subheader: 'Kurumsal',
+        subheaderEn: 'Corporate',
         items: [
-          { title: 'Hakkımızda', path: PATH_PAGE.about },
-          { title: 'Projelerimiz', path: PATH_PAGE.ourprojects },
-          { title: 'Bayilik Başvurusu', path: PATH_PAGE.vendor },
-          { title: 'Broşür', path: PATH_PAGE.pdf },
+          { title: 'Hakkımızda', titleEn:'About Us', path: PATH_PAGE.about },
+          { title: 'Projelerimiz', titleEn:'Our Projects', path: PATH_PAGE.ourprojects },
+          { title: 'Bayilik Başvurusu', titleEn:'Dealership Application', path: PATH_PAGE.vendor },
+          { title: 'Broşür', titleEn:'Brochure', path: PATH_PAGE.pdf },
         ],
       },
       {
         subheader: 'Ürünlerimiz',
+        subheaderEn:'Products',
         items: [
-          { title: 'SmartCapillarity', path: PATH_PAGE.smartCapillarity },
-          { title: 'SmartRoot', path: PATH_PAGE.smartRoot },
-          { title: 'SmartFarm', path: PATH_PAGE.smartFarm },
-          { title: 'SmartValves', path: PATH_PAGE.smartValves },
-          { title: 'SmartWaterlevel', path: PATH_PAGE.smartWaterlevel },
-          { title: 'AirMoles', path: PATH_PAGE.airMoles },
+          { title: 'SmartCapillarity', titleEn: 'SmartCapillarity', path: PATH_PAGE.smartCapillarity },
+          { title: 'SmartRoot', titleEn: 'SmartRoot', path: PATH_PAGE.smartRoot },
+          { title: 'SmartFarm', titleEn: 'SmartFarm', path: PATH_PAGE.smartFarm },
+          { title: 'SmartValves', titleEn: 'SmartValves', path: PATH_PAGE.smartValves },
+          { title: 'SmartWaterlevel', titleEn: 'SmartWaterlevel', path: PATH_PAGE.smartWaterlevel },
+          { title: 'AirMoles', titleEn: 'AirMoles', path: PATH_PAGE.airMoles },
         ],
       },
       {
         subheader: 'Galeri',
+        subheaderEn: 'Gallery',
         items: [
-          { title: 'Fotoğraf Galerisi', path: PATH_PAGE.gallery },
-          { title: 'Video Galerisi', path: PATH_PAGE.video },
+          { title: 'Fotoğraf Galerisi', titleEn:'Photo Gallery', path: PATH_PAGE.gallery },
+          { title: 'Video Galerisi', titleEn:'Video Gallery', path: PATH_PAGE.video },
         ],
       },
       {
         subheader: 'Haberler',
+        subheaderEn: 'News',
         items: [
-          { title: 'Yazılı Basın', path: PATH_PAGE.mediaPic },
-          { title: 'Görsel Basın', path: PATH_PAGE.mediaVideo },
+          { title: 'Yazılı Basın', titleEn:'News', path: PATH_PAGE.mediaPic },
+          { title: 'Görsel Basın', titleEn:'Media', path: PATH_PAGE.mediaVideo },
         ],
       },
     ],
   },
   {
     title: 'İletişim',
+    titleEn: 'Contact',
     icon: <Iconify icon={'eva:book-open-fill'} {...ICON_SIZE} />,
     path: PATH_PAGE.contact,
   },

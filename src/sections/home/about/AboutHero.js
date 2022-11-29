@@ -35,16 +35,14 @@ export default function AboutHero() {
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
         <ContentStyle>
-          <TextAnimate text="Smart Mole's" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
+          <TextAnimate text="SmartMole's" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title')} />
-            &nbsp;
-            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title2')} />
+            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title')}/>
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title3')}/>
+            <TextAnimate sx={{ typography: 'h3' }} text={translate('AboutHero.title2')}/>
           </Box>
         </ContentStyle>
       </Container>

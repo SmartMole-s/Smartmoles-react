@@ -8,6 +8,7 @@ import { fPercent } from '../../../utils/formatNumber';
 import Image from '../../../components/Image';
 import { MotionInView, varFade } from '../../../components/animate';
 //hooks
+import useLocales from '../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -24,6 +25,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function AboutWhat() {
   const theme = useTheme();
+  const { translate } = useLocales();
   const isLight = theme.palette.mode === 'light';
   const shadow = `-40px 40px 80px ${alpha(isLight ? theme.palette.grey[500] : theme.palette.common.black, 0.48)}`;
 
@@ -80,30 +82,20 @@ export default function AboutWhat() {
                   color: (theme) => (theme.palette.mode === 'light' ? 'text.secondary' : 'common.white'),
                 }}
                 >
-                Bizler 1997'den beri Yuluğ Mühendislik çatısı altında Türkiye ve Dünya'nın birçok ülkesinde sulama
-                sistemleri projeleri ve uygulamaları yapan bir ekibiz. <b>Yuluğ Mühendislik</b> olarak, Ege Üniversitesi
-                Teknoloji Geliştirme Bölgesinde SmartMole's Su Yönetimi Teknolojisi markasıyla <b>ARGE</b>{' '}
-                çalışmalarımızı sürdürüyoruz.
+                {translate('AboutWhat.desc1')}
                 <br></br>
                 <br></br>
-                <strong>Bu yola çıkış nedenimiz;</strong>
+                <strong>{translate('AboutWhat.strong1')}</strong>
                 <br></br>
-                Görüyorduk ki; basınçlı sulama sistemleri tarımsal ve peyzaj alanlarında, adeta yüzey sulama yapar gibi
-                kullanılmaktaydı. Bu sürdürülemez israfın, sebebiyet verdiği kirlilik ve çölleşmenin engellenmesi ise
-                mevcut teknoloji ve yaklaşımlarla mümkün değildi. Bu gidişata dur diyebilmek için geliştirdiğimiz
-                ürünlerimiz, işletmelerinize kârlılık ve bereket getirecek bir altın anahtardır. %97,34 oranında yerli
-                ve millî imkânlarla üretilen siber fiziksel teknolojimiz CE ve RoHS belgelendirmesi ile görüleceği üzere
-                çevre ve kullanıcı dostudur. Su kaynaklarının %75'ine yakınını sulamada kullandığımız düşünülürse,
-                azalan ve kirlenen su kaynaklarını ve toprağı, tarım yaptığımız havzalarda korumak hepimizin gelecek
-                kuşaklara borcudur. Bu anlayışla, ilginize teşekkür eder, yollarımızın kesişmesinden duyduğum mutluluğu
-                ifade etmek isterim.
+                <br></br>
+                {translate('AboutWhat.desc2')}
                 <br />
                 <br />
-                <strong>Saygılarımla,</strong>
+                <strong>{translate('AboutWhat.strong2')}</strong>
                 <br />
-                <strong>Ömer Yuluğ</strong>
+                <strong>{translate('AboutWhat.strong3')}</strong>
                 <br />
-                CEO /Ziraat Yüksek Mühendisi
+                {translate('AboutWhat.end')}
               </Typography>
             </MotionInView>
           </Grid>

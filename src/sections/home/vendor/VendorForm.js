@@ -6,12 +6,14 @@ import { Button, TextField, Typography, Grid } from '@mui/material';
 import SuccessAlert from '../../../components/alerts/SuccessAlert';
 // emailJs
 import emailjs from '@emailjs/browser';
+//hooks
+import useLocales from '../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
 export default function VendorForm() {
   const form = useRef();
-
+  const { translate } = useLocales();
   const alertState = (title, description, descriptionStrong) => {
     return (
       <SuccessAlert title={`${title}`} description={`${description}`} descriptionStrong={`${descriptionStrong}`} />
@@ -39,75 +41,75 @@ export default function VendorForm() {
         {/* <Stack spacing={3}> */}
         <Grid container item>
           <Typography letterSpacing={1} variant="h4">
-            Bayimiz olmak için aşağıdaki formu doldurunuz.
+          {translate('Vendor.title3')}
           </Typography>
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="company_name" fullWidth label="Şirket Ünvanı" required />
+          <TextField name="company_name" fullWidth label={translate('Vendor.place1')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="authorized_person_name_and_surname " fullWidth label="Yetkili kişi Ad ve Soyadı:" required />
+          <TextField name="authorized_person_name_and_surname " fullWidth label={translate('Vendor.place2')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="company_phone" fullWidth label="Şirket Telefonu:" required />
+          <TextField name="company_phone" fullWidth label={translate('Vendor.place3')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="user_phone" fullWidth label="Telefon (GSM):" required />
+          <TextField name="user_phone" fullWidth label={translate('Vendor.place4')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="email" fullWidth label="E-Posta:" required />
+          <TextField name="email" fullWidth label={translate('Vendor.place5')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="website" fullWidth label="Web Sayfası:" required />
+          <TextField name="website" fullWidth label={translate('Vendor.place6')} required />
         </Grid>
 
         <Grid container item>
-          <TextField name="adress" fullWidth label="Açık Adres:" multiline rows={2} required />
+          <TextField name="adress" fullWidth label={translate('Vendor.place7')} multiline rows={2} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="tax" fullWidth label="Vergi Dairesi:" required />
+          <TextField name="tax" fullWidth label={translate('Vendor.place8')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="tax_number" fullWidth label="Vergi Numarası:" required />
+          <TextField name="tax_number" fullWidth label={translate('Vendor.place9')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="registered_chamber_of_commerce" fullWidth label="Bağlı Olduğu Ticaret Odası:" required />
+          <TextField name="registered_chamber_of_commerce" fullWidth label={translate('Vendor.place10')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="trade_registery_number" fullWidth label="Ticaret Sicil No:" required />
+          <TextField name="trade_registery_number" fullWidth label={translate('Vendor.place11')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="foundation_year" fullWidth label="Kuruluş Yılı:" required />
+          <TextField name="foundation_year" fullWidth label={translate('Vendor.place12')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="personal_number" fullWidth label="Personel Sayısı:" required />
+          <TextField name="personal_number" fullWidth label={translate('Vendor.place13')} required />
         </Grid>
 
         <Grid container item>
-          <TextField name="fields_of_activity" fullWidth label="Faaliyet Alanları:" multiline rows={4} required />
+          <TextField name="fields_of_activity" fullWidth label={translate('Vendor.place14')} multiline rows={4} required />
         </Grid>
 
         <Grid container item>
-          <TextField name="references" fullWidth label="Referanslarınız:" multiline rows={4} required />
+          <TextField name="references" fullWidth label={translate('Vendor.place15')} multiline rows={4} required />
         </Grid>
 
         <Grid container item>
           <TextField
             name="dealer_geographic_area"
             fullWidth
-            label="Bayilik yapmak istediğiniz coğrafi alan:"
+            label={translate('Vendor.place16')}
             multiline
             rows={2}
             required
@@ -118,7 +120,7 @@ export default function VendorForm() {
           <TextField
             name="other_dealers"
             fullWidth
-            label="Varsa Sahip olduğunuz diğer bayilikler:"
+            label={translate('Vendor.place17')}
             multiline
             rows={4}
           />
@@ -133,7 +135,7 @@ export default function VendorForm() {
             )
           ) : (
             <Button type="submit" value="Send" size="large" variant="contained" fullWidth>
-              Gönder
+              {translate('Vendor.button')}
             </Button>
           )}
         </Grid>

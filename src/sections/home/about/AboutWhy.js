@@ -4,6 +4,8 @@ import { Box, Card, Container, Typography } from '@mui/material';
 // components
 import Image from '../../../components/Image';
 import { MotionInView, varFade } from '../../../components/animate';
+//hooks
+import useLocales from '../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -11,27 +13,32 @@ const CARDS = [
   {
     icon: '/static/images/05.png',
     title: 'Doğayı Koru',
+    titleEn: 'Protect Nature',
     // description:
     //   'Toprak profilindeki nem miktarını ve kapiller su hareketini gerçek zamanlı analiz edebilen ve sulama sistemlerini Yapay Zeka ile yöneten dünyadaki ilk patentli teknolojileri biz geliştirdik.',
   },
   {
     icon: '/static/images/02.png',
     title: 'İşletme Giderlerini Düşür',
+    titleEn: 'Decrease Operating Expenses',
     // description: "Doğa Kanunları'nın müsaade ettiği üst sınıra kadartasarruf sağlayarak verimi arttırıyoruz !",
   },
   {
     icon: '/static/images/03.png',
     title: 'Verimi Artır',
+    titleEn: 'Increase Yield',
     // description: 'Yüksek hassasiyete sahip çoklu kapasitif nem sensörü ve neme dayalı kapiller hareket algılama ve yönetim robotu.',
   },
   {
     icon: '/static/images/04.png',
     title: 'Toplumsal Eğitimi Sağla',
+    titleEn: 'Comminty Education',
     // description: 'Yüksek hassasiyete sahip çoklu kapasitif nem sensörü ve neme dayalı kapiller hareket algılama ve yönetim robotu.',
   },
   {
     icon: '/static/images/01.png',
     title: 'Kullanıcı Dostu Ol',
+    titleEn: 'User Friendly',
     // description: 'Yüksek hassasiyete sahip çoklu kapasitif nem sensörü ve neme dayalı kapiller hareket algılama ve yönetim robotu.',
   },
 ];
@@ -71,7 +78,7 @@ const CardStyle = styled(Card)(({ theme }) => {
     '&.cardBottom': {
       [theme.breakpoints.up('md')]: {
         // left: 'calc(50% + 10%)',
-      }
+      },
     },
     '&.cardCenter': {
       [theme.breakpoints.up('md')]: {
@@ -103,7 +110,8 @@ const CardStyle = styled(Card)(({ theme }) => {
 export default function HomeMinimal() {
   const theme = useTheme();
   const isLight = theme.palette.mode === 'light';
-
+  const lang = localStorage.getItem('i18nextLng');
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container>
@@ -114,10 +122,12 @@ export default function HomeMinimal() {
           }}
         >
           <MotionInView variants={varFade().inDown}>
-            <Typography variant="h2" sx={{textShadow:`2px 2px 4px ${theme.palette.primary.light}`}}>SmartMole's Teknolojilerinin 5 Temel Mottosu!</Typography>
+            <Typography variant="h2" sx={{ textShadow: `2px 2px 4px ${theme.palette.primary.light}` }}>
+              {translate('AboutWhy.title')}
+            </Typography>
             <br></br>
             <br></br>
-            <Typography variant="h4" sx={{letterSpacing:'1px'}}></Typography>
+            <Typography variant="h4" sx={{ letterSpacing: '1px' }}></Typography>
             <br></br>
             <br></br>
             {/* <Typography component="div" variant="body1">
@@ -163,7 +173,7 @@ export default function HomeMinimal() {
                   }}
                 />
                 <Typography variant="h5" paragraph>
-                  {card.title}
+                  {lang === 'tr' ? card.title : card.titleEn}
                 </Typography>
                 <Typography sx={{ color: isLight ? 'text.secondary' : 'common.white' }}>{card.description}</Typography>
               </CardStyle>

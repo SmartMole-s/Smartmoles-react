@@ -27,19 +27,116 @@
     "button": "Bayi Başvuru Formu"
   },
   "AboutHero": {
-    "title": "Teknoloji",
-    "title2": "Dünyasına",
-    "title3": "Hoşgeldiniz"
+    "title": "Teknoloji Dünyasına",
+    "title2": "Hoşgeldiniz"
   },
   "AboutWhat": {
     "desc1": "Bizler 1997'den beri Yuluğ Mühendislik çatısı altında Türkiye ve Dünya'nın birçok ülkesinde sulama sistemleri projeleri ve uygulamaları yapan bir ekibiz. Yuluğ Mühendislik olarak Ege Üniversitesi Teknoloji Geliştirme Bölgesinde SmartMole's Su Yönetimi Teknolojisi markasıyla ARGE çalışmalarımızı sürdürüyoruz.",
     "strong1": "Bu yola çıkış nedenimiz;",
     "desc2": " Görüyorduk ki; basınçlı sulama sistemleri tarımsal ve peyzaj alanlarında, adeta yüzey sulama yapar gibi kullanılmaktaydı. Bu sürdürülemez israfın, sebebiyet verdiği kirlilik ve çölleşmenin engellenmesi ise mevcut teknoloji ve yaklaşımlarla mümkün değildi. Bu gidişata dur diyebilmek için geliştirdiğimiz ürünlerimiz, işletmelerinize kârlılık ve bereket getirecek bir altın anahtardır. %97,34 oranında yerli ve millî imkânlarla üretilen siber fiziksel teknolojimiz CE ve RoHS belgelendirmesi ile görüleceği üzere çevre ve kullanıcı dostudur. Su kaynaklarının %75'ine yakınını sulamada kullandığımız düşünülürse, azalan ve kirlenen su kaynaklarını ve toprağı, tarım yaptığımız havzalarda korumak hepimizin gelecek kuşaklara borcudur. Bu anlayışla, ilginize teşekkür eder, yollarımızın kesişmesinden duyduğum mutluluğu ifade etmek isterim.",
-    "strong2":"Saygılarımla,",
-    "strong3":"Ömer Yuluğ",
-    "end":"CEO /Ziraat Yüksek Mühendisi"
+    "strong2": "Saygılarımla,",
+    "strong3": "Ömer Yuluğ",
+    "end": "CEO /Ziraat Yüksek Mühendisi"
   },
   "AboutWhy": {
-    "title": "SmartMole's Teknolojilerinin 5 Temel Mottosu!"
+    "title": "SmartMole's Teknolojilerinin 5 Temel Mottosu!",
+    "motto1": "Doğayı Koru",
+    "motto2": "İşletme Giderlerini Düşür",
+    "motto3": "Verimi Artır",
+    "motto4": "Toplumsal Eğitimi Sağla",
+    "motto5": "Kullanıcı Dostu Ol"
+  },
+  "OurProjects": {
+    "title": "Projelerimiz"
+  },
+  "Vendor": {
+    "title": "Bayimiz Olmak",
+    "title2": "İster misiniz?",
+    "title3": "Bayimiz olmak için aşağıdaki formu doldurunuz.",
+    "place1": "Şirket Ünvanı",
+    "place2": "Yetkili Kişi Ad ve Soyadı",
+    "place3": "Şirket Telefonu",
+    "place4": "Telefon (GSM)",
+    "place5": "E-Posta",
+    "place6": "Web Sayfası",
+    "place7": "Açık Adres",
+    "place8": "Vergi Dairesi",
+    "place9": "Vergi Numarası",
+    "place10": "Bağlı Olduğu Ticaret Odası",
+    "place11": "Ticaret Sicil No",
+    "place12": "Kuruluş Yılı",
+    "place13": "Personel Sayısı",
+    "place14": "Faaliyet Alanları",
+    "place15": "Referanslarınız",
+    "place16": "Bayilik Yapmak İstediğiniz Coğrafi Alan",
+    "place17": "Varsa Sahip Olduğunuz Diğer Bayilikler",
+    "button": "Gönder"
+  },
+  "Gallery": {
+    "title": "Fotoğraf Galerisi",
+    "photo": "Growtech Fuarı",
+    "photo1": "Peyzaj Alanları",
+    "photo2": "Seralar",
+    "photo3": "Tarım Alanları",
+    "photo4": "Ayçiçeği",
+    "photo5": "Bağ",
+    "photo6": "Ceviz",
+    "photo7": "Çim",
+    "photo8": "Elma",
+    "photo9": "Hurma",
+    "photo10": "Kiraz",
+    "photo11": "Leylandi",
+    "photo12": "Mısır",
+    "photo13": "Muz",
+    "photo14": "Yonca",
+    "photo15": "Zeytin"
+  },
+  "Video": {
+    "title": "Video Galerisi"
+  },
+  "MediaVideo": {
+    "title": "Görsel Basın",
+    "title2": "Basında Biz"
+  },
+  "Contact": {
+    "title": "İletişim",
+    "title2": "Bize Ulaşın",
+    "desc": "İletişim formundan bizimle iletişime geçebilirsiniz. Gönderdiğiniz formlar müşteri temsilcimiz tarafından incelendikten sonra en kısa süre zarfında tarafınıza dönüş sağlanacaktır.",
+    "place1": "Ad Soyad",
+    "place2": "Email",
+    "place3": "Konu",
+    "place4": "Mesajınız",
+    "button": "Gönder"
+  },
+  "Main": {
+    "title": "Ana Sayfa",
+    "title2": "Menüler",
+    "title3": "İletişim",
+    "menu1": "Kurumsal",
+    "menu2": "Ürünlerimiz",
+    "menu3": "Galeri",
+    "menu4": "Haberler",
+    "menu1a": "Hakkımızda",
+    "menu1b": "Projelerimiz",
+    "menu1c": "Bayilik Başvurusu",
+    "menu1d": "Broşür",
+    "menu2a": "SmartCapillarity",
+    "menu2b": "SmartRoot",
+    "menu2c": "SmartFarm",
+    "menu2d": "SmartValves",
+    "menu2e": "SmartWaterlevel",
+    "menu2f": "AirMoles",
+    "menu3a": "Fotoğraf Galerisi",
+    "menu3b": "Video Galerisi",
+    "menu4a": "Yazılı Basın",
+    "menu4b": "Görsel Basın"
+  },
+  "Footer":{
+    "title":"SmartMole's bir Yuluğ Mühendislik markasıdır.",
+    "address":"Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir",
+    "copyright":"Tüm hakları saklıdır."
+  },
+  "Pdf":{
+    "src":"/static/pdf/brosur.pdf"
   }
 }

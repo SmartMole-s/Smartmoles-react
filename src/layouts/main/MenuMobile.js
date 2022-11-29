@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { NavLink as RouterLink, useLocation } from 'react-router-dom';
 // @mui
 import { alpha, styled } from '@mui/material/styles';
-import { Box, List, Link, Drawer, Collapse, ListItemText, ListItemIcon, ListItemButton } from '@mui/material';
+import { Box, List, Drawer, Collapse, ListItemText, ListItemIcon, ListItemButton } from '@mui/material';
 // config
 import { NAVBAR } from '../../config';
 // components
@@ -103,14 +103,14 @@ MenuMobileItem.propTypes = {
 };
 
 function MenuMobileItem({ item, isOpen, onOpen }) {
-  const { title, path, icon, children } = item;
-
+  const { title, titleEn, path, icon, children } = item;
+  const lang = localStorage.getItem('i18nextLng');
   if (children) {
     return (
       <>
         <ListItemStyle onClick={onOpen}>
           <ListItemIcon>{icon}</ListItemIcon>
-          <ListItemText disableTypography primary={title} />
+          <ListItemText disableTypography primary={lang === 'tr' ? title : titleEn} />
           <Iconify
             icon={isOpen ? 'eva:arrow-ios-downward-fill' : 'eva:arrow-ios-forward-fill'}
             sx={{ width: 16, height: 16, ml: 1 }}
@@ -119,21 +119,10 @@ function MenuMobileItem({ item, isOpen, onOpen }) {
 
         <Collapse in={isOpen} timeout="auto" unmountOnExit>
           <Box sx={{ display: 'flex', flexDirection: 'column-reverse' }}>
-            <NavSectionVertical
-              navConfig={children}
-            />
+            <NavSectionVertical navConfig={children} />
           </Box>
         </Collapse>
       </>
-    );
-  }
-
-  if (title === 'Documentation') {
-    return (
-      <ListItemStyle href={path} target="_blank" rel="noopener" component={Link}>
-        <ListItemIcon>{icon}</ListItemIcon>
-        <ListItemText disableTypography primary={title} />
-      </ListItemStyle>
     );
   }
 
@@ -151,7 +140,7 @@ function MenuMobileItem({ item, isOpen, onOpen }) {
       }}
     >
       <ListItemIcon>{icon}</ListItemIcon>
-      <ListItemText disableTypography primary={title} />
+      <ListItemText disableTypography primary={lang === 'tr' ? title : titleEn} />
     </ListItemStyle>
   );
 }
