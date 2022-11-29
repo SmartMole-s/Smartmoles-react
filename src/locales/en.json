@@ -25,7 +25,117 @@
     "title": "Would You Like To Be",
     "title2": "Our Dealer?",
     "button": "Dealer Application Form"
+  },
+  "AboutHero": {
+    "title": "Welcome to the ",
+    "title2": "World of Technology"
+  },
+  "AboutWhat": {
+    "desc1": "We are a team that has been carrying out irrigation system projects and applications in many countries of the world and in Turkey under the roof of Yulug Engineering since 1997. As Yulug Engineering, we continue our R&D studies and developments under the brand of SmartMole's Water Management Technologies in Ege University Technology Development Zone. ",
+    "strong1": "Our reason for starting this Journey;",
+    "desc2": " We saw that; pressurized irrigation systems were used in agricultural and landscaping areas, almost as if they were surface irrigation. Preventing this unsustainable waste, pollution and desertification caused by these actions was not possible with current technologies and approaches. Our technologies are developed to put a stop to this trend and it's a golden key that will bring profitability and abundance to your businesses. Our cyber physical technologies, produced with 97.34% domestic and national resources and its environment and user friendly, as can be seen with CE and RoHS certification. Considering that we use 75% of the water resources for irrigation, it is our duty for future generations to protect the diminishing and polluted water resources and soil in the basins where cultivate. With this understanding, I would like to thank you for your interest and I would like to express my happiness at crossing of our paths.",
+    "strong2": "Best Regards,",
+    "strong3": "Ömer Yuluğ",
+    "end": "CEO / Agr. Eng. MSc / Chairman"
+  },
+  "AboutWhy": {
+    "title": "SmartMole's Teknolojilerinin 5 Temel Mottosu!",
+    "motto1": "Protect Nature",
+    "motto2": "Decrease Operating Expenses",
+    "motto3": "Increase Yield",
+    "motto4": "Comminty Education",
+    "motto5": "User Friendly"
+  },
+  "OurProjects": {
+    "title": "Our Projects"
+  },
+  "Vendor": {
+    "title": "Would You Like to be",
+    "title2": "Our Dealer?",
+    "title3": "Fill in the form below to become our dealer.",
+    "place1": "company title",
+    "place2": "authorized person name and surname",
+    "place3": "Company Phone",
+    "place4": "Phone (GSM)",
+    "place5": "E-Mail",
+    "place6": "Web Site",
+    "place7": "Adress",
+    "place8": "Tax Administration",
+    "place9": "Tax Number",
+    "place10": "Registered Chamber of Commerce",
+    "place11": "Trade Registry Number",
+    "place12": "Foundation Year",
+    "place13": "Personal Number",
+    "place14": "fields of activity",
+    "place15": "Your references",
+    "place16": "Geographical Region You Want to Buy Franchise",
+    "place17": "Other Dealerships You Own, If Any"
+  },
+  "Gallery": {
+    "title": "Photo Gallery",
+    "photo": "Growtech Fair",
+    "photo1": "Peysage Areas",
+    "photo2": "Greenhouses",
+    "photo3": "Farming areas ",
+    "photo4": "Sunflower",
+    "photo5": "Vineyard",
+    "photo6": "Walnut",
+    "photo7": "Grass",
+    "photo8": "Apple",
+    "photo9": "Date",
+    "photo10": "Cherry",
+    "photo11": "Leyland",
+    "photo12": "Sweetcorn",
+    "photo13": "Banana",
+    "photo14": "Clover",
+    "photo15": "Olives"
+  },
+  "Video": {
+    "title": "Video Gallery"
+  },
+  "MediaVideo": {
+    "title": "Visual Media",
+    "title2": "We in the Media"
+  },
+  "Contact": {
+    "title": "Communication",
+    "title2": "Contact Us",
+    "desc": "You can contact us via the contact form. After the forms you send are reviewed by our customer representative, you will be returned as soon as possible.",
+    "place1": "Name Surname",
+    "place2": "Email",
+    "place3": "Subject",
+    "place4": "Your Message",
+    "button": "Send"
+  },
+  "Main": {
+    "title": "Home Page",
+    "title2": "menus",
+    "title3": "Communication",
+    "menu1": "Institutional",
+    "menu2": "Our products",
+    "menu3": "Gallery",
+    "menu4": "News",
+    "menu1a": "about us",
+    "menu1b": "Our projects",
+    "menu1c": "Dealership Application",
+    "menu1d": "Brochure",
+    "menu2a": "SmartCapillarity",
+    "menu2b": "SmartRoot",
+    "menu2c": "SmartFarm",
+    "menu2d": "SmartValves",
+    "menu2e": "SmartWaterlevel",
+    "menu2f": "AirMoles",
+    "menu3a": "Photo Gallery",
+    "menu3b": "Video Gallery",
+    "menu4a": "Printed Press",
+    "menu4b": "Visual Press"
+  },
+  "Footer":{
+    "title":"SmartMole's is a brand of Yulug Mühendislik.",
+    "address":"Manavkuyu, Halil Atilla Plaza, 243. Sk. No: 15 D:10, 35220 Bayraklı/İzmir",
+    "copyright":"All rights reserved."
   }
+
 
 
 
