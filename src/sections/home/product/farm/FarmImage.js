@@ -2,7 +2,7 @@
 import { Box, Container, Typography, Grid } from '@mui/material';
 // components
 import Image from '../../../../components/Image';
-import { MotionInView, varFade, TextAnimate } from '../../../../components/animate';
+import { MotionInView, varFade } from '../../../../components/animate';
 //hooks
 import useLocales from '../../../../hooks/useLocales';
 
@@ -37,9 +37,6 @@ export default function FarmImage() {
           >
             <b>{translate('SmartFarmImage.title')}</b>
           </Typography>
-          <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate sx={{ typography: 'h3' }} text="Teknoloji &nbsp; Dünyasına " />
-          </Box>
         </Grid>
       </Box>
 
