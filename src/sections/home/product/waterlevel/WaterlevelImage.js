@@ -95,16 +95,6 @@ export default function WaterlevelImage() {
       >
         <Image src="/static/product/waterlevel/smartwaterlevel-5.png" alt="about-vision" effect="black-and-white" />
       </Box>
-
-      <Grid container justifyContent="center">
-        <Grid item xs={12} sm={8}>
-          <MotionInView variants={varFade().inUp}>
-            <Typography variant="body" sx={{ textAlign: 'center' }}>
-              {translate('SmartWaterlevelImage.desc5')}
-            </Typography>
-          </MotionInView>
-        </Grid>
-      </Grid>
     </Container>
   );
 }

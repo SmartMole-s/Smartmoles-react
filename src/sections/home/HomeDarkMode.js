@@ -1,6 +1,6 @@
 import { m } from 'framer-motion';
 // @mui
-import { Grid, Box, Tooltip, Container, Button ,Typography} from '@mui/material';
+import { Grid, Box, Tooltip, Container, Button, Typography } from '@mui/material';
 // components
 import Image from '../../components/Image';
 import { varFade } from '../../components/animate';
@@ -15,7 +15,7 @@ export default function HomeDarkMode() {
   const { translate } = useLocales();
   return (
     <>
-      <Grid container justifyContent="center" alignItems='center'>
+      <Grid container justifyContent="center" alignItems="center">
         <Grid item sm={12} md={6}>
           <Container sx={{ position: 'relative' }}>
             <Image
@@ -36,18 +36,15 @@ export default function HomeDarkMode() {
               }}
             />
           </Container>
-          {/* <SloganStyle sx={{ padding: '28% 5%', color: '#000' }}>
-            <Typist>tarımsal faaliyetlerinize<br></br> değer katıyoruz</Typist>
-          </SloganStyle> */}
           {isDesktop && (
-           <m.div variants={varFade().inRight}  >
-              <Typography variant="h2" sx={{ px:'10%'}}>
-              {translate('HomeDark.title')}
-              <br></br>
-              {translate('HomeDark.title2')}
+            <m.div variants={varFade().inRight}>
+              <Typography variant="h2" sx={{ px: '10%' }}>
+                {translate('HomeDark.title')}
+                <br></br>
+                {translate('HomeDark.title2')}
               </Typography>
             </m.div>
-            )}
+          )}
         </Grid>
         <Grid item sm={12} md={6}>
           <Box
@@ -64,8 +61,8 @@ export default function HomeDarkMode() {
                   position: 'absolute',
                   height: '25%',
                   width: '25%',
-                  top: '5%',
-                  right: '35%',
+                  top: '1%',
+                  right: '38%',
                   zIndex: '2',
                   opacity: '0',
                 }}
@@ -81,8 +78,8 @@ export default function HomeDarkMode() {
                   height: '25%',
                   width: '25%',
                   position: 'absolute',
-                  top: '28%',
-                  right: '6%',
+                  top: '18%',
+                  right: '71%',
                   zIndex: '2',
                   opacity: '0',
                 }}
@@ -98,8 +95,8 @@ export default function HomeDarkMode() {
                   height: '25%',
                   width: '25%',
                   position: 'absolute',
-                  top: '30%',
-                  left: '8%',
+                  top: '52%',
+                  left: '3%',
                   zIndex: '2',
                   opacity: '0',
                 }}
@@ -115,8 +112,8 @@ export default function HomeDarkMode() {
                   height: '25%',
                   width: '25%',
                   position: 'absolute',
-                  bottom: '6%',
-                  left: '19%',
+                  bottom: '54%',
+                  left: '73%',
                   zIndex: '2',
                   opacity: '0',
                 }}
@@ -132,8 +129,8 @@ export default function HomeDarkMode() {
                   height: '25%',
                   width: '25%',
                   position: 'absolute',
-                  bottom: '6%',
-                  right: '18%',
+                  bottom: '18%',
+                  right: '4%',
                   zIndex: '2',
                   opacity: '0',
                 }}
@@ -149,8 +146,8 @@ export default function HomeDarkMode() {
                   height: '25%',
                   width: '25%',
                   position: 'absolute',
-                  bottom: '34%',
-                  right: '37%',
+                  bottom: '38%',
+                  right: '38%',
                   zIndex: '2',
                   opacity: '0',
                 }}
@@ -158,6 +155,23 @@ export default function HomeDarkMode() {
                 href="/hakkimizda"
               >
                 SmartMoles
+              </Button>
+            </Tooltip>
+            <Tooltip title="AirMoles" arrow>
+              <Button
+                sx={{
+                  height: '25%',
+                  width: '25%',
+                  position: 'absolute',
+                  bottom: '1%',
+                  right: '39%',
+                  zIndex: '2',
+                  opacity: '0',
+                }}
+                size="large"
+                href="/air-moles"
+              >
+                AirMoles
               </Button>
             </Tooltip>
             <Image src="/static/images/markalar.png" alt="about-vision" effect="black-and-white" />

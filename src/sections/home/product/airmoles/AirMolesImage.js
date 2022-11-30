@@ -3,28 +3,26 @@ import { Box, Container, Typography, Grid } from '@mui/material';
 // components
 import Image from '../../../../components/Image';
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
 export default function AirMolesImage() {
+  const { translate } = useLocales();
   return (
     <Container sx={{ mt: 10 }}>
       <Grid container justifyContent="center">
         <Grid item xs={12} md={6} sx={{ paddingRight: 10, py: 10 }}>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="h4" sx={{ textAlign: 'center!important' }}>
-              Bilgiye dayalı karar vermek için kompakt, inovatif bir teknoloji
+              {translate('AirMolesImage.desc')}
             </Typography>
           </MotionInView>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="body1" sx={{ textAlign: 'left', lineHeight: '1.8' }}>
-              <br></br> AIRMAR'ın WeatherStation WXRS'si yağmur yoğunluğu, birikimi ve gerçek zamanlı süresi hakkında
-              gerçek zamanlı bilgi sağlar. Akustik bir sensör, WeatherStation cihazının üstünde bulunan patentli
-              "şemsiye" sensöründe tek tek yağmur damlalarının enerjisini ölçer. Bu yağmur algılayıcı sensör,
-              boşaltılması, temizlenmesi veya pislik nedeniyle tıkanması gereken hareketli parça veya bileşen
-              içermediğinden neredeyse bakım gerektirmez. Minimum bakım ve tam bir ultrasonik rüzgâr, sıcaklık,
-              barometrik basınç ve bağıl nem paketinin entegrasyonu ile WeatherStation WXRS, geleneksel ölçüm
-              cihazlarına kıyaslanırsa önemli ölçüde daha düşük toplam sahip olma maliyeti (TCO) sunar
+              <br></br> 
+              {translate('AirMolesImage.desc2')}
             </Typography>
           </MotionInView>
         </Grid>
@@ -48,24 +46,24 @@ export default function AirMolesImage() {
         <Grid item xs={12} sm={8}>
           <MotionInView variants={varFade().inUp}>
             <Typography variant="h5" sx={{ textAlign: 'center!important' }}>
-              Tarlanızın meteorolojik verilerine dünyanın her yerinden ulaşın
+            {translate('AirMolesImage.title')}
               <br/>
             </Typography>
             <Typography variant="body1" sx={{ textAlign: 'center' }}>
               <br/>
-              • Bakım gerektirmez
+              • {translate('AirMolesImage.li1')}
               <br/><br/>
-              • Görünen rüzgar hızı ve yönünün ultrosonik ölçümü
+              • {translate('AirMolesImage.li2')}
               <br/><br/>
-              • Yağmur birikiminin, yoğunluğunun ve süresinin akustik ölçümü
+              • {translate('AirMolesImage.li3')}
               <br/><br/>
-              • Manyetik ve gerçek kuzey arasındaki farkı düzelten GPS
+              • {translate('AirMolesImage.li4')}
               <br/><br/>
-              • Manyetik kuzeye referanslı rüzgar hızı verileri için dahili pusula
+              • {translate('AirMolesImage.li5')}
               <br/><br/>
-              • Düşme nedeniyle tıkanma veri bütünlüğü kaybı olmaz
+              • {translate('AirMolesImage.li6')}
               <br/><br/>
-              • Hareketli parçası olmayan sağlam, kompakt, UV stabilize gövdeye sahip
+              • {translate('AirMolesImage.li7')}
             </Typography>
           </MotionInView>
         </Grid>

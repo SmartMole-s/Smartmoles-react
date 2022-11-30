@@ -214,7 +214,7 @@
     "title": "If drainage conditions are poor, ",
     "title2": "desired benefit from agricultural",
     "title3": "production cannot be seen!",
-    "button": "Fiyat Teklifi Al"
+    "button": "Get a Quote"
   },
   "SmartWaterlevelWhat": {
     "desc": "SmartWaterLevel product identifies the problem and helps to take the necessary measures in order to study and solve the drainage problem areas and make them suitable for agriculture.",
@@ -222,10 +222,29 @@
     "desc3": "With SmartWaterLevel technology, it is possible to conduct groundwater level surveys in a basin/field/park and garden, as well as detecting the amount of water used by each plant from the groundwater in real time, with artificial intelligence technology, it is possible to operate the irrigation system only to complete the remaining amount."
   },
   "SmartWaterlevelImage": {
-    "desc": "Taban suyu seviyenize göre projenizi sağlıklı yönetmeniz için Etüt-İzleme ve sulama sistemi yönetim hizmetlerimizle yanınızdayız. Kök bölgesine taban suyundan gelen su ile sulama suyu miktarı arasındaki ilişkiyi kuruyoruz. Kapiller yükselmeyi takip edebiliyor ve etüt verilerine göre alınması gereken önlemleri beraber kararlaştırıyoruz. Taban suyu seviyesinin bilinmesi, hem drenaj sorununun net olarak tanımlanabilmesi hem de sulama ve gübreleme işlemlerinin kirliliğe ve israfa yol açmadan yapılabilmesi için gerekmektedir. Taban suyu seviyesine bağlı olarak toprak profilinde taban suyundan zemine doğru kapiller hareket ile nem yükselir.",
-    "desc2": "Bitkilerin oksijensiz kalması ve kurumasına eden olan saturasyondaki toprak koşulları drenaj yapılmasını gerektirmektedir. Klasik drenaj anlayışında bitki, kök bölgesinden daha derine, mümkün olamıyorsa etkili kök bölgesi seviyesinde fazla su drene edilmeye çalışılır. Park ve bahçelerde ya da tarımsal üretimin yapıldığı bir tarlada/havzada drenaj sorunu çözümlendikten sonra sulama suyu ihtiyacı bitkiye verilir.",
-    "desc3": "Ancak çoğu bölgede bitkiler ihtiyaç duydukları sulama suyu ihtiyacını drene edilen/edilmeyen taban suyundan karşılar. Ancak ne kadar miktarda bitki su ihtiyacının taban suyundan karşılanabildiğini tespit edebilen bir teknoloji olmadığından ayrıca gereğinden fazla sulama yapılır. Sulama ile beraber taban suyu iyice şişer ve/veya taban suyuna sulama suyu içerisindeki gübre ve kimyasal maddelerle beraber karışır. Azot yıkanması gerçekleşerek ciddi bir gübre israfı ve yeraltı suyu ortaya çıkar.",
-    "desc4": "Park ve bahçelerde yada tarımsal üretimin yapıldığı bir tarlada/havzada drenaj sorunu çözümlendikten sonra sulama suyu ihtiyacı bitkiye verilir. Ancak çoğu bölgede bitkiler ihtiyaç duydukları sulama suyu ihtiyacını drene edilen/edilmeyen taban suyundan karşılar. Ancak ne kadar miktarda bitki su ihtiyacının taban suyundan karşılanabildiğini tespit edebilen bir teknoloji olmadığından ayrıca gereğinden fazla sulama yapılır. Sulama ile beraber taban suyu iyice şişer ve/vaya taban suyuna sulama suyu içerisindeki gübre ve kimyasal maddelerle beraber karışır. Azot yıkanması gerçekleşerek ciddi bir gübre ısrafı ve yer altı suyu kirliliği ortaya çıkar.",
-    "desc5": "Sahip olduğumuz SmartWaterLevel teknolojisi ile bu sorun gerekli gözlemler yapılarak çözümlenebilmektedir. Hem bir havzada/tarlada/park ve bahçede taban suyu seviyesi etüdü yapabilmekte hemde her bitkinin gerçek zamanlı olarak taban suyundan kullandığı su miktarını tespit ederek yapay zeka teknolojisi ile sulama sistemini sadece kalan miktarı tamamlamak üzere çalıştırmak mümkün olabilmektedir.SmartWaterLevel taban suyu seviyesini gerçek zamanlı olarak izleyebilen akıllı bir robot sistemdir."
+    "desc": "We are by your side with our searching-monitoring and irrigation system management services so that you can manage your project properly according to your ground water level. We establish the relationship between the water coming from the ground water to the root zone and amount of irrigation water. We can monitor the capillary rise and compare the measures to be taken according to received data. Knowing the groundwater level is necessary to clearly define the drainage problem and to carry out irrigation and fertilization operations without causing pollution and waste. Depending on the ground water level, the moisture rises with the capillarity movement from the ground water to the ground in the soil profile.",
+    "desc2": "Soil conditions at saturation that cause the plants to be oxygen-free and dry. So therefore, it requires drainage. In the classical drainage approach, more water is tried to be drained deeper than the root zone of the plant, if not possible, at the level of the effective root zone. After the drainage problem is resolved in parks and gardens or in a field/basin where an agricultural production is made, the irrigation water requirement is given to the plant. In most regions, plants meet their irrigation water needs from the ground water that is drained or not.",
+    "desc3": "However, since there is no technology that can determine how much plant water needs can be met from ground water, more than necessary irrigation is also done. With irrigation, the ground water swells well and/or it mixes with the fertilizers and chemicals in the irrigation water. Washing of the nitrogen takes place, resulting in a serious waste of fertilizer and groundwater pollution.",
+    "desc4": "SmartWaterLevel is a smart robotic system that can monitor the bottom water level in real time."
+  },
+  "AirMolesSlider": {
+    "title": "Do you know how weather conditions",
+    "title2": "affect your plants",
+    "button": "Get a Quote"
+  },
+  "AirMolesWhat": {
+    "desc": "AirMole's high technology provides local and cloud-based access to meteorological data."
+  },
+  "AirMolesImage": {
+    "desc": "A compact, innovative technology  for informed decision making",
+    "desc2": "AIRMAR's WeatherStation WXRS provides real-time information on rain intensity, accumulation and event duration. An acoustic sensor measures the impact energy of individual raindrops on the patented 'umbrella' sensor located on the top of Weather Station instrument. This rain detecting sensor is virtually maintenance free as it has no moving parts or components that need to be emptied, cleaned or will become clogged by debris. With minimal maintenance plus the integration of a full suite of ultrasonic wind, temperature, barometric pressure and relative humidity, WeatherStation WXRS delivers a significantly lower total cost of ownership (TCO) than traditional measurement devices.",
+    "title": "Access your field's meteorological data from anywhere in the world",
+    "li1": "Ultrasonic measurement of apparent wind speed an direction",
+    "li2": "Acoustic measurement of rain accumulation, intensity, and duration",
+    "li3": "Internal compass for wind-speed data referenced to magnetic north",
+    "li4": "GPS for time stamping correcting for the variation between magnetic and true north",
+    "li5": "Maintenance-free operation is superior to tipping buckets, weighing gauges, optical measurement.",
+    "li6": "Rugged, compact, UV stabilized housing with no moving parts",
+    "li7": "No obstruction and data integrity loss due to debris."
   }
 }

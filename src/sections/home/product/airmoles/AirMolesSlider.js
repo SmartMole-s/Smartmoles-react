@@ -5,6 +5,8 @@ import { Box, Container, Button } from '@mui/material';
 // components
 import Iconify from '../../../../components/Iconify';
 import { MotionContainer, TextAnimate, varFade, varBounce } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -31,6 +33,7 @@ const ContentStyle = styled('div')(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function AirMolesSlider() {
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
@@ -38,11 +41,11 @@ export default function AirMolesSlider() {
           <TextAnimate text="AirMoles" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="Hava &nbsp; şartlarının &nbsp; bitkilerinizi" sx={{ mr: 2, typography: 'h4' }} />
+            <TextAnimate text={translate('AirMolesSlider.title')} sx={{ mr: 2, typography: 'h4' }} />
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text="nasıl &nbsp; etkilediğini &nbsp; biliyor &nbsp; musunuz?" sx={{ mb: 2, mr: 2, typography: 'h4' }} />
+            <TextAnimate text={translate('AirMolesSlider.title2')} sx={{ mb: 2, mr: 2, typography: 'h4' }} />
           </Box>
           <m.div variants={varBounce().inUp}>
             <Button
@@ -52,7 +55,7 @@ export default function AirMolesSlider() {
               variant="contained"
               startIcon={<Iconify icon={'eva:flash-fill'} width={20} height={20} />}
             >
-              Fiyat Teklifi Al
+              {translate('AirMolesSlider.button')}
             </Button>
           </m.div>
         </ContentStyle>

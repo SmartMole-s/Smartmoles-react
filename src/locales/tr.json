@@ -224,8 +224,27 @@
   "SmartWaterlevelImage": {
     "desc": "Taban suyu seviyenize göre projenizi sağlıklı yönetmeniz için Etüt-İzleme ve sulama sistemi yönetim hizmetlerimizle yanınızdayız. Kök bölgesine taban suyundan gelen su ile sulama suyu miktarı arasındaki ilişkiyi kuruyoruz. Kapiller yükselmeyi takip edebiliyor ve etüt verilerine göre alınması gereken önlemleri beraber kararlaştırıyoruz. Taban suyu seviyesinin bilinmesi, hem drenaj sorununun net olarak tanımlanabilmesi hem de sulama ve gübreleme işlemlerinin kirliliğe ve israfa yol açmadan yapılabilmesi için gerekmektedir. Taban suyu seviyesine bağlı olarak toprak profilinde taban suyundan zemine doğru kapiller hareket ile nem yükselir.",
     "desc2": "Bitkilerin oksijensiz kalması ve kurumasına eden olan saturasyondaki toprak koşulları drenaj yapılmasını gerektirmektedir. Klasik drenaj anlayışında bitki, kök bölgesinden daha derine, mümkün olamıyorsa etkili kök bölgesi seviyesinde fazla su drene edilmeye çalışılır. Park ve bahçelerde ya da tarımsal üretimin yapıldığı bir tarlada/havzada drenaj sorunu çözümlendikten sonra sulama suyu ihtiyacı bitkiye verilir.",
-    "desc3": "Ancak çoğu bölgede bitkiler ihtiyaç duydukları sulama suyu ihtiyacını drene edilen/edilmeyen taban suyundan karşılar. Ancak ne kadar miktarda bitki su ihtiyacının taban suyundan karşılanabildiğini tespit edebilen bir teknoloji olmadığından ayrıca gereğinden fazla sulama yapılır. Sulama ile beraber taban suyu iyice şişer ve/veya taban suyuna sulama suyu içerisindeki gübre ve kimyasal maddelerle beraber karışır. Azot yıkanması gerçekleşerek ciddi bir gübre israfı ve yeraltı suyu ortaya çıkar.",
-    "desc4": "Park ve bahçelerde yada tarımsal üretimin yapıldığı bir tarlada/havzada drenaj sorunu çözümlendikten sonra sulama suyu ihtiyacı bitkiye verilir. Ancak çoğu bölgede bitkiler ihtiyaç duydukları sulama suyu ihtiyacını drene edilen/edilmeyen taban suyundan karşılar. Ancak ne kadar miktarda bitki su ihtiyacının taban suyundan karşılanabildiğini tespit edebilen bir teknoloji olmadığından ayrıca gereğinden fazla sulama yapılır. Sulama ile beraber taban suyu iyice şişer ve/vaya taban suyuna sulama suyu içerisindeki gübre ve kimyasal maddelerle beraber karışır. Azot yıkanması gerçekleşerek ciddi bir gübre ısrafı ve yer altı suyu kirliliği ortaya çıkar.",
-    "desc5": "Sahip olduğumuz SmartWaterLevel teknolojisi ile bu sorun gerekli gözlemler yapılarak çözümlenebilmektedir. Hem bir havzada/tarlada/park ve bahçede taban suyu seviyesi etüdü yapabilmekte hemde her bitkinin gerçek zamanlı olarak taban suyundan kullandığı su miktarını tespit ederek yapay zeka teknolojisi ile sulama sistemini sadece kalan miktarı tamamlamak üzere çalıştırmak mümkün olabilmektedir.SmartWaterLevel taban suyu seviyesini gerçek zamanlı olarak izleyebilen akıllı bir robot sistemdir."
+    "desc3": "Ancak çoğu bölgede bitkiler ihtiyaç duydukları sulama suyu ihtiyacını drene edilen/edilmeyen taban suyundan karşılar. Ancak ne kadar miktarda bitki su ihtiyacının taban suyundan karşılanabildiğini tespit edebilen bir teknoloji olmadığından ayrıca gereğinden fazla sulama yapılır. Sulama ile beraber taban suyu iyice şişer ve/veya taban suyuna sulama suyu içerisindeki gübre ve kimyasal maddelerle beraber karışır. Azot yıkanması gerçekleşerek ciddi bir gübre israfı ve yeraltı suyu kirliliği ortaya çıkar.",
+    "desc4": "Sahip olduğumuz SmartWaterLevel teknolojisi ile bu sorun gerekli gözlemler yapılarak çözümlenebilmektedir. Hem bir havzada/tarlada/park ve bahçede taban suyu seviyesi etüdü yapabilmekte hemde her bitkinin gerçek zamanlı olarak taban suyundan kullandığı su miktarını tespit ederek yapay zeka teknolojisi ile sulama sistemini sadece kalan miktarı tamamlamak üzere çalıştırmak mümkün olabilmektedir.SmartWaterLevel taban suyu seviyesini gerçek zamanlı olarak izleyebilen akıllı bir robot sistemdir."
+  },
+  "AirMolesSlider": {
+    "title": "Hava şartlarının bitkilerinizi",
+    "title2": "nasıl etkilediğini biliyor musunuz?",
+    "button": "Fiyat Teklifi Al"
+  },
+  "AirMolesWhat": {
+    "desc": "AirMoles yüksek teknolojisi ile meteorolojik verilere yerel ve bulut tabanlı olarak erişmenizi sağlar"
+  },
+  "AirMolesImage": {
+    "desc": "Bilgiye dayalı karar vermek için kompakt, inovatif bir teknoloji",
+    "desc2": "AIRMAR'ın WeatherStation WXRS'si yağmur yoğunluğu, birikimi ve gerçek zamanlı süresi hakkında gerçek zamanlı bilgi sağlar. Akustik bir sensör, WeatherStation cihazının üstünde bulunan patentli 'şemsiye' sensöründe tek tek yağmur damlalarının enerjisini ölçer. Bu yağmur algılayıcı sensör, boşaltılması, temizlenmesi veya pislik nedeniyle tıkanması gereken hareketli parça veya bileşen içermediğinden neredeyse bakım gerektirmez. Minimum bakım ve tam bir ultrasonik rüzgâr, sıcaklık, barometrik basınç ve bağıl nem paketinin entegrasyonu ile WeatherStation WXRS, geleneksel ölçüm cihazlarına kıyaslanırsa önemli ölçüde daha düşük toplam sahip olma maliyeti (TCO) sunar.",
+    "title": "Tarlanızın meteorolojik verilerine dünyanın her yerinden ulaşın",
+    "li1": "Bakım gerektirmez",
+    "li2": "Görünen rüzgar hızı ve yönünün ultrosonik ölçümü",
+    "li3": "Yağmur birikiminin, yoğunluğunun ve süresinin akustik ölçümü",
+    "li4": "Manyetik ve gerçek kuzey arasındaki farkı düzelten GPS",
+    "li5": "Manyetik kuzeye referanslı rüzgar hızı verileri için dahili pusula",
+    "li6": "Düşme nedeniyle tıkanma veri bütünlüğü kaybı olmaz",
+    "li7": "Hareketli parçası olmayan sağlam, kompakt, UV stabilize gövdeye sahip"
   }
 }

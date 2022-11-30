@@ -5,6 +5,8 @@ import { Grid, Container, Typography } from '@mui/material';
 import useResponsive from '../../../../hooks/useResponsive';
 // components
 import { MotionInView, varFade } from '../../../../components/animate';
+//hooks
+import useLocales from '../../../../hooks/useLocales';
 
 // ----------------------------------------------------------------------
 
@@ -21,7 +23,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 export default function AirMolesWhat() {
   const isDesktop = useResponsive('up', 'md');
-
+  const { translate } = useLocales();
   return (
     <RootStyle>
       <Container>
@@ -51,7 +53,7 @@ export default function AirMolesWhat() {
                   color: (theme) => (theme.palette.mode === 'light' ? 'text.secondary' : 'common.white'),
                 }}
               >
-                <b>AirMoles</b> yüksek teknolojisi ile meteorolojik verilere yerel ve bulut tabanlı olarak erişmenizi sağlar
+                {translate('AirMolesWhat.desc')}
               </Typography>
             </MotionInView>
           </Grid>

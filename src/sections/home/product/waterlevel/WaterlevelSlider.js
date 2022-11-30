@@ -49,7 +49,7 @@ export default function WaterlevelSlider() {
           </Box>
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
-            <TextAnimate text={translate('SmartWaterlevelSlider.title2')} sx={{ mb: 2, mr: 2, typography: 'h4' }} />
+            <TextAnimate text={translate('SmartWaterlevelSlider.title3')} sx={{ mb: 2, mr: 2, typography: 'h4' }} />
           </Box>
           <m.div variants={varBounce().inUp}>
             <Button
