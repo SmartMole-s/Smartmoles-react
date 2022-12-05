@@ -16,7 +16,7 @@ export default function HomeDarkMode() {
   return (
     <>
       <Grid container justifyContent="center" alignItems="center">
-        <Grid item sm={12} md={6}>
+        <Grid item sm={12} md={4}>
           <Container sx={{ position: 'relative' }}>
             <Image
               visibleByDefault
@@ -38,7 +38,7 @@ export default function HomeDarkMode() {
           </Container>
           {isDesktop && (
             <m.div variants={varFade().inRight}>
-              <Typography variant="h2" sx={{ px: '10%' }}>
+              <Typography variant="h2">
                 {translate('HomeDark.title')}
                 <br></br>
                 {translate('HomeDark.title2')}
@@ -46,7 +46,11 @@ export default function HomeDarkMode() {
             </m.div>
           )}
         </Grid>
-        <Grid item sm={12} md={6}>
+       
+        <Grid item sm={12} md={1}>
+
+        </Grid>
+        <Grid item sm={12} md={4}>
           <Box
             sx={{
               mb: 10,

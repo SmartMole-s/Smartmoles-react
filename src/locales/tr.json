@@ -16,7 +16,9 @@
   },
   "HomeDark": {
     "title": "Siber Fiziksel Teknoloji",
-    "title2": "Ürünlerimizi İnceleyin"
+    "title2": "Ürünlerimizi İnceleyin",
+    "right":"Nerede Olduğunuz Önemli",
+    "right2": "Değil, Biz Yanınızdayız"
   },
   "HomeBanner": {
     "title": "SmartMole's teknolojileri birbiriyle entegre ve bağımsız çalışabilen yapay zekâ destekli çözümler sunar."
