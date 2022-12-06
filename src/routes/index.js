@@ -5,6 +5,7 @@ import MainLayout from '../layouts/main';
 import LogoOnlyLayout from '../layouts/LogoOnlyLayout';
 // components
 import LoadingScreen from '../components/LoadingScreen';
+import { CapillarityPriceList } from 'src/sections/home/priceList';
 
 // ----------------------------------------------------------------------
 
@@ -59,6 +60,7 @@ export default function Router() {
         { path: 'smart-farm', element: <SmartFarm />},
         { path: 'smart-valves', element: <SmartValves />},
         { path: 'air-moles', element: <AirMoles />},
+        { path: 'smart-capillarity-fiyat-listesi', element: <CapillarityPriceList />}
       ],
     },
     { path: '*', element: <Navigate to="/404" replace /> },

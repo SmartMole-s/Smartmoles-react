@@ -26,5 +26,6 @@ export const PATH_PAGE = {
   smartWaterlevel: '/smart-waterlevel',
   smartFarm: '/smart-farm',
   smartValves: '/smart-valves',
-  airMoles:'/air-moles'
+  airMoles:'/air-moles',
+  capillarityPriceList :'/smart-capillarity-fiyat-listesi'
 };

@@ -1,22 +1,16 @@
+import React from 'react';
 // @mui
-import { Container, Card, CardHeader, CardMedia, CardContent, CardActions, Collapse } from '@mui/material';
+import { Container, Card, CardHeader, CardMedia, CardContent, CardActions, Collapse, Box, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import  from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import AddTaskIcon from '@mui/icons-material/AddTask';
-import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
-
 // components
-import Iconify from '../../../../components/Iconify';
-import { MotionContainer } from '../../../../components/animate';
-//hooks
-// import useLocales from '../../../../hooks/useLocales';
+import { MotionContainer } from '../../../components/animate';
+// hooks
+import useLocales from '../../../hooks/useLocales';
+// mock
+import { priceData } from '../../../_mock/priceData';
 
 // ----------------------------------------------------------------------
 
@@ -37,72 +31,127 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
   }),
 }));
 
+function Item(props) {
+  const { sx, ...other } = props;
+  return (
+    <Box
+      sx={{
+        p: 1,
+        m: 1,
+        bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : 'grey.100'),
+        color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),
+        border: '1px solid',
+        borderColor: (theme) => (theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300'),
+        ...sx,
+      }}
+      {...other}
+    />
+  );
+}
+
+// const Item = styled(Paper)(({ theme }) => ({
+//   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+//   ...theme.typography.body2,
+//   padding: theme.spacing(1),
+//   textAlign: 'center',
+//   color: theme.palette.text.secondary,
+// }));
+
 export default function CapillarityPriceList() {
   const [expanded, setExpanded] = React.useState(false);
+  const { translate } = useLocales();
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
-  // const { translate } = useLocales();
-
-  return (
-    <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
-      <React.Fragment>
-        <Card sx={{ maxWidth: 345, mx: 2, my: 2, boxShadow: 6 }}>
-          <CardHeader
-            title="Hub ve Sensör Modülü"
-            sx={{ textAlign: 'center' }}
-            // subheader="September 14, 2016"
-          />
-          <CardMedia
-            component="img"
-            height="auto"
-            image="https://i.hizliresim.com/tojsl7d.png"
-            alt="SmartCapillarity"
-          />
-          <CardContent>
-            <Typography variant="body2" color="text.secondary">
-              This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup
-              of frozen peas along with the mussels, if you like.
-            </Typography>
-          </CardContent>
-          <CardActions disableSpacing sx={{ display: 'flex', justifyContent: 'center' }}>
-            <IconButton aria-label="add to form">
-              <Typography variant="body1" color="text.secondary">
-                Fiyat Al
-              </Typography>
-              <AddTaskIcon />
-            </IconButton>
-
-            <ExpandMore expand={expanded} onClick={handleExpandClick} aria-expanded={expanded} aria-label="show more">
-              <ExpandMoreIcon />
-            </ExpandMore>
-          </CardActions>
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-              <Typography paragraph>Method:</Typography>
-              <Typography paragraph>
-                Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10 minutes.
-              </Typography>
-              <Typography paragraph>
-                Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high heat. Add chicken,
-                shrimp and chorizo, and cook, stirring occasionally until lightly browned, 6 to 8 minutes. Transfer
-                shrimp to a large plate and set aside, leaving chicken and chorizo in the pan. Add pimentón, bay leaves,
-                garlic, tomatoes, onion, salt and pepper, and cook, stirring often until thickened and fragrant, about
-                10 minutes. Add saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-              </Typography>
-              <Typography paragraph>
-                Add rice and stir very gently to distribute. Top with artichokes and peppers, and cook without stirring,
-                until most of the liquid is absorbed, 15 to 18 minutes. Reduce heat to medium-low, add reserved shrimp
-                and mussels, tucking them down into the rice, and cook again without stirring, until mussels have opened
-                and rice is just tender, 5 to 7 minutes more. (Discard any mussels that don&apos;t open.)
-              </Typography>
-              <Typography>Set aside off of the heat to let rest for 10 minutes, and then serve.</Typography>
-            </CardContent>
-          </Collapse>
-        </Card>
-      </React.Fragment>
-    </Container>
-  );
+  return priceData.map((item) => {
+    const lang = localStorage.getItem('i18nextLng');
+    return (
+      <Container component={MotionContainer} sx={{ position: 'relative', height: '100%', marginTop: '10%' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignContent: 'stretch',
+            p: 1,
+            m: 1,
+          }}
+        >
+          <Item>
+            <Card sx={{ maxWidth: 345, mx: 2, my: 2, boxShadow: 6 }}>
+              <CardHeader
+                title={lang === 'tr' ? item.titleTr : item.titleEn}
+                sx={{ textAlign: 'center' }}
+                // subheader="September 14, 2016"
+              />
+              <CardMedia component="img" height="auto" image={item.src} alt="SmartCapillarity" />
+              <CardContent>
+                <Typography variant="body2" color="text.secondary">
+                  {lang === 'tr' ? item.titleTr : item.titleEn}
+                </Typography>
+              </CardContent>
+              <CardActions disableSpacing sx={{ display: 'flex', justifyContent: 'center' }}>
+                <IconButton aria-label="add to form">
+                  <Typography variant="body1" color="text.secondary">
+                    {translate('item.askPriceTr')}
+                  </Typography>
+                </IconButton>
+                <ExpandMore
+                  expand={expanded}
+                  onClick={handleExpandClick}
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                >
+                  <ExpandMoreIcon />
+                </ExpandMore>
+              </CardActions>
+              <Collapse in={expanded} timeout="auto" unmountOnExit>
+                <CardContent>
+                  <Typography paragraph>{lang === 'tr' ? item.descTr : item.descEn}</Typography>
+                  <Typography paragraph>{lang === 'tr' ? item.collapseTr : item.collapseEn}</Typography>
+                </CardContent>
+              </Collapse>
+            </Card>
+          </Item>
+          <Item>
+            <Card sx={{ maxWidth: 345, mx: 2, my: 2, boxShadow: 6 }}>
+              <CardHeader
+                title={lang === 'tr' ? item.titleTr : item.titleEn}
+                sx={{ textAlign: 'center' }}
+                // subheader="September 14, 2016"
+              />
+              <CardMedia component="img" height="auto" image={item.src} alt="SmartCapillarity" />
+              <CardContent>
+                <Typography variant="body2" color="text.secondary">
+                  {lang === 'tr' ? item.titleTr : item.titleEn}
+                </Typography>
+              </CardContent>
+              <CardActions disableSpacing sx={{ display: 'flex', justifyContent: 'center' }}>
+                <IconButton aria-label="add to form">
+                  <Typography variant="body1" color="text.secondary">
+                    {translate('item.askPriceTr')}
+                  </Typography>
+                </IconButton>
+                <ExpandMore
+                  expand={expanded}
+                  onClick={handleExpandClick}
+                  aria-expanded={expanded}
+                  aria-label="show more"
+                >
+                  <ExpandMoreIcon />
+                </ExpandMore>
+              </CardActions>
+              <Collapse in={expanded} timeout="auto" unmountOnExit>
+                <CardContent>
+                  <Typography paragraph>{lang === 'tr' ? item.descTr : item.descEn}</Typography>
+                  <Typography paragraph>{lang === 'tr' ? item.collapseTr : item.collapseEn}</Typography>
+                </CardContent>
+              </Collapse>
+            </Card>
+          </Item>
+        </Box>
+      </Container>
+    );
+  });
 }
