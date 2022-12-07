@@ -26,13 +26,12 @@ const ContentStyle = styled('div')(({ theme }) => ({
 export default function PriceList() {
   return (
     <Page title="Fiyat-Listesi">
-      <RootStyle>
-        <Container sx={{ my: 10 }}>
-          <ContentStyle>
-            <PriceListPdf />
-          </ContentStyle>
-        </Container>
-      </RootStyle>
+      <RootStyle></RootStyle>
+      <Container maxWidth={'lg'}>
+        <ContentStyle>
+          <PriceListPdf />
+        </ContentStyle>
+      </Container>
     </Page>
   );
 }
