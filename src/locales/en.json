@@ -246,5 +246,20 @@
     "li5": "Maintenance-free operation is superior to tipping buckets, weighing gauges, optical measurement.",
     "li6": "Rugged, compact, UV stabilized housing with no moving parts",
     "li7": "No obstruction and data integrity loss due to debris."
+  },
+  "Career": {
+    "title": "Career",
+    "title2": "Join Us"
+  },
+  "CareerForm": {
+    "title" : "Fill in the form below to join us.",
+    "place1": "Name",
+    "place2": "Surname",
+    "place3": "Birth Date",
+    "place4": "Gsm",
+    "place5": "E-Mail",
+    "place6": "Your Total Experience in the Software Industry",
+    "place7": "Programming Languages ​​You Use",
+    "button": "Send"
   }
 }

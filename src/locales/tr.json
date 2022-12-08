@@ -17,7 +17,7 @@
   "HomeDark": {
     "title": "Siber Fiziksel Teknoloji",
     "title2": "Ürünlerimizi İnceleyin",
-    "right":"Nerede Olduğunuz Önemli",
+    "right": "Nerede Olduğunuz Önemli",
     "right2": "Değil, Biz Yanınızdayız"
   },
   "HomeBanner": {
@@ -248,5 +248,20 @@
     "li5": "Manyetik kuzeye referanslı rüzgar hızı verileri için dahili pusula",
     "li6": "Düşme nedeniyle tıkanma veri bütünlüğü kaybı olmaz",
     "li7": "Hareketli parçası olmayan sağlam, kompakt, UV stabilize gövdeye sahip"
+  },
+  "Career": {
+    "title": "Kariyer",
+    "title2": "Bize Katılın"
+  },
+  "CareerForm": {
+    "title": "Bize katılmak için aşağıdaki formu doldurunuz.",
+    "place1": "İsim",
+    "place2": "Soyisim",
+    "place3": "Doğum Tarihi",
+    "place4": "Telefon",
+    "place5": "E-Posta",
+    "place6": "Yazılım Sektöründeki Toplam Deneyiminiz",
+    "place7": "Kullandığınız Programlama Dilleri",
+    "button": "Gönder"
   }
 }

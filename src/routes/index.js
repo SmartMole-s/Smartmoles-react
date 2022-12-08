@@ -60,7 +60,8 @@ export default function Router() {
         { path: 'smart-farm', element: <SmartFarm />},
         { path: 'smart-valves', element: <SmartValves />},
         { path: 'air-moles', element: <AirMoles />},
-        { path: 'smart-capillarity-fiyat-listesi', element: <CapillarityPriceList />}
+        { path: 'smart-capillarity-fiyat-listesi', element: <CapillarityPriceList />},
+        { path: 'kariyer', element: <Career />},
       ],
     },
     { path: '*', element: <Navigate to="/404" replace /> },
@@ -85,6 +86,7 @@ const Pricing = Loadable(lazy(() => import('../pages/home/Pricing')));
 const Payment = Loadable(lazy(() => import('../pages/home/Payment')));
 const Page500 = Loadable(lazy(() => import('../pages/Page500')));
 const NotFound = Loadable(lazy(() => import('../pages/Page404')));
+const Career = Loadable(lazy(() => import('../pages/home/career/Career')));
 
 // Product
 const SmartCapillarity = Loadable(lazy(() => import('../pages/home/product/SmartCapillarity')));

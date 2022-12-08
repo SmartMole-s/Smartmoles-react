@@ -1,8 +1,9 @@
 // @mui
-import { styled, Box, Paper, Grid } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
+// import { Divider } from '@mui/material';
 // components
 import Page from '../../../components/Page';
-import { CapillarityPriceList } from '../../../sections/home/priceList/CapillarityPriceList';
+import { CareerSlider, CareerForm } from '../../../sections/home/career';
 
 // ----------------------------------------------------------------------
 
@@ -12,14 +13,16 @@ const RootStyle = styled('div')(({ theme }) => ({
     paddingTop: theme.spacing(11),
   },
 }));
+
 // ----------------------------------------------------------------------
 
-export default function SmartCapillarityPriceList() {
+export default function Career() {
   return (
-    <Page title="SmartCapillarity Fiyat Listesi">
+    <Page title="Career">
       <RootStyle>
+        <CareerSlider />
+            <CareerForm />
       </RootStyle>
-      <CapillarityPriceList />
     </Page>
   );
 }
