@@ -14,20 +14,88 @@ import {
   IconButton,
   Accordion,
   AccordionDetails,
-  AccordionSummary 
+  AccordionSummary,
+  Tabs,
+  Tab,
+  ImageList,
+  ImageListItem,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
+function srcset(image, size, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
 
-// hooks
-// import useLocales from '../../../hooks/useLocales';
-// mock
-// import { priceData } from '../../../_mock/priceData';
-
+const itemData = [
+  {
+    img: '/static/images/test3.png',
+    title: 'Breakfast',
+    rows: 4,
+    cols: 2,
+  },
+  {
+    img: '/static/images/test1.png',
+    title: 'Burger',
+    rows: 4,
+    cols: 2,
+  },
+  {
+    img: '/static/images/test2.png',
+    title: 'Camera',
+    rows: 4,
+    cols: 2,
+  },
+  {
+    img: '/static/images/test4.png',
+    title: 'Coffee',
+    cols: 2,
+    rows: 4,
+    cols: 2,
+  },
+  // {
+  //   img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+  //   title: 'Hats',
+  //   cols: 2,
+  // },
+  // {
+  //   img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+  //   title: 'Honey',
+  //   author: '@arwinneil',
+  //   // rows: 2,
+  //   // cols: 2,
+  // },
+  // {
+  //   img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+  //   title: 'Basketball',
+  // },
+  // {
+  //   img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+  //   title: 'Fern',
+  // },
+  // {
+  //   img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+  //   title: 'Mushrooms',
+  //   rows: 2,
+  //   cols: 2,
+  // },
+  // {
+  //   img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
+  //   title: 'Tomato basil',
+  // },
+  // {
+  //   img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+  //   title: 'Sea star',
+  // },
+  // {
+  //   img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+  //   title: 'Bike',
+  //   cols: 2,
+  // },
+];
 // ----------------------------------------------------------------------
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -91,17 +159,14 @@ export default function RecipeReviewCard() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-//----------------------------------------------------------------
-const [accExpanded, accSetExpanded] = useState(false);
+  //----------------------------------------------------------------
+  const [accExpanded, accSetExpanded] = useState(false);
 
-const accHandleChange = (panel) => (event, isExpanded) => {
-  accSetExpanded(isExpanded ? panel : false);
-};
+  const accHandleChange = (panel) => (event, isExpanded) => {
+    accSetExpanded(isExpanded ? panel : false);
+  };
 
-
-
-
-//----------------------------------------------------------------
+  //----------------------------------------------------------------
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -110,7 +175,7 @@ const accHandleChange = (panel) => (event, isExpanded) => {
   return (
     <>
       <Grid container sx={{ my: 15, px: 20, mx: 'auto' }}>
-        <Box sx={{ width: '100%'}}>
+        <Box sx={{ width: '100%' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
               <Tab label="SR-5 CLD" {...a11yProps(0)} />
@@ -118,148 +183,119 @@ const accHandleChange = (panel) => (event, isExpanded) => {
               {/* <Tab label="Item Three" {...a11yProps(2)} /> */}
             </Tabs>
           </Box>
+
           <TabPanel value={value} index={0}>
-            <Grid item xs={4}>
-              <Box sx={{ width: '100%' }}>
-                <Item>
-                  <Card sx={{ maxWidth: 345 }}>
-                    <CardHeader title="GATEWAY" sx={{ textAlign: 'center' }} />
-                    <CardMedia
-                      component="img"
-                      height="auto"
-                      image="https://i.hizliresim.com/tojsl7d.png"
-                      alt="Smart Capillarity"
-                    />
-                    <CardContent>
-                      <Typography variant="h6" color="text.secondary">
-                        GATEWAY-2, endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve
-                        büyük ölçekli projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır
-                      </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                      <IconButton aria-label="add to favorites">{/* <FavoriteIcon /> */}</IconButton>
-                      <ExpandMore
-                        expand={expanded}
-                        onClick={handleExpandClick}
-                        aria-expanded={expanded}
-                        aria-label="show more"
+            <Grid container sx={{ mx: 'auto' }}>
+              <Grid item xs={4}>
+                <Box sx={{ width: '100%' }}>
+                  <Item>
+                    <ImageList sx={{ width: 500, height: 450 }} variant="quilted" cols={4} rowHeight={121}>
+                      {itemData.map((item) => (
+                        <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+                          <img {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} loading="lazy" />
+                        </ImageListItem>
+                      ))}
+                    </ImageList>
+                  </Item>
+                </Box>
+              </Grid>
+
+              <Grid item xs={8}>
+                <Box sx={{ width: '100%' }}>
+                  <Item>
+                    <Accordion accExpanded={accExpanded === 'panel1'} onChange={accHandleChange('panel1')}>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1bh-content"
+                        id="panel1bh-header"
                       >
-                        <ExpandMoreIcon />
-                      </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                      <CardContent>
-                        <Typography paragraph>
-                          *Kolay kurulum. <br />
-                          <br /> *Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla
-                          ulaşılabileceğiniz internet arayüzü).
+                        <Typography sx={{ width: '33%', flexShrink: 0 }}>GATEWAY</Typography>
+                        <Typography sx={{ color: 'text.secondary' }}>Teknik Özellikleri ve Avantajları</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Typography>
+                          Endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve büyük ölçekli
+                          projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır.
                           <br />
-                          <br /> *LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
+                          <br />
+                          Kolay kurulum.
+                          <br />
+                          <br />
+                          Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla ulaşılabileceğiniz
+                          internet arayüzü)
+                          <br />
+                          <br />
+                          LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
                           erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
                         </Typography>
-                      </CardContent>
-                    </Collapse>
-                  </Card>
-                </Item>
-              </Box>
-            </Grid>
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-          <div>
-      <Accordion accExpanded={accExpanded === 'panel1'} onChange={accHandleChange('panel1')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
-        >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
-            General settings
-          </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion accExpanded={accExpanded === 'panel2'} onChange={accHandleChange('panel2')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2bh-content"
-          id="panel2bh-header"
-        >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>Users</Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            You are currently not an owner
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
-            varius pulvinar diam eros in elit. Pellentesque convallis laoreet
-            laoreet.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion accExpanded={accExpanded === 'panel3'} onChange={accHandleChange('panel3')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3bh-content"
-          id="panel3bh-header"
-        >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>
-            Advanced settings
-          </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            Filtering has been entirely disabled for whole web server
-          </Typography>
-        </AccordionSummary>
-  
-      </Accordion>
-    </div>
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            <Grid item xs={4}>
-              <Box sx={{ width: '100%' }}>
-                <Item>
-                  <Card sx={{ maxWidth: 345 }}>
-                    <CardHeader title="Shrimp and Chorizo Paella" sx={{ textAlign: 'center' }} />
-                    <CardMedia
-                      component="img"
-                      height="auto"
-                      image="https://i.hizliresim.com/tojsl7d.png"
-                      alt="Smart Capillarity"
-                    />
-                    <CardContent>
-                      <Typography variant="body2" color="text.secondary">
-                        This impressive paella is a perfect party dish and a fun meal to cook together with your guests.
-                        Add 1 cup of frozen peas along with the mussels, if you like.
-                      </Typography>
-                    </CardContent>
-                    <CardActions disableSpacing>
-                      <IconButton aria-label="add to favorites">{/* <FavoriteIcon /> */}</IconButton>
-                      <ExpandMore
-                        expand={expanded}
-                        onClick={handleExpandClick}
-                        aria-expanded={expanded}
-                        aria-label="show more"
+                      </AccordionDetails>
+                    </Accordion>
+                    <Accordion accExpanded={accExpanded === 'panel2'} onChange={accHandleChange('panel2')}>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel2bh-content"
+                        id="panel2bh-header"
                       >
-                        <ExpandMoreIcon />
-                      </ExpandMore>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                      <CardContent>
-                        <Typography paragraph>
-                          Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10 minutes.
+                        <Typography sx={{ width: '33%', flexShrink: 0 }}>GATEWAY</Typography>
+                        <Typography sx={{ color: 'text.secondary' }}>Teknik Özellikleri ve Avantajları</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Typography>
+                          Endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve büyük ölçekli
+                          projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır.
+                          <br />
+                          <br />
+                          Kolay kurulum.
+                          <br />
+                          <br />
+                          Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla ulaşılabileceğiniz
+                          internet arayüzü)
+                          <br />
+                          <br />
+                          LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
+                          erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
                         </Typography>
-                      </CardContent>
-                    </Collapse>
-                  </Card>
-                </Item>
-              </Box>
+                      </AccordionDetails>
+                    </Accordion>
+                  </Item>
+                </Box>
+              </Grid>
             </Grid>
+          </TabPanel>
+
+          <TabPanel value={value} index={1}>
+            <Accordion accExpanded={accExpanded === 'panel1'} onChange={accHandleChange('panel1')}>
+              <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1bh-content" id="panel1bh-header">
+                <Typography sx={{ width: '33%', flexShrink: 0 }}>General settings</Typography>
+                <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id
+                  dignissim quam.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion accExpanded={accExpanded === 'panel2'} onChange={accHandleChange('panel2')}>
+              <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel2bh-content" id="panel2bh-header">
+                <Typography sx={{ width: '33%', flexShrink: 0 }}>Users</Typography>
+                <Typography sx={{ color: 'text.secondary' }}>You are currently not an owner</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography>
+                  Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus, varius pulvinar diam eros in
+                  elit. Pellentesque convallis laoreet laoreet.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion accExpanded={accExpanded === 'panel3'} onChange={accHandleChange('panel3')}>
+              <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel3bh-content" id="panel3bh-header">
+                <Typography sx={{ width: '33%', flexShrink: 0 }}>Advanced settings</Typography>
+                <Typography sx={{ color: 'text.secondary' }}>
+                  Filtering has been entirely disabled for whole web server
+                </Typography>
+              </AccordionSummary>
+            </Accordion>
           </TabPanel>
         </Box>
       </Grid>
