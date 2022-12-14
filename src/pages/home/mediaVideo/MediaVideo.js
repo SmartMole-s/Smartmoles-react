@@ -29,6 +29,11 @@ export default function Video() {
             Basında Biz
           </Typography>
           <Grid container spacing={10}>
+          <Grid item xs={12} md={6}>
+              <Card>
+                <MediaVideoMain embedId={'juy7wtzdcmE'} />
+              </Card>
+            </Grid>
             <Grid item xs={12} md={6}>
               <Card>
                 <MediaVideoMain embedId={'VQCqynGVtcw'} />
