@@ -2,6 +2,88 @@
 
 export const media = [
   {
+    id: '19',
+    pathname: 'dogaya-ragmen-degil-dogayla-uyumlu-teknolojiler-uretiyoruz',
+    title: 'Doğaya Rağmen Değil, Doğayla Uyumlu Teknolojiler Üretiyoruz',
+    src: '/static/images/sera.jpeg',
+    content: `<p>Geçtiğimiz yıl dünyada, toplam 24 milyar ton toprak çölleşti. Küresel ısınmanın etkileri ise her yıl
+    giderek artıyor. Bu noktada doğayı ve kaynakları koruyarak sürdürülebilirlik adına atılan her adım
+    çok kıymetli.
+    </p>
+    <br/>
+    <p>
+    Yuluğ Mühendislik, doğa ile uyumlu olmanın öneminden yola çıkarak yarattığı patentli, yerli ve milli teknoloji markası SmartMole’s ile suyun yönetimi konusunda çözümler sunuyor. Endüstri 5.0’ın yansıması olarak tarım 5 teknolojileri ürettiklerini belirten Yuluğ Mühendislik Genel Müdürü Ömer Yuluğ ile markaları SmartMole’s, sektörün mevcut durumu ve yapılması gerekenler üzerine gerçekleştirdiğimiz röportajda aldığımız yanıtlar, son derece bilgilendirici ve gerçeklerle yüzleştiriciydi:
+    </p>
+    <br/>
+    <br/>
+    <p>
+    <p><strong>SmartMole’s ve SmartMole’s un satış stratejisi hakkında bilgi verir misiniz?</strong></p>
+    <br/>
+
+    <p>SmartMole’s, Yuluğ Mühendislik olarak bizim teknoloji markamız. SmartMole’s, prensip olarak akıllı köstebekler demek aslında. Neden yola akıllı köstebekler ile çıktık çünkü akıllı bir köstebek nerede ve nasıl yaşaması gerektiğini çok iyi bilir ve yaşamını, bulunduğu yere zarar vermeden sürdürür. Endüstri 5.0, olağanüstü akıllı insan topluluğunun oluşmasına hizmet eder. Biz endüstri 5.0’ın yansıması olarak tarım 5 teknolojileri üretiyoruz. Yaptığımız teknolojilerin veri takibi yapılması için bir ara yüzleri var ve bu ara yüzleri, olabildiğince çiftçilerin eğitilmesine yönelik tasarlıyoruz.</p>
+    <br/>
+    <p>Ana merkezimizde bulut üzerinden biz de onların verilerine ulaşabiliyoruz. Bu sayede hem ara yüzümüzden hem de canlı olarak su ve sulama sistemi yönetimini nasıl yapmaları gerektiği, gübre kullanırken nelere dikkat etmeleri gerektiği gibi konularda kendilerine bilgi vererek süreci destekliyoruz. Satış stratejisi olarak ise aslında ürünlerimizi satmıyoruz abonelik sistemi ile çalışıyoruz. Çünkü 10 dekarda üretim yapan bir çiftçi bizim ürünlerimizi çok rahat satın alabilir. Ama hedefimiz yalnızca bu kitleye ulaşmak değil. Sadece bu ölçekte çiftçiye dokunarak toprağı ve suyu kurtaramayız. Kaldı ki bizim ülkemiz parçalı arazi yapısına sahip. Dolayısıyla su ve toprağı koruyabilmek için beş ya da 10 dekar alanda üretim yapan üreticiye de dokunmak zorundayız. Bu yüzden ürünlerimizi kiralama yöntemiyle ilerliyor ve abonelik sistemi ile çalışıyoruz. Abonemiz olarak hem ürünü temin etmiş hem de danışmanlık hizmetinden yararlanmış oluyorlar. Bu sayede biz de onlarla birlikte süreci yönetiyoruz.</p>
+<br/>
+<p>Bizim ürünlerimiz, toprakta kullanılabilen ürünler, topraksız tarımda kullanılamıyor. Ürünlerimiz toprakta üretilen her
+tarımsal üründe kullanılabilir. Her ürün için değişmekle birlikte ortalama 3-4 dekar büyüklükten itibaren ise kullanımı mümkün. Ancak bizim hobi bahçeleri ya da yazlık bahçeler gibi yerlerde üretim yapan müşterimiz de çok çünkü suyu
+çok az ve o da kaynağını etkin kullanmak zorunda. SmartMole’s ile Türkiye’de birçok noktada varız. Bunun yanı sıra
+Türki Cumhuriyetlerdeki varlığımız da gayet iyi durumda. Yeni bölge olarak hedefimiz Arap yarımadası çünkü bu bölgelerde su, çok kritik durumda. Ayrıca Avrupa ve Amerika pazarındaki varlığımızı da artırmak istiyoruz.</p>
+<br/>
+
+<h4>SmartMole’s un çalışma sistemini anlatır mısınız? Nasıl bir teknolojiden bahsediyoruz ve üreticilere hangi avantajları sağlıyor?</h4>
+<br/>
+
+<p>Smart Mole’s; SmartRoot, SmartCapillarity, SmartWaterLevel ve Smartİrrigation olmak üzere içerisinde birkaç farklı
+ürün barındırıyor. Bir de SmartFarm adında bir yüksek teknolojimiz var. Dünyada hiçbir çiftçi ve ziraat mühendisi, bitkinin %70-80 suyunu kullandığı etkili kök bölgesinin yerini bilemez. Toprağın üstünden bakarak bunu görmek mümkün değil ve herhangi bir nem sensörü ile de bunu göremezsiniz, sadece toprağın nemini ölçebilirsiniz. Peki ama bütün bilimsel formül ve yaklaşımlar, bitkinin etkili kök bölgesini sulamak üzere kurulmuş. Bu nedenle SmartRoot’u icat ettik ve geliştirdik.</p>
+
+<br/>
+<p>Bahçede 50 yıllık zeytin ağacına bakıyorsunuz ve buna göre 90cm kökü olmalı diye düşünüyorsunuz. Ancak gerçek koşullar öyle olmayabiliyor. Örneğin biz etkili kök derinliği 3540cm civarında olan birçok zeytin ağacı ile karşılaşıyoruz. Bu noktada çalışan ürünümüz SmartRoot, akıllı kök yönetim sistemi olarak devreye giriyor. Dünyada, %97.34 yerli ve milli belgesi ile kökün yerini belirleyen tek teknolojiye sahip olduğumuzu da belirtmek isterim. Etkili kök bölgesini belirledikten sonra SmartCapillarity devreye giriyor. Toprağın içerisinde diyelim ki kök derinliği 120cm ama 35cm’i etkili
+kök bölgesi olarak belirlendi. Su ve gübre, sadece bu etkili kök bölgesinde kalmalı. İşte bu etkili kök bölgesi yönetimini
+SmartRoot teknolojimiz yapıyor.</p>
+<br/>
+<p>SmartCapillarity, patenti bize ait olan kapiller hareket sensörleri ile suyun toprak içerisindeki hareketini, gerçek zamanlı olarak çok hassas bir şekilde izliyor. Ayrıca içerisinde bir tane hassas nem sensörü de var. SmartRoot ile etkili kök
+bölgesi tespitinden sonra suyun hareketini SmartCapillarity ile tespit ederek, suyu yer çekimine yenik düşürmeden, onun sağa-sola ve yukarıya yayılımını sağlıyoruz. Dolayısıyla sulama operasyonunu yönetirken birim miktar suyu daha
+fazla kök hacmine yayıyoruz. Bu sayede gübreniz ve suyunuz etkili kök bölgesinde kalıyor. Uluslararası Tarımsal Araştırma Merkezi’nde bu sene yaptığımız denemede, su ve gübrede bilimsel metodoloji ile sulanan diğer vana gruplarına göre %65’in üzerinde tasarruf sağlamış durumdayız. Sahip olduğumuz SmartWaterLevel teknolojisi ise taban suyu seviyesi etüdü yapmamızı sağlıyor. Bu sayede her bitkinin gerçek zamanlı olarak taban suyundan kullandığı su miktarını tespit ederek yapay zeka teknolojisi ile sulama sistemini, sadece kalan miktarı tamamlamak üzere çalıştırmak mümkün hale geliyor. Smartİrrigation teknolojimiz ile aslında etüt çalışması yapıyoruz. Proje öncesinde toplanan verileri yapay zeka ile yorumlayarak yapılacak projelerde doğruluk oranını artırıyoruz.</p>
+
+<br/>
+<h4>Doğa ile uyumlu tanımını çok önemsiyorsunuz? Ne demek bu doğa ile uyumlu olmak?</h4>
+<br/>
+
+<p>Kanadalı bir astrofizikçi der ki ‘Doğa ile savaş halindeyiz, kazanırsak kaybedeceğiz.’ Doğanın bir işleyişi var ve tarıma
+hizmet eden birinin önce iyi bir doğa gözlemcisi olması gerektiğini düşünüyorum. Karın yeraltı sularına nasıl karıştığını ya da bitkinin kök bölgesindeki su ve bitki besin elementlerinin nasıl bitkiye alındığını iyi bilmemiz gerekiyor. Çünkü o işleyişi bozmaya başladığımız anda doğa kanunlarına aykırı hareket etmiş oluyoruz. Sulama dediğimiz, doğal yağışlarla karşılanmayan suyu yapay yollarla bitkiye vermek demek. Ama etkili kök bölgesine değil de yer altı sularına sızacak kadar su verirsek, bu doğa kanunlarına aykırı oluyor. Doğa suyu hiçbir zaman böyle vermez. Siz bu şekilde 18-24 saat sulama yaparsanız bitkinin yararlanacağı bitki besin elementlerini de yıkayıp kökün altına gitmesine sebep olursunuz. Bu noktada da çoraklaşma ve çölleşme başlar. Bitki bir canlı ve onun kökü ile konuşuyor olmanız lazım, içinde bulunduğu toprak ile değil. Kökün nerede, ne zaman su içmek istiyorsun ya da neye ihtiyacın var? Dünyada biz hariç, bitkinin kökü ile konuşan hiçbir teknoloji yok. Siz sadece nem sensörü ile bu işi yönetemezsiniz. Nem sensörünü koydunuz ama kök başka tarafta ve sen o derinlikte sulama yapıyorsun. Peki neye göre ve nasıl karar verdin buna? Bilimsel bir makaleden yola çıkmış olabilirsin ama çiftçi Mehmet Amca ile Ayşe Teyze’nin yerleri farklı dillerde, kendine özgü mikro klimalarda konuşuyor.</p>
+<br/>
+<p>Dolayısıyla oralarda bunu çözümlediğin zaman doğayla uyumlu oluyorsun. Yoksa bir bilimsel çalışmadan yola çıkıp tüme varım ile ilerlersen tamamen doğaya aykırı davranmış olursun. Çünkü her çözüm kendi içerisinde farklı bir karakter çizebiliyor. Bizim SmartMole’s ile yaptığımız şey doğayı taklit etmek, başka bir sırrımız yok. Bu sayede de diğer yöntemlere kıyasla %65’in üzerinde tasarruf sağlıyoruz. Neden bizim teknolojilerimiz patentli? Çünkü biz bir şeyi baştan yaratmıyoruz sadece doğanın dilini çok iyi anlıyoruz. Patent demek, tekniğin bilinen kısmını aşmak demek zaten. Peki nasıl patent alıyorsunuz? Yer çekiminin bulunması gibi; yani yer çekimi zaten vardı siz onu keşfettiniz sadece. Biz de patentli teknolojiler üretirken, doğa bunu yapıyor bizim cihazlarımız da bunu simüle etsin diyoruz. İşte bu yüzden doğa ile uyumlu hareket etmek çok önemli.</p>
+
+<br/>
+<p><b>Sektöre dair bir değerlendirme rica edebilir miyiz sizden?</b></p>
+<br/>
+
+<p>Tarım demek aslında sofralarımıza gelen ürün demek ve insanlar yemek yemek zorunda. Ancak dünyada alım gücü
+çok azaldı. Bu yüzden de son tüketicinin mutsuz olduğunu görüyoruz. Mutsuzluğun sebebi ortada ve çözümü de
+ortada. Peki çözüme yönelik herhangi bir adım atılıyor mu, bunu tartışmak lazım. Biz, Yuluğ Mühendislik olarak hedeflere ulaştığımız bir yıl geçirdik hatta bazı noktalarda talebe yetişemedik. Bugün için hedefleri tutturmak güzel olabilir
+ancak bu noktada, özellikle bizim gibi yüksek teknoloji üreten firmalar için amaç, bu yıl hedefleri tutturmak yani günü
+kurtarmak olmamalı diye düşünüyorum. Çünkü bizim gibi firmalar aslında geleceğe yatırım yapar.</p>
+<br/>
+
+<p>Bu ne demek? Eğer bizim gibi toprak ve su başta olmak üzere, doğal kaynakları korumak üzere teknoloji üretiyorsanız; bu kaynakların sürdürülebilirliği ölçüsünde pazara teknoloji sunabileceksiniz demek. Geçen sene dünyada 24 milyar ton toprak çölleşti. Bu açıdan bakacak olursak her yıl daha kötüye gidiyor diyebiliriz, günü kurtarmak yetmiyor. Bu noktada planlama, denetim ve etik çok önemli. Tarım sektörünün sosyokültürel pozisyonu çok geride kalmış, tarımsal yayın ve haberleşme ise çok kirlenmiş durumda. Herkes kendi ürününü ön plana çıkarabilmek adına çiftçiyi deneme tahtası haline getirdi. Üretilen teknolojik çözümler, elektronik mühendisi, ziraat mühendisi ve bilgisayar mühendisi olan multidisipliner çalışmalar ile yürütülüyor. Maalesef çiftçinin bilimsel gerçeklerle paralel üretilmiş teknolojileri ayırt edebilme gücü çok zayıf. Bu noktada mutlaka dijital dönüşüm ile birlikte hayatımıza giren bu algı yönetiminin bir etik kurulu tarafından denetlenmesi gerekiyor.</p>
+<br/>
+
+
+<p>Gerçekten bilimsel gerçeklerle paralel teknolojiler sahaya sürülüyor mu? Çiftçiye söylenenler doğru mu? Bir sulama sistemi kurulduktan sonra tamamen çiftçinin yönetimine bırakılması ne kadar doğru? Bunların denetlenmesi şart. Ziraat mühendisleri odası, ziraat odaları ve çiftçi örgütleri siyasi otorite ile birlikte bir etik kurallar dizini oluşturmalı ve bu kurallar çerçevesinde hareket edilip edilmediği denetlenmeli. Bu noktada tek karar verici siyasi otorite olmamalı. Denetlenmediği sürece bu iş olmaz. Türkiye çapında bir üretim deseni planlanmadığı sürece su olsun olmasın, bu iş yine olmaz. Diğer taraftan özel sektöre bakacak olursak çok acı ama bir malzeme satıcıları var bir de gerçekten doğayı korumaya çalışan, değerli teknoloji üreten firmalar var. Bu değerli teknoloji üreten firmaların en büyük rakipleri ise değersiz, kirli veri üreten ve eskiden kalmış alışkanlıkları ile nem sensörlerinden aldıkları verileri bulut erişimiyle süsleyip satmaya çalışan firmalardır. Bunların maalesef hepsi doğa kanunlarına aykırı çalışıyor. Bu yüzden denetim şart diyorum, bizi de denetlesinler. Ancak bu denetim yapacak kişilerin gerçekten yetkin kişiler olması çok önemli çünkü biz, teknoloji üretiyoruz.</p>
+<br/>
+
+<p>Ülkemizde maalesef bir de tek yıllık boru kullanımı sorunu var. Çiftçi hasat döneminde, tarlalarını bu tek yıllık borularla birlikte hasat ediyor. Tarlalara bakın, polietilen boru ekilmiş gibi olur bu dönemde. Yine bu noktada da denetime ihtiyacımız var. Bakın İsrail, kendi ülkesinde tek yıllık boru değil çok yıllık boru kullanır, toprağını asla kirletmez. Amerika’da tek yıllık boru kullanımı görürüsünüz ama nasıl? Çok sıkı denetim vardır. Amerika’daki çiftçi bu yıl kaldırdığı tek yıllık borunun eyalete göre değişen belirlenmiş oranını, akredite olmuş depoya iade etmek zorundadır. Bu iade zabıt altına alınır ve ondan sonra gidip yeni boru alabilir, toprağını kirletmesine izin verilmez. Peki bizde bunu kim denetleyecek? Topraklarımız günden güne kirleniyor ve bu çok üzücü.</p>
+
+<br/>
+<h4>Peki nasıl bir 2023 yılı öngörüyorsunuz?</h4>
+<br/>
+
+<p>2023’te bizi bekleyen en büyük tehlike, dijital kirlilik ve maalesef çiftçileri koruyacak bir sistem yok şu anda. Dijital teknolojiler ile dijital kirlilik yaratanların mutlaka birbirinden ayrılması lazım. Bir başka önemli konu ise küresel ısınma. Etkileri, artarak devam edecek ve bu şunu getirecek; beklenmeyen zamanlarda beklenmeyen, olağanüstü hava olayları yaşanacak. Buna bağlı olarak kutuplardaki buzulların erimeye devam etmesi ile birlikte, okyanuslardaki akıntılar değişiyor.</p>
+
+<p>Bu da iklimleri ve mikro klimaları değiştiriyor. Burada da dengesizlikler artarak devam edecek. Doğa ne yapıyor biliyor musunuz, mutlaka dengeye geliyor ve insana rağmen dengeye geliyor. Bu yüzyıllar boyunca böyle olmuş. O yüzden aslında tehlikede olan doğa değil neslimiz. Eğer süreç böyle devam ederse tarımsal ürünlerde pahalılık, üretimde ve kalitede azalma gibi sorunlar bizi bekliyor olacak. Biz SmartMole’s ile bu yüzden herkese erişmeye ve onlarla birlikte süreci doğaya rağmen değil doğaya uyumlu şekilde yönetmeye çalışıyoruz. Ticari kısmın kendiliğinden yürüyeceğini düşünüyoruz. Zor mu, tabii ki zor çünkü işleri sosyal sorumluluk projesi gibi de yürütüyoruz. Ancak mevcut bilgi ve teknoloji ile her şeyin mümkün olduğunu bildiğimiz için bundan zevk alıyoruz.</p>
+`,
+  },
+  {
     id: '1',
     pathname: 'tarimin-invasyonu-odullendirildi',
     title: 'Tarımın İnovasyonu Ödüllendirildi',
@@ -503,89 +585,7 @@ export const media = [
     <p>
     Geliştirdikleri sistem sayesinde toprağın içindeki köklerin tespit edilmesinin ardından suyun hareketinin tamamen kontrol altına alınabildiğini ifade eden Yuluğ, “Ya da çiftçi dostlarımıza mesaj atıyor diyor ki sulama zamanı geldi, bir mesaj atıp sulama zamanı bitti diyor. Biz çiftçimizin toprağın altındaki gözü oluyoruz. 100 birim gübrenin 75 birimi istatistiklere göre boşa gidiyor. Bu fazla gübreler yer altı sularına karışıyor, buna da nitrat kirliliği deniyor. O yer altı sularından tekrar sulama yapmak isteyen çiftçilerimiz de bu suyu kullanmak zorunda kalıyor. Biz boşa giden yüzde 75’lik miktarı, maddi olarak ceplerinde tutmalarını sağlıyoruz. Suyun ve gübrenin kök bölgesinin aşağısına kaçmasını engelleyerek, yüzde 50’nin üzerinde su, gübre ve işçilik tasarrufu yapmalarını sağlıyoruz. Bu da ürün verimi ve kalitesini artırdığı gibi bitki hastalık ve zararları da azaltıyor” diye konuştu.
     </p>`,
-  },
-  {
-    id: '19',
-    pathname: 'dogaya-ragmen-degil-dogayla-uyumlu-teknolojiler-uretiyoruz',
-    title: 'Doğaya Rağmen Değil, Doğayla Uyumlu Teknolojiler Üretiyoruz',
-    src: '/static/images/sera.jpeg',
-    content: `<p>Geçtiğimiz yıl dünyada, toplam 24 milyar ton toprak çölleşti. Küresel ısınmanın etkileri ise her yıl
-    giderek artıyor. Bu noktada doğayı ve kaynakları koruyarak sürdürülebilirlik adına atılan her adım
-    çok kıymetli.
-    </p>
-    <br/>
-    <p>
-    Yuluğ Mühendislik, doğa ile uyumlu olmanın öneminden yola çıkarak yarattığı patentli, yerli ve milli teknoloji markası SmartMole’s ile suyun yönetimi konusunda çözümler sunuyor. Endüstri 5.0’ın yansıması olarak tarım 5 teknolojileri ürettiklerini belirten Yuluğ Mühendislik Genel Müdürü Ömer Yuluğ ile markaları SmartMole’s, sektörün mevcut durumu ve yapılması gerekenler üzerine gerçekleştirdiğimiz röportajda aldığımız yanıtlar, son derece bilgilendirici ve gerçeklerle yüzleştiriciydi:
-    </p>
-    <br/>
-    <br/>
-    <p>
-    <p><strong>SmartMole’s ve SmartMole’s un satış stratejisi hakkında bilgi verir misiniz?</strong></p>
-    <br/>
-
-    <p>SmartMole’s, Yuluğ Mühendislik olarak bizim teknoloji markamız. SmartMole’s, prensip olarak akıllı köstebekler demek aslında. Neden yola akıllı köstebekler ile çıktık çünkü akıllı bir köstebek nerede ve nasıl yaşaması gerektiğini çok iyi bilir ve yaşamını, bulunduğu yere zarar vermeden sürdürür. Endüstri 5.0, olağanüstü akıllı insan topluluğunun oluşmasına hizmet eder. Biz endüstri 5.0’ın yansıması olarak tarım 5 teknolojileri üretiyoruz. Yaptığımız teknolojilerin veri takibi yapılması için bir ara yüzleri var ve bu ara yüzleri, olabildiğince çiftçilerin eğitilmesine yönelik tasarlıyoruz.</p>
-    <br/>
-    <p>Ana merkezimizde bulut üzerinden biz de onların verilerine ulaşabiliyoruz. Bu sayede hem ara yüzümüzden hem de canlı olarak su ve sulama sistemi yönetimini nasıl yapmaları gerektiği, gübre kullanırken nelere dikkat etmeleri gerektiği gibi konularda kendilerine bilgi vererek süreci destekliyoruz. Satış stratejisi olarak ise aslında ürünlerimizi satmıyoruz abonelik sistemi ile çalışıyoruz. Çünkü 10 dekarda üretim yapan bir çiftçi bizim ürünlerimizi çok rahat satın alabilir. Ama hedefimiz yalnızca bu kitleye ulaşmak değil. Sadece bu ölçekte çiftçiye dokunarak toprağı ve suyu kurtaramayız. Kaldı ki bizim ülkemiz parçalı arazi yapısına sahip. Dolayısıyla su ve toprağı koruyabilmek için beş ya da 10 dekar alanda üretim yapan üreticiye de dokunmak zorundayız. Bu yüzden ürünlerimizi kiralama yöntemiyle ilerliyor ve abonelik sistemi ile çalışıyoruz. Abonemiz olarak hem ürünü temin etmiş hem de danışmanlık hizmetinden yararlanmış oluyorlar. Bu sayede biz de onlarla birlikte süreci yönetiyoruz.</p>
-<br/>
-<p>Bizim ürünlerimiz, toprakta kullanılabilen ürünler, topraksız tarımda kullanılamıyor. Ürünlerimiz toprakta üretilen her
-tarımsal üründe kullanılabilir. Her ürün için değişmekle birlikte ortalama 3-4 dekar büyüklükten itibaren ise kullanımı mümkün. Ancak bizim hobi bahçeleri ya da yazlık bahçeler gibi yerlerde üretim yapan müşterimiz de çok çünkü suyu
-çok az ve o da kaynağını etkin kullanmak zorunda. SmartMole’s ile Türkiye’de birçok noktada varız. Bunun yanı sıra
-Türki Cumhuriyetlerdeki varlığımız da gayet iyi durumda. Yeni bölge olarak hedefimiz Arap yarımadası çünkü bu bölgelerde su, çok kritik durumda. Ayrıca Avrupa ve Amerika pazarındaki varlığımızı da artırmak istiyoruz.</p>
-<br/>
-
-<h4>SmartMole’s un çalışma sistemini anlatır mısınız? Nasıl bir teknolojiden bahsediyoruz ve üreticilere hangi avantajları sağlıyor?</h4>
-<br/>
-
-<p>Smart Mole’s; SmartRoot, SmartCapillarity, SmartWaterLevel ve Smartİrrigation olmak üzere içerisinde birkaç farklı
-ürün barındırıyor. Bir de SmartFarm adında bir yüksek teknolojimiz var. Dünyada hiçbir çiftçi ve ziraat mühendisi, bitkinin %70-80 suyunu kullandığı etkili kök bölgesinin yerini bilemez. Toprağın üstünden bakarak bunu görmek mümkün değil ve herhangi bir nem sensörü ile de bunu göremezsiniz, sadece toprağın nemini ölçebilirsiniz. Peki ama bütün bilimsel formül ve yaklaşımlar, bitkinin etkili kök bölgesini sulamak üzere kurulmuş. Bu nedenle SmartRoot’u icat ettik ve geliştirdik.</p>
-
-<br/>
-<p>Bahçede 50 yıllık zeytin ağacına bakıyorsunuz ve buna göre 90cm kökü olmalı diye düşünüyorsunuz. Ancak gerçek koşullar öyle olmayabiliyor. Örneğin biz etkili kök derinliği 3540cm civarında olan birçok zeytin ağacı ile karşılaşıyoruz. Bu noktada çalışan ürünümüz SmartRoot, akıllı kök yönetim sistemi olarak devreye giriyor. Dünyada, %97.34 yerli ve milli belgesi ile kökün yerini belirleyen tek teknolojiye sahip olduğumuzu da belirtmek isterim. Etkili kök bölgesini belirledikten sonra SmartCapillarity devreye giriyor. Toprağın içerisinde diyelim ki kök derinliği 120cm ama 35cm’i etkili
-kök bölgesi olarak belirlendi. Su ve gübre, sadece bu etkili kök bölgesinde kalmalı. İşte bu etkili kök bölgesi yönetimini
-SmartRoot teknolojimiz yapıyor.</p>
-<br/>
-<p>SmartCapillarity, patenti bize ait olan kapiller hareket sensörleri ile suyun toprak içerisindeki hareketini, gerçek zamanlı olarak çok hassas bir şekilde izliyor. Ayrıca içerisinde bir tane hassas nem sensörü de var. SmartRoot ile etkili kök
-bölgesi tespitinden sonra suyun hareketini SmartCapillarity ile tespit ederek, suyu yer çekimine yenik düşürmeden, onun sağa-sola ve yukarıya yayılımını sağlıyoruz. Dolayısıyla sulama operasyonunu yönetirken birim miktar suyu daha
-fazla kök hacmine yayıyoruz. Bu sayede gübreniz ve suyunuz etkili kök bölgesinde kalıyor. Uluslararası Tarımsal Araştırma Merkezi’nde bu sene yaptığımız denemede, su ve gübrede bilimsel metodoloji ile sulanan diğer vana gruplarına göre %65’in üzerinde tasarruf sağlamış durumdayız. Sahip olduğumuz SmartWaterLevel teknolojisi ise taban suyu seviyesi etüdü yapmamızı sağlıyor. Bu sayede her bitkinin gerçek zamanlı olarak taban suyundan kullandığı su miktarını tespit ederek yapay zeka teknolojisi ile sulama sistemini, sadece kalan miktarı tamamlamak üzere çalıştırmak mümkün hale geliyor. Smartİrrigation teknolojimiz ile aslında etüt çalışması yapıyoruz. Proje öncesinde toplanan verileri yapay zeka ile yorumlayarak yapılacak projelerde doğruluk oranını artırıyoruz.</p>
-
-<br/>
-<h4>Doğa ile uyumlu tanımını çok önemsiyorsunuz? Ne demek bu doğa ile uyumlu olmak?</h4>
-<br/>
-
-<p>Kanadalı bir astrofizikçi der ki ‘Doğa ile savaş halindeyiz, kazanırsak kaybedeceğiz.’ Doğanın bir işleyişi var ve tarıma
-hizmet eden birinin önce iyi bir doğa gözlemcisi olması gerektiğini düşünüyorum. Karın yeraltı sularına nasıl karıştığını ya da bitkinin kök bölgesindeki su ve bitki besin elementlerinin nasıl bitkiye alındığını iyi bilmemiz gerekiyor. Çünkü o işleyişi bozmaya başladığımız anda doğa kanunlarına aykırı hareket etmiş oluyoruz. Sulama dediğimiz, doğal yağışlarla karşılanmayan suyu yapay yollarla bitkiye vermek demek. Ama etkili kök bölgesine değil de yer altı sularına sızacak kadar su verirsek, bu doğa kanunlarına aykırı oluyor. Doğa suyu hiçbir zaman böyle vermez. Siz bu şekilde 18-24 saat sulama yaparsanız bitkinin yararlanacağı bitki besin elementlerini de yıkayıp kökün altına gitmesine sebep olursunuz. Bu noktada da çoraklaşma ve çölleşme başlar. Bitki bir canlı ve onun kökü ile konuşuyor olmanız lazım, içinde bulunduğu toprak ile değil. Kökün nerede, ne zaman su içmek istiyorsun ya da neye ihtiyacın var? Dünyada biz hariç, bitkinin kökü ile konuşan hiçbir teknoloji yok. Siz sadece nem sensörü ile bu işi yönetemezsiniz. Nem sensörünü koydunuz ama kök başka tarafta ve sen o derinlikte sulama yapıyorsun. Peki neye göre ve nasıl karar verdin buna? Bilimsel bir makaleden yola çıkmış olabilirsin ama çiftçi Mehmet Amca ile Ayşe Teyze’nin yerleri farklı dillerde, kendine özgü mikro klimalarda konuşuyor.</p>
-<br/>
-<p>Dolayısıyla oralarda bunu çözümlediğin zaman doğayla uyumlu oluyorsun. Yoksa bir bilimsel çalışmadan yola çıkıp tüme varım ile ilerlersen tamamen doğaya aykırı davranmış olursun. Çünkü her çözüm kendi içerisinde farklı bir karakter çizebiliyor. Bizim SmartMole’s ile yaptığımız şey doğayı taklit etmek, başka bir sırrımız yok. Bu sayede de diğer yöntemlere kıyasla %65’in üzerinde tasarruf sağlıyoruz. Neden bizim teknolojilerimiz patentli? Çünkü biz bir şeyi baştan yaratmıyoruz sadece doğanın dilini çok iyi anlıyoruz. Patent demek, tekniğin bilinen kısmını aşmak demek zaten. Peki nasıl patent alıyorsunuz? Yer çekiminin bulunması gibi; yani yer çekimi zaten vardı siz onu keşfettiniz sadece. Biz de patentli teknolojiler üretirken, doğa bunu yapıyor bizim cihazlarımız da bunu simüle etsin diyoruz. İşte bu yüzden doğa ile uyumlu hareket etmek çok önemli.</p>
-
-<br/>
-<p><b>Sektöre dair bir değerlendirme rica edebilir miyiz sizden?</b></p>
-<br/>
-
-<p>Tarım demek aslında sofralarımıza gelen ürün demek ve insanlar yemek yemek zorunda. Ancak dünyada alım gücü
-çok azaldı. Bu yüzden de son tüketicinin mutsuz olduğunu görüyoruz. Mutsuzluğun sebebi ortada ve çözümü de
-ortada. Peki çözüme yönelik herhangi bir adım atılıyor mu, bunu tartışmak lazım. Biz, Yuluğ Mühendislik olarak hedeflere ulaştığımız bir yıl geçirdik hatta bazı noktalarda talebe yetişemedik. Bugün için hedefleri tutturmak güzel olabilir
-ancak bu noktada, özellikle bizim gibi yüksek teknoloji üreten firmalar için amaç, bu yıl hedefleri tutturmak yani günü
-kurtarmak olmamalı diye düşünüyorum. Çünkü bizim gibi firmalar aslında geleceğe yatırım yapar.</p>
-<br/>
-
-<p>Bu ne demek? Eğer bizim gibi toprak ve su başta olmak üzere, doğal kaynakları korumak üzere teknoloji üretiyorsanız; bu kaynakların sürdürülebilirliği ölçüsünde pazara teknoloji sunabileceksiniz demek. Geçen sene dünyada 24 milyar ton toprak çölleşti. Bu açıdan bakacak olursak her yıl daha kötüye gidiyor diyebiliriz, günü kurtarmak yetmiyor. Bu noktada planlama, denetim ve etik çok önemli. Tarım sektörünün sosyokültürel pozisyonu çok geride kalmış, tarımsal yayın ve haberleşme ise çok kirlenmiş durumda. Herkes kendi ürününü ön plana çıkarabilmek adına çiftçiyi deneme tahtası haline getirdi. Üretilen teknolojik çözümler, elektronik mühendisi, ziraat mühendisi ve bilgisayar mühendisi olan multidisipliner çalışmalar ile yürütülüyor. Maalesef çiftçinin bilimsel gerçeklerle paralel üretilmiş teknolojileri ayırt edebilme gücü çok zayıf. Bu noktada mutlaka dijital dönüşüm ile birlikte hayatımıza giren bu algı yönetiminin bir etik kurulu tarafından denetlenmesi gerekiyor.</p>
-<br/>
-
-
-<p>Gerçekten bilimsel gerçeklerle paralel teknolojiler sahaya sürülüyor mu? Çiftçiye söylenenler doğru mu? Bir sulama sistemi kurulduktan sonra tamamen çiftçinin yönetimine bırakılması ne kadar doğru? Bunların denetlenmesi şart. Ziraat mühendisleri odası, ziraat odaları ve çiftçi örgütleri siyasi otorite ile birlikte bir etik kurallar dizini oluşturmalı ve bu kurallar çerçevesinde hareket edilip edilmediği denetlenmeli. Bu noktada tek karar verici siyasi otorite olmamalı. Denetlenmediği sürece bu iş olmaz. Türkiye çapında bir üretim deseni planlanmadığı sürece su olsun olmasın, bu iş yine olmaz. Diğer taraftan özel sektöre bakacak olursak çok acı ama bir malzeme satıcıları var bir de gerçekten doğayı korumaya çalışan, değerli teknoloji üreten firmalar var. Bu değerli teknoloji üreten firmaların en büyük rakipleri ise değersiz, kirli veri üreten ve eskiden kalmış alışkanlıkları ile nem sensörlerinden aldıkları verileri bulut erişimiyle süsleyip satmaya çalışan firmalardır. Bunların maalesef hepsi doğa kanunlarına aykırı çalışıyor. Bu yüzden denetim şart diyorum, bizi de denetlesinler. Ancak bu denetim yapacak kişilerin gerçekten yetkin kişiler olması çok önemli çünkü biz, teknoloji üretiyoruz.</p>
-<br/>
-
-<p>Ülkemizde maalesef bir de tek yıllık boru kullanımı sorunu var. Çiftçi hasat döneminde, tarlalarını bu tek yıllık borularla birlikte hasat ediyor. Tarlalara bakın, polietilen boru ekilmiş gibi olur bu dönemde. Yine bu noktada da denetime ihtiyacımız var. Bakın İsrail, kendi ülkesinde tek yıllık boru değil çok yıllık boru kullanır, toprağını asla kirletmez. Amerika’da tek yıllık boru kullanımı görürüsünüz ama nasıl? Çok sıkı denetim vardır. Amerika’daki çiftçi bu yıl kaldırdığı tek yıllık borunun eyalete göre değişen belirlenmiş oranını, akredite olmuş depoya iade etmek zorundadır. Bu iade zabıt altına alınır ve ondan sonra gidip yeni boru alabilir, toprağını kirletmesine izin verilmez. Peki bizde bunu kim denetleyecek? Topraklarımız günden güne kirleniyor ve bu çok üzücü.</p>
-
-<br/>
-<h4>Peki nasıl bir 2023 yılı öngörüyorsunuz?</h4>
-<br/>
-
-<p>2023’te bizi bekleyen en büyük tehlike, dijital kirlilik ve maalesef çiftçileri koruyacak bir sistem yok şu anda. Dijital teknolojiler ile dijital kirlilik yaratanların mutlaka birbirinden ayrılması lazım. Bir başka önemli konu ise küresel ısınma. Etkileri, artarak devam edecek ve bu şunu getirecek; beklenmeyen zamanlarda beklenmeyen, olağanüstü hava olayları yaşanacak. Buna bağlı olarak kutuplardaki buzulların erimeye devam etmesi ile birlikte, okyanuslardaki akıntılar değişiyor.</p>
-
-<p>Bu da iklimleri ve mikro klimaları değiştiriyor. Burada da dengesizlikler artarak devam edecek. Doğa ne yapıyor biliyor musunuz, mutlaka dengeye geliyor ve insana rağmen dengeye geliyor. Bu yüzyıllar boyunca böyle olmuş. O yüzden aslında tehlikede olan doğa değil neslimiz. Eğer süreç böyle devam ederse tarımsal ürünlerde pahalılık, üretimde ve kalitede azalma gibi sorunlar bizi bekliyor olacak. Biz SmartMole’s ile bu yüzden herkese erişmeye ve onlarla birlikte süreci doğaya rağmen değil doğaya uyumlu şekilde yönetmeye çalışıyoruz. Ticari kısmın kendiliğinden yürüyeceğini düşünüyoruz. Zor mu, tabii ki zor çünkü işleri sosyal sorumluluk projesi gibi de yürütüyoruz. Ancak mevcut bilgi ve teknoloji ile her şeyin mümkün olduğunu bildiğimiz için bundan zevk alıyoruz.</p>
-`,
-  },
+  }
   // { id: '19', pathname: '2', title: 'greenhouse', src: '/static/greenhouse/4.jpg', content: 'Smartmoles' },
   // { id: '20', pathname: '2', title: 'peysage', src: '/static/peysage/1.jpg', content: 'Smartmoles' },
   // { id: '21', pathname: '2', title: 'peysage', src: '/static/peysage/2.jpg', content: 'Smartmoles' },
