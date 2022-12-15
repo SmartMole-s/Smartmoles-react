@@ -29,7 +29,12 @@ export default function Video() {
             Basında Biz
           </Typography>
           <Grid container spacing={10}>
-          <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6}>
+              <Card>
+                <MediaVideoMain embedId={'Gb6dzi15uKA'} />
+              </Card>
+            </Grid>
+            <Grid item xs={12} md={6}>
               <Card>
                 <MediaVideoMain embedId={'juy7wtzdcmE'} />
               </Card>
@@ -77,6 +82,11 @@ export default function Video() {
             <Grid item xs={12} md={6}>
               <Card>
                 <MediaVideoMain embedId={'C5F4ga0ZzeE'} />
+              </Card>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Card>
+                <MediaVideoMain embedId={'4o8SQg4CjCk'} />
               </Card>
             </Grid>
             <Grid item xs={12} md={6}>

@@ -45,11 +45,6 @@ export default function Video() {
                 <VideoMain embedId={'yTgXbT35iuQ'} />
               </Card>
             </Grid>
-            <Grid item xs={12} md={6}>
-              <Card>
-                <VideoMain embedId={'4o8SQg4CjCk'} />
-              </Card>
-            </Grid>
           </Grid>
         </Container>
       </RootStyle>
