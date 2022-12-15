@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Divider } from '@mui/material';
 // components
 import Page from '../../../components/Page';
-import  { CapillaritySlider, CapillarityWhat, CapillarityImage }  from '../../../sections/home/product/capillarity';
+import  { CapillaritySlider, CapillarityProduct }  from '../../../sections/home/product/capillarity';
 
 // ----------------------------------------------------------------------
 
@@ -22,9 +22,7 @@ export default function SmartCapillarity() {
       <RootStyle>
         <CapillaritySlider />
         
-        <CapillarityWhat />
-
-        <CapillarityImage />
+        <CapillarityProduct />
 
         <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 40 }} />
 

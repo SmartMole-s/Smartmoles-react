@@ -1,10 +1,8 @@
-import { m } from 'framer-motion';
 // @mui
 import { styled } from '@mui/material/styles';
-import { Box, Container, Button } from '@mui/material';
+import { Box, Container } from '@mui/material';
 // components
-import Iconify from '../../../components/Iconify';
-import { MotionContainer, TextAnimate, varFade, varBounce } from '../../../components/animate';
+import { MotionContainer, TextAnimate, varFade } from '../../../components/animate';
 //hooks
 import useLocales from '../../../hooks/useLocales';
 

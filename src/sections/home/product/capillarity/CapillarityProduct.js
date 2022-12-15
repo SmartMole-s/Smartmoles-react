@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
 // @mui
 import {
-  Card,
-  CardHeader,
-  CardMedia,
-  CardContent,
-  CardActions,
-  Collapse,
   Box,
   Paper,
   Grid,
   Typography,
-  IconButton,
   Accordion,
   AccordionDetails,
   AccordionSummary,
@@ -22,6 +15,20 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import {RootWhat} from "../root"
+
+// const RootStyle = styled('div')(({ theme }) => ({
+//   backgroundSize: 'cover',
+//   backgroundPosition: 'center',
+//   backgroundImage: 'linear-gradient(#00000059, #0000008a),url(/static/slider/smart_capillarity.jpg)',
+//   padding: theme.spacing(10, 0),
+//   [theme.breakpoints.up('md')]: {
+//     height: 560,
+//     padding: 0,
+//   },
+// }));
+
+// ----------------------------------------------------------------------
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -33,70 +40,32 @@ function srcset(image, size, rows = 1, cols = 1) {
 const itemData = [
   {
     img: '/static/images/test3.png',
-    title: 'Breakfast',
+    title: 'Gateway',
     rows: 4,
     cols: 2,
   },
   {
     img: '/static/images/test1.png',
-    title: 'Burger',
+    title: 'Gateway',
     rows: 4,
     cols: 2,
   },
   {
     img: '/static/images/test2.png',
-    title: 'Camera',
+    title: 'Gateway',
     rows: 4,
     cols: 2,
   },
   {
     img: '/static/images/test4.png',
-    title: 'Coffee',
+    title: 'Gateway',
     cols: 2,
     rows: 4,
-    cols: 2,
   },
-  // {
-  //   img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-  //   title: 'Hats',
-  //   cols: 2,
-  // },
-  // {
-  //   img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-  //   title: 'Honey',
-  //   author: '@arwinneil',
-  //   // rows: 2,
-  //   // cols: 2,
-  // },
-  // {
-  //   img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-  //   title: 'Basketball',
-  // },
-  // {
-  //   img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-  //   title: 'Fern',
-  // },
-  // {
-  //   img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-  //   title: 'Mushrooms',
-  //   rows: 2,
-  //   cols: 2,
-  // },
-  // {
-  //   img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-  //   title: 'Tomato basil',
-  // },
-  // {
-  //   img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-  //   title: 'Sea star',
-  // },
-  // {
-  //   img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-  //   title: 'Bike',
-  //   cols: 2,
-  // },
 ];
+
 // ----------------------------------------------------------------------
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -141,19 +110,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const ExpandMore = styled((props) => {
-  const { expand, ...other } = props;
-  return <IconButton {...other} />;
-})(({ theme, expand }) => ({
-  transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  transition: theme.transitions.create('transform', {
-    duration: theme.transitions.duration.shortest,
-  }),
-}));
-
 export default function RecipeReviewCard() {
-  const [expanded, setExpanded] = useState(false);
-
   // tabs
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
@@ -166,30 +123,24 @@ export default function RecipeReviewCard() {
     accSetExpanded(isExpanded ? panel : false);
   };
 
-  //----------------------------------------------------------------
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-
   return (
     <>
-      <Grid container sx={{ my: 15, px: 20, mx: 'auto' }}>
+      <Grid sx={{ my: 15, px: 20, mx: 'auto' }}>
         <Box sx={{ width: '100%' }}>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-              <Tab label="SR-5 CLD" {...a11yProps(0)} />
-              <Tab label="SR-6 CLD" {...a11yProps(1)} />
+              <Tab label="SR-5 CLD" {...a11yProps(0)} sx={{ fontSize: '1.5rem' }} />
+              <Tab label="SR-6 CLD" {...a11yProps(1)} sx={{ fontSize: '1.5rem' }} />
               {/* <Tab label="Item Three" {...a11yProps(2)} /> */}
             </Tabs>
           </Box>
 
           <TabPanel value={value} index={0}>
             <Grid container sx={{ mx: 'auto' }}>
-              <Grid item xs={4}>
+              <Grid item md={12} lg={6}>
                 <Box sx={{ width: '100%' }}>
                   <Item>
-                    <ImageList sx={{ width: 500, height: 450 }} variant="quilted" cols={4} rowHeight={121}>
+                    <ImageList sx={{ height: "auto" }} variant="quilted" cols={4} rowHeight={121}>
                       {itemData.map((item) => (
                         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
                           <img {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} loading="lazy" />
@@ -200,16 +151,21 @@ export default function RecipeReviewCard() {
                 </Box>
               </Grid>
 
-              <Grid item xs={8}>
+              <Grid item md={12} lg={6}>
                 <Box sx={{ width: '100%' }}>
                   <Item>
-                    <Accordion accExpanded={accExpanded === 'panel1'} onChange={accHandleChange('panel1')}>
+                    <RootWhat />
+                    <Accordion
+                      accExpanded={accExpanded === 'panel1'}
+                      onChange={accHandleChange('panel1')}
+                      sx={{ width: '100%' }}
+                    >
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1bh-content"
                         id="panel1bh-header"
                       >
-                        <Typography sx={{ width: '33%', flexShrink: 0 }}>GATEWAY</Typography>
+                        <Typography sx={{ width: '50%', flexShrink: 0 }}>GATEWAY</Typography>
                         <Typography sx={{ color: 'text.secondary' }}>Teknik Özellikleri ve Avantajları</Typography>
                       </AccordionSummary>
                       <AccordionDetails>
@@ -236,7 +192,7 @@ export default function RecipeReviewCard() {
                         aria-controls="panel2bh-content"
                         id="panel2bh-header"
                       >
-                        <Typography sx={{ width: '33%', flexShrink: 0 }}>GATEWAY</Typography>
+                        <Typography sx={{ width: '50%', flexShrink: 0 }}>GATEWAY</Typography>
                         <Typography sx={{ color: 'text.secondary' }}>Teknik Özellikleri ve Avantajları</Typography>
                       </AccordionSummary>
                       <AccordionDetails>

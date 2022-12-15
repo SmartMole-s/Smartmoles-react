@@ -5,7 +5,6 @@ import MainLayout from '../layouts/main';
 import LogoOnlyLayout from '../layouts/LogoOnlyLayout';
 // components
 import LoadingScreen from '../components/LoadingScreen';
-import { CapillarityPriceList } from 'src/sections/home/priceList';
 
 // ----------------------------------------------------------------------
 
@@ -53,14 +52,12 @@ export default function Router() {
         { path: 'yazili-basin/:name', element: <MediaPicDetail />},
         { path: 'gorsel-basin', element: <MediaVideo />},
         { path: 'brosur', element: <Pdf />},
-        { path: 'fiyat-listesi', element: <PriceList />},
         { path: 'smart-capillarity', element: <SmartCapillarity />},
         { path: 'smart-root', element: <SmartRoot />},
         { path: 'smart-waterlevel', element: <SmartWaterlevel />},
         { path: 'smart-farm', element: <SmartFarm />},
         { path: 'smart-valves', element: <SmartValves />},
         { path: 'air-moles', element: <AirMoles />},
-        { path: 'smart-capillarity-fiyat-listesi', element: <CapillarityPriceList />},
         { path: 'kariyer', element: <Career />},
       ],
     },
@@ -76,7 +73,6 @@ const HomePage = Loadable(lazy(() => import('../pages/home/Home')));
 const About = Loadable(lazy(() => import('../pages/home/About')));
 const Contact = Loadable(lazy(() => import('../pages/home/Contact')));
 const Pdf = Loadable(lazy(() => import('../pages/home/Pdf')));
-const PriceList = Loadable(lazy(() => import('../pages/home/PriceList')));
 const OurProjects = Loadable(lazy(() => import('../pages/home/OurProjects')));
 const Faqs = Loadable(lazy(() => import('../pages/home/Faqs')));
 const Vendor = Loadable(lazy(() => import('../pages/home/Vendor')));
