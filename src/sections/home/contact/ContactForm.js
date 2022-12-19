@@ -6,7 +6,7 @@ import { Button, Typography, TextField, Stack } from '@mui/material';
 import { MotionInView, varFade } from '../../../components/animate';
 import { SuccessAlert } from '../../../components/alerts';
 // emaljs
-import emailjs from '@emailjs/browser';
+import MailServer from '../../../service/MailServer';
 //hooks
 import useLocales from '../../../hooks/useLocales';
 
@@ -15,25 +15,48 @@ import useLocales from '../../../hooks/useLocales';
 export default function ContactForm() {
   const form = useRef();
   const { translate } = useLocales();
+  const services = new MailServer();
   const alertState = (title, description, descriptionStrong) => {
     return (
       <SuccessAlert title={`${title}`} description={`${description}`} descriptionStrong={`${descriptionStrong}`} />
     );
   };
 
+  const [data, setData] = useState({
+    fullname: '',
+    email: '',
+    subjects: '',
+    message: ''
+  });
+
+  
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setData({
+      ...data,
+      [e.target.name]: value,
+    });
+  };
+
+
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-    setIsSuccess(true);
-    emailjs.sendForm('service_z59cdzc', 'template_hoing1q', form.current, 'UBZ9lm5WEFl_pIG6K').then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
+    const mailData = {
+      fullname: data.fullname,
+      email: data.email,
+      subjects: data.subjects,
+      message: data.message,
+    };
+    await services.sendForm(mailData).then((e) => {
+      if (e.status === 200) {
+        setIsSuccess(true);
+        setTimeout(() => {
+          setIsSuccess(false);
+        }, 3000);
       }
-    );
+    });
   };
 
   return (
@@ -45,19 +68,19 @@ export default function ContactForm() {
       <form ref={form} onSubmit={sendEmail}>
         <Stack spacing={3}>
           <MotionInView variants={varFade().inUp}>
-            <TextField name="user_name" fullWidth label={translate('Contact.place1')} required />
+            <TextField onChange={handleChange} name="fullname" fullWidth label={translate('Contact.place1')} required />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            <TextField name="user_email" fullWidth label={translate('Contact.place2')} required />
+            <TextField onChange={handleChange} name="email" fullWidth label={translate('Contact.place2')} required />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            <TextField fullWidth label={translate('Contact.place3')} required />
+            <TextField onChange={handleChange} name='subjects' fullWidth label={translate('Contact.place3')} required />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            <TextField name="message" fullWidth label={translate('Contact.place4')} multiline rows={4} required />
+            <TextField onChange={handleChange} name="message" fullWidth label={translate('Contact.place4')} multiline rows={4} required />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>

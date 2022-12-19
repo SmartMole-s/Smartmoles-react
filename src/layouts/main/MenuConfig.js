@@ -31,7 +31,7 @@ const menuConfig = [
           { title: 'Projelerimiz', titleEn:'Our Projects', path: PATH_PAGE.ourprojects },
           { title: 'Bayilik Başvurusu', titleEn:'Dealership Application', path: PATH_PAGE.vendor },
           { title: 'Broşür', titleEn:'Brochure', path: PATH_PAGE.pdf },
-          { title: 'Kariyer', titleEn:'Career', path: PATH_PAGE.career },
+          // { title: 'Kariyer', titleEn:'Career', path: PATH_PAGE.career },
         ],
       },
       {
