@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { RootWhat } from '../root';
+import { MolesWhat } from '../moles';
 // hooks
 import useResponsive from '../../../../hooks/useResponsive';
 
@@ -53,6 +53,7 @@ const itemData = [
     cols: 2,
   },
 ];
+
 const itemData2 = [
   {
     img: '/static/product/capillarity/hub.png',
@@ -141,10 +142,11 @@ export default function RecipeReviewCard() {
           <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                <Tab label="SC-1 CLD" {...a11yProps(0)} sx={{ fontSize: '1.5rem' }} />
-                <Tab label="SC-2 CLD" {...a11yProps(1)} sx={{ fontSize: '1.5rem' }} />
-                <Tab label="SC-3 CLD" {...a11yProps(2)} sx={{ fontSize: '1.5rem' }} />
-                <Tab label="SC-4 CLD" {...a11yProps(3)} sx={{ fontSize: '1.5rem' }} />
+                <Tab label="SM-1 CLD &nbsp; |" {...a11yProps(0)} sx={{ fontSize: '1.5rem' }} />
+                <Tab label="SM-2 CLD &nbsp; |" {...a11yProps(1)} sx={{ fontSize: '1.5rem' }} />
+                <Tab label="SM-3 CLD &nbsp; |" {...a11yProps(2)} sx={{ fontSize: '1.5rem' }} />
+                <Tab label="SM-4 CLD &nbsp; +" {...a11yProps(3)} sx={{ fontSize: '1.5rem' }} />
+                <Tab label="Pakete Eklenebilecek Ürünler" {...a11yProps(4)} sx={{ fontSize: '1rem' }} />
               </Tabs>
             </Box>
 
@@ -167,7 +169,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <MolesWhat />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -372,7 +374,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <MolesWhat />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -630,7 +632,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <MolesWhat />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -867,7 +869,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <MolesWhat />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -1163,7 +1165,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <MolesWhat />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}

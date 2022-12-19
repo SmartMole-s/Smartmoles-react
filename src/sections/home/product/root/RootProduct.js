@@ -47,7 +47,7 @@ const itemData = [
     cols: 2,
   },
   {
-    img: '/static/product/capillarity/capillarity.png',
+    img: '/static/product/smartmoles.png',
     title: 'Gateway',
     rows: 4,
     cols: 2,
@@ -120,7 +120,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function RecipeReviewCard() {
+export default function RootProduct() {
   // tabs
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
@@ -141,10 +141,8 @@ export default function RecipeReviewCard() {
           <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                <Tab label="SC-1 CLD" {...a11yProps(0)} sx={{ fontSize: '1.5rem' }} />
-                <Tab label="SC-2 CLD" {...a11yProps(1)} sx={{ fontSize: '1.5rem' }} />
-                <Tab label="SC-3 CLD" {...a11yProps(2)} sx={{ fontSize: '1.5rem' }} />
-                <Tab label="SC-4 CLD" {...a11yProps(3)} sx={{ fontSize: '1.5rem' }} />
+                <Tab label="SR-1 CLD" {...a11yProps(0)} sx={{ fontSize: '1.5rem' }} />
+                <Tab label="SR-2 CLD" {...a11yProps(1)} sx={{ fontSize: '1.5rem' }} />
               </Tabs>
             </Box>
 
@@ -183,7 +181,7 @@ export default function RecipeReviewCard() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            HUB merkezi bağlantı birimidir. GSM ve LoRa haberleşme modülleri sayesinde çevre birimleri
+                          HUB merkezi bağlantı birimidir. GSM ve LoRa haberleşme modülleri sayesinde çevre birimleri
                             için bir modem rolündedir.Ayrıca sensörlerden anlamlı bilgi alma konusunu tek başına
                             üstlenebilir(modül bağlantıları ve RS485 bağlantı imkanı).
                             <br />
@@ -274,19 +272,17 @@ export default function RecipeReviewCard() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin
+                          KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin
                             takip edeceği su hareketini ve toprağın nem değerini anlık olarak siz kullanıcının hizmetine
                             sunar.
                             <br />
                             <br />
-                            <b> Avantajları </b>
+                            <b>Avantajları</b>
                             <br />
                             <br />
-                            ■ Tamamen yerli tasarım/imalat
-                            <br />
-                            <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar)
+                            ■ Tamamen yerli tasarım/imalat. LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5
+                            km’ye kadar uzanabilen erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı
+                            çalışma olanağı sağlar)
                             <br />
                             <br />
                             ■ Toprak altındaki su hareketini ve toprak nem değerini anlık olarak kullanıcıya sunan bir
@@ -296,54 +292,40 @@ export default function RecipeReviewCard() {
                             ■ Bakım maliyetinin olmaması
                             <br />
                             <br />
-                            <b>Sensör için enerji kaynağı</b>
-                            <br />
-                            <br />
-                            ■ DC gerilim ile beslenebilir; 5 V pil.
+                            ■ Sensör için enerji kaynağı: DC gerilim ile beslenebilir; 5 V pil.
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
                             <br />
                             <br />
-                            ■ Kapiler hareket ve nem sensörünün(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı
+                            ■ Kapiler hareket ve nem sensörünün(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı ■
+                            Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş çaplı
+                            etkileşim ve daha az maliyetli).
                             <br />
                             <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli)
-                            <br />
-                            <br />
-                            <b> Programlama</b>
+                            <b>Programlama</b>
                             <br />
                             <br />
                             ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk
-                            kullanabilir
+                            kullanabilir ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama
+                            yöntemi sunan sistemler barındırıyor.
                             <br />
                             <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan
-                            sistemler barındırıyor.
-                            <br />
-                            <br />
-                            <b>Kullanım alanları</b>
+                            <b></b> Kullanım alanları:
                             <br />
                             ■ Tarla &nbsp; ■ Bahçe &nbsp; ■ Sera &nbsp; ■ Peyzaj
                             <br />
                             <br />
-                            <b>KHAS’nün elde ettiği parametreler</b>
+                            <b> ■ KHAS’nün elde ettiği parametreler</b>
                             <br />
+                            - Kapiler su hareket sensörü
                             <br />
-                            ■ Kapiler su hareket sensörü
+                            - Nem sensörü
                             <br />
+                            - Etkili kök bölgesini saptama
                             <br />
-                            ■ Nem sensörü
-                            <br />
-                            <br />
-                            ■ Etkili kök bölgesini saptama
-                            <br />
-                            <br />
-                            <b>Eklemek istediğimiz hizmetler</b>
-                            <br />
-                            <br />■ Yapay zekaya öğretilen sulama süreleri ile sistemin tarlaya ne kadar hacimde su
-                            gerektiğine karar verebilmesi.
+                            <br />■ Eklemek istediğimiz hizmetler: Yapay zekaya öğretilen sulama süreleri ile sistemin
+                            tarlaya ne kadar hacimde su gerektiğine karar verebilmesi.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -388,7 +370,7 @@ export default function RecipeReviewCard() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            HUB merkezi bağlantı birimidir. GSM ve LoRa haberleşme modülleri sayesinde çevre birimleri
+                          HUB merkezi bağlantı birimidir. GSM ve LoRa haberleşme modülleri sayesinde çevre birimleri
                             için bir modem rolündedir.Ayrıca sensörlerden anlamlı bilgi alma konusunu tek başına
                             üstlenebilir(modül bağlantıları ve RS485 bağlantı imkanı).
                             <br />
@@ -479,7 +461,7 @@ export default function RecipeReviewCard() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin
+                          KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin
                             takip edeceği su hareketini ve toprağın nem değerini anlık olarak siz kullanıcının hizmetine
                             sunar.
                             <br />
@@ -520,7 +502,7 @@ export default function RecipeReviewCard() {
                             <br />
                             <b></b> Kullanım alanları:
                             <br />
-                            ■ Tarla ■ Bahçe ■ Sera ■ Peyzaj
+                            ■ Tarla &nbsp; ■ Bahçe &nbsp; ■ Sera &nbsp; ■ Peyzaj
                             <br />
                             <br />
                             <b> ■ KHAS’nün elde ettiği parametreler</b>
@@ -548,7 +530,7 @@ export default function RecipeReviewCard() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            SENSÖR İSTASYONU LoRa protokolünü kullanır. Bir kapiler hareket sensörünün topraktan aldığı
+                          SENSÖR İSTASYONU LoRa protokolünü kullanır. Bir kapiler hareket sensörünün topraktan aldığı
                             nem değerlerini ve su hareket verilerini, yorumlaması için radyo dalgaları kullanarak HUB’a
                             ulaştırır.
                             <br />
@@ -602,525 +584,6 @@ export default function RecipeReviewCard() {
                             <br />
                             ■ Yapay zekaya öğretilen sulama süreleri ile sistemin
                             tarlaya ne kadar hacimde su gerektiğine karar verebilmesi.
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-                    </Item>
-                  </Box>
-                </Grid>
-              </Grid>
-            </TabPanel>
-
-            <TabPanel value={value} index={2}>
-              <Grid container sx={{ mx: 'auto' }}>
-                <Grid item md={12} lg={6}>
-                  <Box sx={{ width: '100%' }}>
-                    <Item>
-                      <ImageList sx={{ height: 'auto' }} variant="quilted" cols={4} rowHeight={121}>
-                        {itemData2.map((item) => (
-                          <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                            <img {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} loading="lazy" />
-                          </ImageListItem>
-                        ))}
-                      </ImageList>
-                    </Item>
-                  </Box>
-                </Grid>
-
-                <Grid item md={12} lg={6}>
-                  <Box sx={{ width: '100%' }}>
-                    <Item>
-                      <RootWhat />
-                      <Accordion
-                        accExpanded={accExpanded === 'panel1'}
-                        onChange={accHandleChange('panel1')}
-                        sx={{ width: '100%' }}
-                      >
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel1bh-content"
-                          id="panel1bh-header"
-                        >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>HUB</Typography>
-                          <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                            HUB merkezi bağlantı birimidir. GSM ve LoRa haberleşme modülleri sayesinde çevre birimleri
-                            için bir modem rolündedir.Ayrıca sensörlerden anlamlı bilgi alma konusunu tek başına
-                            üstlenebilir(modül bağlantıları ve RS485 bağlantı imkanı).
-                            <br />
-                            <br />
-                            <b>Avantajları</b>
-                            <br />
-                            <br />
-                            ■ Kolay kurulum.
-                            <br />
-                            <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
-                            <br />
-                            <br />
-                            ■ Yerleşik RS485 haberleşme çıkış portu. Pil, Güneş paneli veya şebeke gerilimi ile besleme
-                            imkanı. Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla
-                            ulaşılabileceğiniz internet arayüzü). <br />
-                            <br />
-                            ■ HUB için enerji kaynağı: DC gerilim ile beslenebilir; 16 V pil / Solar Panel / Harici
-                            Besleme(Trafo vb.)
-                            <br />
-                            <br />
-                            <b>Bağlantı yapısı</b>
-                            <br />
-                            <br />
-                            ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı.
-                            <br />
-                            <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli).
-                            <br />
-                            <br />
-                            ■ Opsiyonel uç birimler: Vana Kontrolü 1-6 adet. Sensör İstasyonu 1-99 adet.
-                            <br />
-                            <br />
-                            <b>Programlama</b>
-                            <br />
-                            <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt
-                            kullanabilir.
-                            <br />
-                            <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı ve uç birimleriyle kullanıcının ihtiyaçlarını
-                            karşılıyor.
-                            <br />
-                            <br />
-                            <b>İnternete bağlanma yolumuz</b>
-                            <br />
-                            <br />
-                            ■ Yerleşik bir hücresel modem kullanılır.
-                            <br />
-                            <br />
-                            <b>Teknolojilerimiz</b>
-                            <br />
-                            <br />
-                            ■ GSM hatlar sayesinde dünyanın her yerinden erişim
-                            <br />
-                            <br />
-                            ■ LoRa haberleşmenin sağladığı ara birimlerle uzun mesafeli etkileşim.
-                            <br />
-                            <br />
-                            ■ Dahili olarak RS485 haberleşme protokolü kullanma olanağı
-                            <br />
-                            <br />
-                            <b>HUB cihazının ulaşabildiği uç birimler sayesinde elde ettiği parametreler</b>
-                            <br />
-                            <br />
-                            ■ Basınç sensörü
-                            <br />
-                            <br />
-                            ■ Vana Kontrolü I/O, Su sayacı,
-                            <br />
-                            <br />
-                            <b>Eklemek istediğimiz hizmetler</b>
-                            <br />
-                            <br />■ Toprak sıcaklığı, Toprak EC(elektriksel geçirgenlik)
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-                      <Accordion accExpanded={accExpanded === 'panel2'} onChange={accHandleChange('panel2')}>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel2bh-content"
-                          id="panel2bh-header"
-                        >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>KHAS</Typography>
-                          <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                            KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin
-                            takip edeceği su hareketini ve toprağın nem değerini anlık olarak siz kullanıcının hizmetine
-                            sunar.
-                            <br />
-                            <br />
-                            <b>Avantajları</b>
-                            <br />
-                            <br />
-                            ■ Tamamen yerli tasarım/imalat. LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5
-                            km’ye kadar uzanabilen erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı
-                            çalışma olanağı sağlar)
-                            <br />
-                            <br />
-                            ■ Toprak altındaki su hareketini ve toprak nem değerini anlık olarak kullanıcıya sunan bir
-                            sensördür
-                            <br />
-                            <br />
-                            ■ Bakım maliyetinin olmaması
-                            <br />
-                            <br />
-                            ■ Sensör için enerji kaynağı: DC gerilim ile beslenebilir; 5 V pil.
-                            <br />
-                            <br />
-                            <b>Bağlantı yapısı</b>
-                            <br />
-                            <br />
-                            ■ Kapiler hareket ve nem sensörünün(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı ■
-                            Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş çaplı
-                            etkileşim ve daha az maliyetli).
-                            <br />
-                            <br />
-                            <b>Programlama</b>
-                            <br />
-                            <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk
-                            kullanabilir ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama
-                            yöntemi sunan sistemler barındırıyor.
-                            <br />
-                            <br />
-                            <b></b> Kullanım alanları:
-                            <br />
-                            ■ Tarla ■ Bahçe ■ Sera ■ Peyzaj
-                            <br />
-                            <br />
-                            <b> ■ KHAS’nün elde ettiği parametreler</b>
-                            <br />
-                            - Kapiler su hareket sensörü
-                            <br />
-                            - Nem sensörü
-                            <br />
-                            - Etkili kök bölgesini saptama
-                            <br />
-                            <br />■ Eklemek istediğimiz hizmetler: Yapay zekaya öğretilen sulama süreleri ile sistemin
-                            tarlaya ne kadar hacimde su gerektiğine karar verebilmesi.
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-
-                      <Accordion accExpanded={accExpanded === 'panel2'} onChange={accHandleChange('panel2')}>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel2bh-content"
-                          id="panel2bh-header"
-                        >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>
-                            VANA YÖNETİMİ <br /> (HUB'A DAHİLDİR)
-                          </Typography>
-                          <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                            VANA YÖNETİMİ, HUB kutusu içeriğinde olan bir modüldür. Kullanıcının ihtiyaçlarına paralel
-                            çalışmaktadır. 
-                            <br /> 
-                            <br /> 
-                            Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini
-                            yapay zeka destekli yönetme imkanı sağlar.
-                            <br />
-                            <br />
-                            Her bir vana modülü ilgili tek bir solenoid vanayı kontrol eder(HUB kutusu, size en fazla 6
-                            vana modülü imkanı sunar).
-                            <br />
-                            <br />
-                            <b>Sulama</b> 
-                            <br /> 
-                            <br /> 
-                            ■ Haftanın günlerine veya gün döngüsüne göre sulama imkanı
-                            <br /> 
-                            <br /> 
-                            ■ Sulama başlangıcını zamana göre, koşula göre veya manuel olarak ayarlar.
-                            <br />
-                            <br />
-                            <b>Bağlantı yapısı</b>
-                            <br /> 
-                            <br /> 
-                            ■ HUB ile tümleşik yapıdadır.
-                            <br />
-                            <br /> 
-                            <b>Uç birimler</b>
-                            <br /> 
-                            <br /> 
-                            ■ Solenoid vana.12V DC kilitli solenoidler ile Vana Kontrolü I/O.
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-                    </Item>
-                  </Box>
-                </Grid>
-              </Grid>
-            </TabPanel>
-
-            <TabPanel value={value} index={3}>
-              <Grid container sx={{ mx: 'auto' }}>
-                <Grid item md={12} lg={6}>
-                  <Box sx={{ width: '100%' }}>
-                    <Item>
-                      <ImageList sx={{ height: 'auto' }} variant="quilted" cols={4} rowHeight={121}>
-                        {itemData2.map((item) => (
-                          <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
-                            <img {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} loading="lazy" />
-                          </ImageListItem>
-                        ))}
-                      </ImageList>
-                    </Item>
-                  </Box>
-                </Grid>
-
-                <Grid item md={12} lg={6}>
-                  <Box sx={{ width: '100%' }}>
-                    <Item>
-                      <RootWhat />
-                      <Accordion
-                        accExpanded={accExpanded === 'panel1'}
-                        onChange={accHandleChange('panel1')}
-                        sx={{ width: '100%' }}
-                      >
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel1bh-content"
-                          id="panel1bh-header"
-                        >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>HUB</Typography>
-                          <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                            HUB merkezi bağlantı birimidir. GSM ve LoRa haberleşme modülleri sayesinde çevre birimleri
-                            için bir modem rolündedir.Ayrıca sensörlerden anlamlı bilgi alma konusunu tek başına
-                            üstlenebilir(modül bağlantıları ve RS485 bağlantı imkanı).
-                            <br />
-                            <br />
-                            <b>Avantajları</b>
-                            <br />
-                            <br />
-                            ■ Kolay kurulum.
-                            <br />
-                            <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
-                            <br />
-                            <br />
-                            ■ Yerleşik RS485 haberleşme çıkış portu. Pil, Güneş paneli veya şebeke gerilimi ile besleme
-                            imkanı. Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla
-                            ulaşılabileceğiniz internet arayüzü). <br />
-                            <br />
-                            ■ HUB için enerji kaynağı: DC gerilim ile beslenebilir; 16 V pil / Solar Panel / Harici
-                            Besleme(Trafo vb.)
-                            <br />
-                            <br />
-                            <b>Bağlantı yapısı</b>
-                            <br />
-                            <br />
-                            ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı.
-                            <br />
-                            <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli).
-                            <br />
-                            <br />
-                            ■ Opsiyonel uç birimler: Vana Kontrolü 1-6 adet. Sensör İstasyonu 1-99 adet.
-                            <br />
-                            <br />
-                            <b>Programlama</b>
-                            <br />
-                            <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt
-                            kullanabilir.
-                            <br />
-                            <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı ve uç birimleriyle kullanıcının ihtiyaçlarını
-                            karşılıyor.
-                            <br />
-                            <br />
-                            <b>İnternete bağlanma yolumuz</b>
-                            <br />
-                            <br />
-                            ■ Yerleşik bir hücresel modem kullanılır.
-                            <br />
-                            <br />
-                            <b>Teknolojilerimiz</b>
-                            <br />
-                            <br />
-                            ■ GSM hatlar sayesinde dünyanın her yerinden erişim
-                            <br />
-                            <br />
-                            ■ LoRa haberleşmenin sağladığı ara birimlerle uzun mesafeli etkileşim.
-                            <br />
-                            <br />
-                            ■ Dahili olarak RS485 haberleşme protokolü kullanma olanağı
-                            <br />
-                            <br />
-                            <b>HUB cihazının ulaşabildiği uç birimler sayesinde elde ettiği parametreler</b>
-                            <br />
-                            <br />
-                            ■ Basınç sensörü
-                            <br />
-                            <br />
-                            ■ Vana Kontrolü I/O, Su sayacı,
-                            <br />
-                            <br />
-                            <b>Eklemek istediğimiz hizmetler</b>
-                            <br />
-                            <br />■ Toprak sıcaklığı, Toprak EC(elektriksel geçirgenlik)
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-                      <Accordion accExpanded={accExpanded === 'panel2'} onChange={accHandleChange('panel2')}>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel2bh-content"
-                          id="panel2bh-header"
-                        >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>KHAS</Typography>
-                          <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                            KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin
-                            takip edeceği su hareketini ve toprağın nem değerini anlık olarak siz kullanıcının hizmetine
-                            sunar.
-                            <br />
-                            <br />
-                            <b>Avantajları</b>
-                            <br />
-                            <br />
-                            ■ Tamamen yerli tasarım/imalat. LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5
-                            km’ye kadar uzanabilen erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı
-                            çalışma olanağı sağlar)
-                            <br />
-                            <br />
-                            ■ Toprak altındaki su hareketini ve toprak nem değerini anlık olarak kullanıcıya sunan bir
-                            sensördür
-                            <br />
-                            <br />
-                            ■ Bakım maliyetinin olmaması
-                            <br />
-                            <br />
-                            ■ Sensör için enerji kaynağı: DC gerilim ile beslenebilir; 5 V pil.
-                            <br />
-                            <br />
-                            <b>Bağlantı yapısı</b>
-                            <br />
-                            <br />
-                            ■ Kapiler hareket ve nem sensörünün(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı ■
-                            Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş çaplı
-                            etkileşim ve daha az maliyetli).
-                            <br />
-                            <br />
-                            <b>Programlama</b>
-                            <br />
-                            <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk
-                            kullanabilir ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama
-                            yöntemi sunan sistemler barındırıyor.
-                            <br />
-                            <br />
-                            <b></b> Kullanım alanları:
-                            <br />
-                            ■ Tarla ■ Bahçe ■ Sera ■ Peyzaj
-                            <br />
-                            <br />
-                            <b> ■ KHAS’nün elde ettiği parametreler</b>
-                            <br />
-                            - Kapiler su hareket sensörü
-                            <br />
-                            - Nem sensörü
-                            <br />
-                            - Etkili kök bölgesini saptama
-                            <br />
-                            <br />■ Eklemek istediğimiz hizmetler: Yapay zekaya öğretilen sulama süreleri ile sistemin
-                            tarlaya ne kadar hacimde su gerektiğine karar verebilmesi.
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-
-                      <Accordion accExpanded={accExpanded === 'panel2'} onChange={accHandleChange('panel2')}>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel2bh-content"
-                          id="panel2bh-header"
-                        >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>SENSÖR İSTASYONU</Typography>
-                          <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                            SENSÖR İSTASYONU LoRa protokolünü kullanır. Bir kapiler hareket sensörünün topraktan aldığı
-                            nem değerlerini ve su hareket verilerini, yorumlaması için radyo dalgaları kullanarak HUB’a
-                            ulaştırır.
-                            <br />
-                            <br />
-                            ■ Avantajları: Kolay kurulum. LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5
-                            km’ye kadar uzanabilen erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı
-                            çalışma olanağı sağlar).
-                            <br />
-                            <br />
-                            ■ Sensör Kartı için enerji kaynağı: DC gerilim ile beslenebilir; 16 V pil / Solar Panel 10W.
-                            <br />
-                            <br />
-                            <b>Bağlantı yapısı</b>
-                            ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile
-                            bağlantı imkanı. Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine
-                            göre geniş çaplı etkileşim ve daha az maliyetli).
-                            <br />
-                            <br />
-                            ■ Haberleşme yöntemi: HUB ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
-                            <br />
-                            <br />
-                            ■ SENSÖR İSTASYONU’nun elde ettiği parametreler: Kapiler hareket sensörü. Nem. <br />
-                            <br />
-                            ■ Kullanım alanları
-                            <br />
-                            Tarla - Bahçe - Sera - Peyzaj
-                            <br />
-                            <br />■ Eklemek istediğimiz hizmetler: Yapay zekaya öğretilen sulama süreleri ile sistemin
-                            tarlaya ne kadar hacimde su gerektiğine karar verebilmesi.
-                          </Typography>
-                        </AccordionDetails>
-                      </Accordion>
-
-                      <Accordion accExpanded={accExpanded === 'panel2'} onChange={accHandleChange('panel2')}>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel2bh-content"
-                          id="panel2bh-header"
-                        >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>
-                            VANA YÖNETİMİ <br /> (HUB'A DAHİLDİR)
-                          </Typography>
-                          <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>
-                          VANA YÖNETİMİ, HUB kutusu içeriğinde olan bir modüldür. Kullanıcının ihtiyaçlarına paralel
-                            çalışmaktadır. 
-                            <br /> 
-                            <br /> 
-                            Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini
-                            yapay zeka destekli yönetme imkanı sağlar.
-                            <br />
-                            <br />
-                            Her bir vana modülü ilgili tek bir solenoid vanayı kontrol eder(HUB kutusu, size en fazla 6
-                            vana modülü imkanı sunar).
-                            <br />
-                            <br />
-                            <b>Sulama</b> 
-                            <br /> 
-                            <br /> 
-                            ■ Haftanın günlerine veya gün döngüsüne göre sulama imkanı
-                            <br /> 
-                            <br /> 
-                            ■ Sulama başlangıcını zamana göre, koşula göre veya manuel olarak ayarlar.
-                            <br />
-                            <br />
-                            <b>Bağlantı yapısı</b>
-                            <br /> 
-                            <br /> 
-                            ■ HUB ile tümleşik yapıdadır.
-                            <br />
-                            <br /> 
-                            <b>Uç birimler</b>
-                            <br /> 
-                            <br /> 
-                            ■ Solenoid vana.12V DC kilitli solenoidler ile Vana Kontrolü I/O.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>

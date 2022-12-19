@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Divider } from '@mui/material';
 // components
 import Page from '../../../components/Page';
-import { RootSlider, RootProduct } from '../../../sections/home/product/root';
+import { MolesSlider, MolesProduct } from '../../../sections/home/product/moles';
 
 // ----------------------------------------------------------------------
 
@@ -16,14 +16,14 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-export default function SmartRoot() {
+export default function Moles() {
   return (
-    <Page title="SmartRoot">
+    <Page title="AirMoles">
       <RootStyle>
-        
-        <RootSlider />
 
-        <RootProduct />
+        <MolesSlider />
+                
+        <MolesProduct />
 
         <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 40 }} />
 

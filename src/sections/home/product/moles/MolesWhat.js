@@ -20,7 +20,7 @@ const RootStyle = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-export default function RootWhat() {
+export default function MolesWhat() {
   const { translate } = useLocales();
   return (
     <RootStyle>
@@ -29,7 +29,7 @@ export default function RootWhat() {
           <Grid item>
             <MotionInView variants={varFade().inRight}>
               <Typography variant="h2" sx={{ mb: 3 }}>
-                SmartRoot
+                SmartMoles
               </Typography>
             </MotionInView>
 
