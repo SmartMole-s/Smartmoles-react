@@ -6,7 +6,7 @@ import { Button, Typography, TextField, Stack } from '@mui/material';
 import { MotionInView, varFade } from '../../../components/animate';
 import { SuccessAlert } from '../../../components/alerts';
 // emaljs
-import MailServer from '../../../service/MailServer';
+import MailService from '../../../service/MailServer';
 //hooks
 import useLocales from '../../../hooks/useLocales';
 
@@ -15,7 +15,7 @@ import useLocales from '../../../hooks/useLocales';
 export default function ContactForm() {
   const form = useRef();
   const { translate } = useLocales();
-  const services = new MailServer();
+  const services = new MailService();
   const alertState = (title, description, descriptionStrong) => {
     return (
       <SuccessAlert title={`${title}`} description={`${description}`} descriptionStrong={`${descriptionStrong}`} />
@@ -26,10 +26,10 @@ export default function ContactForm() {
     fullname: '',
     email: '',
     subjects: '',
-    message: ''
+    message: '',
   });
+  console.log();
 
-  
   const handleChange = (e) => {
     const value = e.target.value;
     setData({
@@ -38,19 +38,25 @@ export default function ContactForm() {
     });
   };
 
-
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const sendEmail = async (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const mailData = {
+    let mailData = {
       fullname: data.fullname,
       email: data.email,
       subjects: data.subjects,
       message: data.message,
     };
-    await services.sendForm(mailData).then((e) => {
-      if (e.status === 200) {
+    let _mailData = [];
+    for (var property in mailData) {
+      var encodedKey = encodeURIComponent(property);
+      var encodedValue = encodeURIComponent(mailData[property]);
+      _mailData.push(encodedKey + '=' + encodedValue);
+    }
+    _mailData = _mailData.join('&');
+    services.sendForm(_mailData).then((e) => {
+      if (e.status === 200 || 201 || 204) {
         setIsSuccess(true);
         setTimeout(() => {
           setIsSuccess(false);
@@ -76,11 +82,19 @@ export default function ContactForm() {
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            <TextField onChange={handleChange} name='subjects' fullWidth label={translate('Contact.place3')} required />
+            <TextField onChange={handleChange} name="subjects" fullWidth label={translate('Contact.place3')} required />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
-            <TextField onChange={handleChange} name="message" fullWidth label={translate('Contact.place4')} multiline rows={4} required />
+            <TextField
+              onChange={handleChange}
+              name="message"
+              fullWidth
+              label={translate('Contact.place4')}
+              multiline
+              rows={4}
+              required
+            />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
