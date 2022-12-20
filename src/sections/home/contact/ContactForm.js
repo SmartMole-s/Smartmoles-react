@@ -28,7 +28,6 @@ export default function ContactForm() {
     subjects: '',
     message: '',
   });
-  console.log();
 
   const handleChange = (e) => {
     const value = e.target.value;
@@ -60,7 +59,7 @@ export default function ContactForm() {
         setIsSuccess(true);
         setTimeout(() => {
           setIsSuccess(false);
-        }, 3000);
+        }, 5000);
       }
     });
   };
