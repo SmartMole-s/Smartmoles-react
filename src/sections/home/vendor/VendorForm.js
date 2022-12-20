@@ -79,7 +79,7 @@ export default function VendorForm() {
       _mailData.push(encodedKey + '=' + encodedValue);
     }
     _mailData = _mailData.join('&');
-    services.sendForm(_mailData).then((e) => {
+    services.sendSeller(_mailData).then((e) => {
       if (e.status === 200 || 201 || 204) {
         setIsSuccess(true);
         setTimeout(() => {
@@ -106,7 +106,7 @@ export default function VendorForm() {
         <Grid container item xs={12} md={6}>
           <TextField
             onChange={handleChange}
-            name="authorizedPersonFullName "
+            name="authorizedPersonFullName"
             fullWidth
             label={translate('Vendor.place2')}
             required
