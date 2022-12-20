@@ -5,7 +5,7 @@ import { Button, TextField, Typography, Grid } from '@mui/material';
 // components
 import SuccessAlert from '../../../components/alerts/SuccessAlert';
 // emailJs
-import emailjs from '@emailjs/browser';
+import MailService from '../../../service/MailServer';
 //hooks
 import useLocales from '../../../hooks/useLocales';
 
@@ -14,25 +14,79 @@ import useLocales from '../../../hooks/useLocales';
 export default function VendorForm() {
   const form = useRef();
   const { translate } = useLocales();
+  const services = new MailService();
   const alertState = (title, description, descriptionStrong) => {
     return (
       <SuccessAlert title={`${title}`} description={`${description}`} descriptionStrong={`${descriptionStrong}`} />
     );
   };
 
+  const [data, setData] = useState({
+    companyName: '',
+    authorizedPersonFullName: '',
+    companyPhone: '',
+    userPhone: '',
+    email: '',
+    website: '',
+    adress: '',
+    tax: '',
+    taxNumber: '',
+    registeredChamberOfCommerce: '',
+    tradeRegisteryNumber: '',
+    foundationYear: '',
+    personalNumber: '',
+    fieldsOfActivity: '',
+    references: '',
+    dealerGeographicArea: '',
+    otherDealers: '',
+  });
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setData({
+      ...data,
+      [e.target.name]: value,
+    });
+  };
+
   const [isSuccess, setIsSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setIsSuccess(true);
-    emailjs.sendForm('service_z59cdzc', 'template_hoing1q', form.current, 'QyL_yy6jitDkpDP0f').then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
+    let mailData = {
+      companyName: data.companyName,
+      authorizedPersonFullName: data.authorizedPersonFullName,
+      companyPhone: data.companyPhone,
+      userPhone: data.userPhone,
+      email: data.email,
+      website: data.website,
+      adress: data.adress,
+      tax: data.tax,
+      taxNumber: data.taxNumber,
+      registeredChamberOfCommerce: data.registeredChamberOfCommerce,
+      tradeRegisteryNumber: data.tradeRegisteryNumber,
+      foundationYear: data.foundationYear,
+      personalNumber: data.personalNumber,
+      fieldsOfActivity: data.fieldsOfActivity,
+      references: data.references,
+      dealerGeographicArea: data.dealerGeographicArea,
+      otherDealers: data.otherDealers,
+    };
+    let _mailData = [];
+    for (var property in mailData) {
+      var encodedKey = encodeURIComponent(property);
+      var encodedValue = encodeURIComponent(mailData[property]);
+      _mailData.push(encodedKey + '=' + encodedValue);
+    }
+    _mailData = _mailData.join('&');
+    services.sendSeller(_mailData).then((e) => {
+      if (e.status === 200 || 201 || 204) {
+        setIsSuccess(true);
+        setTimeout(() => {
+          setIsSuccess(false);
+        }, 5000);
       }
-    );
+    });
   };
 
   return (
@@ -41,73 +95,134 @@ export default function VendorForm() {
         {/* <Stack spacing={3}> */}
         <Grid container item>
           <Typography letterSpacing={1} variant="h4">
-          {translate('Vendor.title3')}
+            {translate('Vendor.title3')}
           </Typography>
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="company_name" fullWidth label={translate('Vendor.place1')} required />
+          <TextField onChange={handleChange} name="companyName" fullWidth label={translate('Vendor.place1')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="authorized_person_name_and_surname " fullWidth label={translate('Vendor.place2')} required />
+          <TextField
+            onChange={handleChange}
+            name="authorizedPersonFullName"
+            fullWidth
+            label={translate('Vendor.place2')}
+            required
+          />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="company_phone" fullWidth label={translate('Vendor.place3')} required />
+          <TextField
+            onChange={handleChange}
+            name="companyPhone"
+            fullWidth
+            label={translate('Vendor.place3')}
+            required
+          />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="user_phone" fullWidth label={translate('Vendor.place4')} required />
+          <TextField onChange={handleChange} name="userPhone" fullWidth label={translate('Vendor.place4')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="email" fullWidth label={translate('Vendor.place5')} required />
+          <TextField onChange={handleChange} name="email" fullWidth label={translate('Vendor.place5')} required />
         </Grid>
 
         <Grid container item xs={12} md={6}>
-          <TextField name="website" fullWidth label={translate('Vendor.place6')} required />
-        </Grid>
-
-        <Grid container item>
-          <TextField name="adress" fullWidth label={translate('Vendor.place7')} multiline rows={2} required />
-        </Grid>
-
-        <Grid container item xs={12} md={6}>
-          <TextField name="tax" fullWidth label={translate('Vendor.place8')} required />
-        </Grid>
-
-        <Grid container item xs={12} md={6}>
-          <TextField name="tax_number" fullWidth label={translate('Vendor.place9')} required />
-        </Grid>
-
-        <Grid container item xs={12} md={6}>
-          <TextField name="registered_chamber_of_commerce" fullWidth label={translate('Vendor.place10')} required />
-        </Grid>
-
-        <Grid container item xs={12} md={6}>
-          <TextField name="trade_registery_number" fullWidth label={translate('Vendor.place11')} required />
-        </Grid>
-
-        <Grid container item xs={12} md={6}>
-          <TextField name="foundation_year" fullWidth label={translate('Vendor.place12')} required />
-        </Grid>
-
-        <Grid container item xs={12} md={6}>
-          <TextField name="personal_number" fullWidth label={translate('Vendor.place13')} required />
-        </Grid>
-
-        <Grid container item>
-          <TextField name="fields_of_activity" fullWidth label={translate('Vendor.place14')} multiline rows={4} required />
-        </Grid>
-
-        <Grid container item>
-          <TextField name="references" fullWidth label={translate('Vendor.place15')} multiline rows={4} required />
+          <TextField onChange={handleChange} name="website" fullWidth label={translate('Vendor.place6')} required />
         </Grid>
 
         <Grid container item>
           <TextField
-            name="dealer_geographic_area"
+            onChange={handleChange}
+            name="adress"
+            fullWidth
+            label={translate('Vendor.place7')}
+            multiline
+            rows={2}
+            required
+          />
+        </Grid>
+
+        <Grid container item xs={12} md={6}>
+          <TextField onChange={handleChange} name="tax" fullWidth label={translate('Vendor.place8')} required />
+        </Grid>
+
+        <Grid container item xs={12} md={6}>
+          <TextField onChange={handleChange} name="taxNumber" fullWidth label={translate('Vendor.place9')} required />
+        </Grid>
+
+        <Grid container item xs={12} md={6}>
+          <TextField
+            onChange={handleChange}
+            name="registeredChamberOfCommerce"
+            fullWidth
+            label={translate('Vendor.place10')}
+            required
+          />
+        </Grid>
+
+        <Grid container item xs={12} md={6}>
+          <TextField
+            onChange={handleChange}
+            name="tradeRegisteryNumber"
+            fullWidth
+            label={translate('Vendor.place11')}
+            required
+          />
+        </Grid>
+
+        <Grid container item xs={12} md={6}>
+          <TextField
+            onChange={handleChange}
+            name="foundationYear"
+            fullWidth
+            label={translate('Vendor.place12')}
+            required
+          />
+        </Grid>
+
+        <Grid container item xs={12} md={6}>
+          <TextField
+            onChange={handleChange}
+            name="personalNumber"
+            fullWidth
+            label={translate('Vendor.place13')}
+            required
+          />
+        </Grid>
+
+        <Grid container item>
+          <TextField
+            onChange={handleChange}
+            name="fieldsOfActivity"
+            fullWidth
+            label={translate('Vendor.place14')}
+            multiline
+            rows={4}
+            required
+          />
+        </Grid>
+
+        <Grid container item>
+          <TextField
+            onChange={handleChange}
+            name="references"
+            fullWidth
+            label={translate('Vendor.place15')}
+            multiline
+            rows={4}
+            required
+          />
+        </Grid>
+
+        <Grid container item>
+          <TextField
+            onChange={handleChange}
+            name="dealerGeographicArea"
             fullWidth
             label={translate('Vendor.place16')}
             multiline
@@ -118,7 +233,8 @@ export default function VendorForm() {
 
         <Grid container item>
           <TextField
-            name="other_dealers"
+            onChange={handleChange}
+            name="otherDealers"
             fullWidth
             label={translate('Vendor.place17')}
             multiline

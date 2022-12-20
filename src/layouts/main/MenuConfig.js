@@ -18,27 +18,6 @@ const menuConfig = [
     path: '/',
   },
   {
-    title: 'Ürünlerimiz',
-    titleEn: 'Contact',
-    icon: <Iconify icon={'eva:book-open-fill'} {...ICON_SIZE} />,
-    path: PATH_PAGE.contact,
-    children: [
-      {
-        subheader: 'Ürünlerimiz',
-        subheaderEn:'Products',
-        items: [
-          { title: 'SmartMoles', titleEn: 'AirMoles', path: PATH_PAGE.moles },
-          { title: 'SmartCapillarity', titleEn: 'SmartCapillarity', path: PATH_PAGE.smartCapillarity },
-          { title: 'SmartRoot', titleEn: 'SmartRoot', path: PATH_PAGE.smartRoot },
-          { title: 'SmartValves', titleEn: 'SmartValves', path: PATH_PAGE.smartValves },
-          { title: 'AirMoles', titleEn: 'AirMoles', path: PATH_PAGE.airMoles },
-          { title: 'SmartFarm', titleEn: 'SmartFarm', path: PATH_PAGE.smartFarm },
-          { title: 'SmartWaterlevel', titleEn: 'SmartWaterlevel', path: PATH_PAGE.smartWaterlevel },
-        ],
-      }
-    ]
-  },
-  {
     title: 'Menü',
     titleEn:'Menu',
     path: '/pages',
