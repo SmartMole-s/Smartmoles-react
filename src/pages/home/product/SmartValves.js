@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Divider } from '@mui/material';
 // components
 import Page from '../../../components/Page';
-import { ValvesSlider, ValvesWhat, ValvesImage } from '../../../sections/home/product/valves';
+import { ValvesSlider, ValvesProduct } from '../../../sections/home/product/valves';
 
 // ----------------------------------------------------------------------
 
@@ -22,9 +22,9 @@ export default function SmartValves() {
       <RootStyle>
         <ValvesSlider />
 
-        <ValvesWhat />
+        <ValvesProduct />
 
-        <ValvesImage />
+        {/* <ValvesImage /> */}
 
         <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 40 }} />
       </RootStyle>

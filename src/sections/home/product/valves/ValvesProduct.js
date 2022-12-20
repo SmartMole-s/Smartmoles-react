@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { RootTab,RootTab2 } from '../root';
+import { ValvesTab, ValvesTab2 } from '../valves';
 // hooks
 import useResponsive from '../../../../hooks/useResponsive';
 
@@ -65,7 +65,7 @@ const itemData2 = [
     title: 'Gateway',
     rows: 4,
     cols: 2,
-  }
+  },
 ];
 
 // ----------------------------------------------------------------------
@@ -114,7 +114,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function RootProduct() {
+export default function ValvesProduct() {
   // tabs
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
@@ -135,8 +135,8 @@ export default function RootProduct() {
           <Box sx={{ width: '100%' }}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
               <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                <Tab label="SR-1 CLD" {...a11yProps(0)} sx={{ fontSize: '1.5rem' }} />
-                <Tab label="SR-2 CLD" {...a11yProps(1)} sx={{ fontSize: '1.5rem' }} />
+                <Tab label="SV-1 CLD" {...a11yProps(0)} sx={{ fontSize: '1.5rem' }} />
+                <Tab label="SV-2 CLD" {...a11yProps(1)} sx={{ fontSize: '1.5rem' }} />
               </Tabs>
             </Box>
 
@@ -145,7 +145,7 @@ export default function RootProduct() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <ImageList sx={{ height: 'auto' }} variant="quilted" cols={4} rowHeight={121}>
+                      <ImageList sx={{ height: 'auto' }} variant="quilted" cols={4} rowHeight="auto">
                         {itemData.map((item) => (
                           <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
                             <img {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} loading="lazy" />
@@ -159,7 +159,7 @@ export default function RootProduct() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootTab />
+                      <ValvesTab />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -170,14 +170,15 @@ export default function RootProduct() {
                           aria-controls="panel1bh-content"
                           id="panel1bh-header"
                         >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>HUB</Typography>
+                          <Typography sx={{ width: '50%', flexShrink: 0 }}>GATEWAY</Typography>
                           <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                          HUB merkezi bağlantı birimidir. GSM ve LoRa haberleşme modülleri sayesinde çevre birimleri
-                            için bir modem rolündedir.Ayrıca sensörlerden anlamlı bilgi alma konusunu tek başına
-                            üstlenebilir(modül bağlantıları ve RS485 bağlantı imkanı).
+                            GATEWAY, endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve
+                            büyük ölçekli projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Avantajları</b>
@@ -186,29 +187,47 @@ export default function RootProduct() {
                             ■ Kolay kurulum.
                             <br />
                             <br />
+                            ■ Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla ulaşılabileceğiniz
+                            internet arayüzü).
+                            <br />
+                            <br />
                             ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
                             erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
                             <br />
                             <br />
-                            ■ Yerleşik RS485 haberleşme çıkış portu. Pil, Güneş paneli veya şebeke gerilimi ile besleme
-                            imkanı. Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla
-                            ulaşılabileceğiniz internet arayüzü). <br />
                             <br />
-                            ■ HUB için enerji kaynağı: DC gerilim ile beslenebilir; 16 V pil / Solar Panel / Harici
-                            Besleme(Trafo vb.)
+                            <br />
+                            <b>GATEWAY için enerji kaynağı</b>
+                            <br />
+                            <br />
+                            - DC gerilim ile beslenebilir;
+                            <br />
+                            <br />
+                            ■ 5 V / 0.5 Ah besleme.
+                            <br />
+                            <br />
+                            ■ USB port ile PC’den besleme imkanı.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
                             <br />
                             <br />
-                            ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı.
+                            ■ 255 adet cihaza kadar erişim imkanı.
                             <br />
                             <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli).
+                            ■ 4 farklı kanaldan tüm alt birimleri kontrol eden hızlı Lora sistemi( WiFi/Bluetooth
+                            sistemine göre geniş çaplı etkileşim ve daha az maliyetli).
                             <br />
                             <br />
-                            ■ Opsiyonel uç birimler: Vana Kontrolü 1-6 adet. Sensör İstasyonu 1-99 adet.
+                            <b>Opsiyonel uç birimler</b>
+                            <br />
+                            <br />
+                            ■ Vana Kontrolü 1-200 adet &nbsp; ■ Pompa Kontrolü 1-23 adet &nbsp; ■ Sensör İstasyonu 1-30
+                            adet &nbsp; ■ AirMoles Hava İstasyonu
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Programlama</b>
@@ -222,10 +241,14 @@ export default function RootProduct() {
                             karşılıyor.
                             <br />
                             <br />
+                            <br />
+                            <br />
                             <b>İnternete bağlanma yolumuz</b>
                             <br />
                             <br />
                             ■ Yerleşik bir hücresel modem kullanılır.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Teknolojilerimiz</b>
@@ -240,18 +263,28 @@ export default function RootProduct() {
                             ■ Dahili olarak RS485 haberleşme protokolü kullanma olanağı
                             <br />
                             <br />
-                            <b>HUB cihazının ulaşabildiği uç birimler sayesinde elde ettiği parametreler</b>
+                            <br />
+                            <br />
+                            <b>GATEWAY’in ulaşabildiği uç birimler</b>
                             <br />
                             <br />
                             ■ Basınç sensörü
                             <br />
                             <br />
-                            ■ Vana Kontrolü I/O, Su sayacı,
+                            ■ Pompa kontrolü I/O,
+                            <br />
+                            <br />
+                            ■ Vana Kontrolü I/O,
+                            <br />
+                            <br />
+                            ■ Su sayacı,
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Eklemek istediğimiz hizmetler</b>
                             <br />
-                            <br />■ Toprak sıcaklığı, Toprak EC(elektriksel geçirgenlik)
+                            <br /> ■ Toprak sıcaklığı &nbsp; ■ Toprak EC(elektriksel geçirgenlik)
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -261,65 +294,130 @@ export default function RootProduct() {
                           aria-controls="panel2bh-content"
                           id="panel2bh-header"
                         >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>KHAS</Typography>
+                          <Typography sx={{ width: '50%', flexShrink: 0 }}>VANA KONTROL ÜNİTESİ</Typography>
                           <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                          KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin
-                            takip edeceği su hareketini ve toprağın nem değerini anlık olarak siz kullanıcının hizmetine
-                            sunar.
+                            VANA KONTROL ÜNİTESİ, LoRa özellikli , 4 farklı vana kontrol eden orta ve büyük ölçekli
+                            sulama projelerinde GATEWAY ile senkronize çalışan kontrolördür.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Avantajları</b>
                             <br />
                             <br />
-                            ■ Tamamen yerli tasarım/imalat. LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5
-                            km’ye kadar uzanabilen erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı
-                            çalışma olanağı sağlar)
+                            ■ Kolay kurulum.
                             <br />
                             <br />
-                            ■ Toprak altındaki su hareketini ve toprak nem değerini anlık olarak kullanıcıya sunan bir
-                            sensördür
+                            ■ Enerji tasarrufu(stand by pozisyonunu gerçek zamanlı koruyarak bakım/değişim maliyetini en
+                            aza indirger).
                             <br />
                             <br />
-                            ■ Bakım maliyetinin olmaması
+                            ■ Merkezi birim sayesinde tüm vana kontrol ünitelerine tekli/çoklu erişim.
                             <br />
                             <br />
-                            ■ Sensör için enerji kaynağı: DC gerilim ile beslenebilir; 5 V pil.
+                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
+                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>VANA KONTROL ÜNİTESİ içine enerji kaynağı</b>
+                            <br />
+                            <br />
+                            - DC gerilim ile beslenebilir
+                            <br />
+                            <br />
+                            ■ 3.6 V pil.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
                             <br />
                             <br />
-                            ■ Kapiler hareket ve nem sensörünün(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı ■
-                            Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş çaplı
-                            etkileşim ve daha az maliyetli).
+                            ■ 4 farklı vana kontrolü işinin yanında, 4 ayrı basınç sensöründen gerçek zamanlı veri
+                            okuma.
+                            <br />
+                            <br />
+                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
+                            çaplı etkileşim ve daha az maliyetli).
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Programlama</b>
                             <br />
                             <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk
-                            kullanabilir ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama
-                            yöntemi sunan sistemler barındırıyor.
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt
+                            kullanabilir
                             <br />
                             <br />
-                            <b></b> Kullanım alanları:
+                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan
+                            sistemler barındırıyor.
                             <br />
-                            ■ Tarla &nbsp; ■ Bahçe &nbsp; ■ Sera &nbsp; ■ Peyzaj
                             <br />
                             <br />
-                            <b> ■ KHAS’nün elde ettiği parametreler</b>
                             <br />
-                            - Kapiler su hareket sensörü
+                            <b>Haberleşme yöntemi</b>
                             <br />
-                            - Nem sensörü
                             <br />
-                            - Etkili kök bölgesini saptama
+                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
                             <br />
-                            <br />■ Eklemek istediğimiz hizmetler: Yapay zekaya öğretilen sulama süreleri ile sistemin
-                            tarlaya ne kadar hacimde su gerektiğine karar verebilmesi.
+                            <br />
+                            <br />
+                            <br />
+                            <b>Teknolojilerimiz</b>
+                            <br />
+                            <br />
+                            ■ Latching röle sayesinde sadece bir pulse akımı ile kontak değiştirme.
+                            <br />
+                            <br />
+                            ■ LoRa haberleşmenin sayesinde GATEWAY ile uzun mesafeli etkileşim.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>VANA KONTROL ÜNİTESİ’nin elde ettiği parametreler</b>
+                            <br />
+                            <br />
+                            ■ Basınç sensörü,
+                            <br />
+                            <br />
+                            ■ 12V DC kilitli solenoidler ile Vana Kontrolü I/O,
+                            <br />
+                            <br />
+                            ■ Su sayacı.
+                            <br />
+                            <br />
+                            ■ Hacimsel gübreleme ve gübre akış kontrolü.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>Kullanım alanları</b>
+                            <br />
+                            <br />
+                            ■ Su kaynakları. &nbsp; ■ Ana vana, alt vanalar. &nbsp; ■ Yerel gübre enjektörü. &nbsp; ■
+                            Yerel filtreler. &nbsp; ■ Merkezi gübre enjektörü. &nbsp; ■ Sulama vanaları.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b> Ek İmkanları</b>
+                            <br />
+                            <br />
+                            ■ Basınç sensörü sayesinde vananın açık/kapalı olma durumunun kontrolü yapılır.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>Eklemek istediğimiz hizmetler</b>
+                            <br />
+                            <br />■ Yapay zekaya öğretilen sulama süreleri ile sistemin tarlaya ne kadar hacimde su
+                            gerektiğine karar verebilmesi.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -348,7 +446,7 @@ export default function RootProduct() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootTab2 />
+                      <ValvesTab2 />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -359,14 +457,15 @@ export default function RootProduct() {
                           aria-controls="panel1bh-content"
                           id="panel1bh-header"
                         >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>HUB</Typography>
+                          <Typography sx={{ width: '50%', flexShrink: 0 }}>GATEWAY</Typography>
                           <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                          HUB merkezi bağlantı birimidir. GSM ve LoRa haberleşme modülleri sayesinde çevre birimleri
-                            için bir modem rolündedir.Ayrıca sensörlerden anlamlı bilgi alma konusunu tek başına
-                            üstlenebilir(modül bağlantıları ve RS485 bağlantı imkanı).
+                            GATEWAY, endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve
+                            büyük ölçekli projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Avantajları</b>
@@ -375,29 +474,47 @@ export default function RootProduct() {
                             ■ Kolay kurulum.
                             <br />
                             <br />
+                            ■ Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla ulaşılabileceğiniz
+                            internet arayüzü).
+                            <br />
+                            <br />
                             ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
                             erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
                             <br />
                             <br />
-                            ■ Yerleşik RS485 haberleşme çıkış portu. Pil, Güneş paneli veya şebeke gerilimi ile besleme
-                            imkanı. Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla
-                            ulaşılabileceğiniz internet arayüzü). <br />
                             <br />
-                            ■ HUB için enerji kaynağı: DC gerilim ile beslenebilir; 16 V pil / Solar Panel / Harici
-                            Besleme(Trafo vb.)
+                            <br />
+                            <b>GATEWAY için enerji kaynağı</b>
+                            <br />
+                            <br />
+                            - DC gerilim ile beslenebilir;
+                            <br />
+                            <br />
+                            ■ 5 V / 0.5 Ah besleme.
+                            <br />
+                            <br />
+                            ■ USB port ile PC’den besleme imkanı.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
                             <br />
                             <br />
-                            ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı.
+                            ■ 255 adet cihaza kadar erişim imkanı.
                             <br />
                             <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli).
+                            ■ 4 farklı kanaldan tüm alt birimleri kontrol eden hızlı Lora sistemi( WiFi/Bluetooth
+                            sistemine göre geniş çaplı etkileşim ve daha az maliyetli).
                             <br />
                             <br />
-                            ■ Opsiyonel uç birimler: Vana Kontrolü 1-6 adet. Sensör İstasyonu 1-99 adet.
+                            <b>Opsiyonel uç birimler</b>
+                            <br />
+                            <br />
+                            ■ Vana Kontrolü 1-200 adet &nbsp; ■ Pompa Kontrolü 1-23 adet &nbsp; ■ Sensör İstasyonu 1-30
+                            adet &nbsp; ■ AirMoles Hava İstasyonu
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Programlama</b>
@@ -411,10 +528,14 @@ export default function RootProduct() {
                             karşılıyor.
                             <br />
                             <br />
+                            <br />
+                            <br />
                             <b>İnternete bağlanma yolumuz</b>
                             <br />
                             <br />
                             ■ Yerleşik bir hücresel modem kullanılır.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Teknolojilerimiz</b>
@@ -429,18 +550,28 @@ export default function RootProduct() {
                             ■ Dahili olarak RS485 haberleşme protokolü kullanma olanağı
                             <br />
                             <br />
-                            <b>HUB cihazının ulaşabildiği uç birimler sayesinde elde ettiği parametreler</b>
+                            <br />
+                            <br />
+                            <b>GATEWAY’in ulaşabildiği uç birimler</b>
                             <br />
                             <br />
                             ■ Basınç sensörü
                             <br />
                             <br />
-                            ■ Vana Kontrolü I/O, Su sayacı,
+                            ■ Pompa kontrolü I/O,
+                            <br />
+                            <br />
+                            ■ Vana Kontrolü I/O,
+                            <br />
+                            <br />
+                            ■ Su sayacı,
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Eklemek istediğimiz hizmetler</b>
                             <br />
-                            <br />■ Toprak sıcaklığı, Toprak EC(elektriksel geçirgenlik)
+                            <br /> ■ Toprak sıcaklığı &nbsp; ■ Toprak EC(elektriksel geçirgenlik)
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -450,65 +581,130 @@ export default function RootProduct() {
                           aria-controls="panel2bh-content"
                           id="panel2bh-header"
                         >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>KHAS</Typography>
+                          <Typography sx={{ width: '50%', flexShrink: 0 }}>VANA KONTROL ÜNİTESİ</Typography>
                           <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                          KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin
-                            takip edeceği su hareketini ve toprağın nem değerini anlık olarak siz kullanıcının hizmetine
-                            sunar.
+                            VANA KONTROL ÜNİTESİ, LoRa özellikli , 4 farklı vana kontrol eden orta ve büyük ölçekli
+                            sulama projelerinde GATEWAY ile senkronize çalışan kontrolördür.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Avantajları</b>
                             <br />
                             <br />
-                            ■ Tamamen yerli tasarım/imalat. LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5
-                            km’ye kadar uzanabilen erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı
-                            çalışma olanağı sağlar)
+                            ■ Kolay kurulum.
                             <br />
                             <br />
-                            ■ Toprak altındaki su hareketini ve toprak nem değerini anlık olarak kullanıcıya sunan bir
-                            sensördür
+                            ■ Enerji tasarrufu(stand by pozisyonunu gerçek zamanlı koruyarak bakım/değişim maliyetini en
+                            aza indirger).
                             <br />
                             <br />
-                            ■ Bakım maliyetinin olmaması
+                            ■ Merkezi birim sayesinde tüm vana kontrol ünitelerine tekli/çoklu erişim.
                             <br />
                             <br />
-                            ■ Sensör için enerji kaynağı: DC gerilim ile beslenebilir; 5 V pil.
+                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
+                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>VANA KONTROL ÜNİTESİ içine enerji kaynağı</b>
+                            <br />
+                            <br />
+                            - DC gerilim ile beslenebilir
+                            <br />
+                            <br />
+                            ■ 3.6 V pil.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
                             <br />
                             <br />
-                            ■ Kapiler hareket ve nem sensörünün(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı ■
-                            Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş çaplı
-                            etkileşim ve daha az maliyetli).
+                            ■ 4 farklı vana kontrolü işinin yanında, 4 ayrı basınç sensöründen gerçek zamanlı veri
+                            okuma.
+                            <br />
+                            <br />
+                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
+                            çaplı etkileşim ve daha az maliyetli).
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Programlama</b>
                             <br />
                             <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk
-                            kullanabilir ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama
-                            yöntemi sunan sistemler barındırıyor.
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt
+                            kullanabilir
                             <br />
                             <br />
-                            <b></b> Kullanım alanları:
+                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan
+                            sistemler barındırıyor.
                             <br />
-                            ■ Tarla &nbsp; ■ Bahçe &nbsp; ■ Sera &nbsp; ■ Peyzaj
                             <br />
                             <br />
-                            <b> ■ KHAS’nün elde ettiği parametreler</b>
                             <br />
-                            - Kapiler su hareket sensörü
+                            <b>Haberleşme yöntemi</b>
                             <br />
-                            - Nem sensörü
                             <br />
-                            - Etkili kök bölgesini saptama
+                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
                             <br />
-                            <br />■ Eklemek istediğimiz hizmetler: Yapay zekaya öğretilen sulama süreleri ile sistemin
-                            tarlaya ne kadar hacimde su gerektiğine karar verebilmesi.
+                            <br />
+                            <br />
+                            <br />
+                            <b>Teknolojilerimiz</b>
+                            <br />
+                            <br />
+                            ■ Latching röle sayesinde sadece bir pulse akımı ile kontak değiştirme.
+                            <br />
+                            <br />
+                            ■ LoRa haberleşmenin sayesinde GATEWAY ile uzun mesafeli etkileşim.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>VANA KONTROL ÜNİTESİ’nin elde ettiği parametreler</b>
+                            <br />
+                            <br />
+                            ■ Basınç sensörü,
+                            <br />
+                            <br />
+                            ■ 12V DC kilitli solenoidler ile Vana Kontrolü I/O,
+                            <br />
+                            <br />
+                            ■ Su sayacı.
+                            <br />
+                            <br />
+                            ■ Hacimsel gübreleme ve gübre akış kontrolü.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>Kullanım alanları</b>
+                            <br />
+                            <br />
+                            ■ Su kaynakları. &nbsp; ■ Ana vana, alt vanalar. &nbsp; ■ Yerel gübre enjektörü. &nbsp; ■
+                            Yerel filtreler. &nbsp; ■ Merkezi gübre enjektörü. &nbsp; ■ Sulama vanaları.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b> Ek İmkanları</b>
+                            <br />
+                            <br />
+                            ■ Basınç sensörü sayesinde vananın açık/kapalı olma durumunun kontrolü yapılır.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>Eklemek istediğimiz hizmetler</b>
+                            <br />
+                            <br />■ Yapay zekaya öğretilen sulama süreleri ile sistemin tarlaya ne kadar hacimde su
+                            gerektiğine karar verebilmesi.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -519,65 +715,89 @@ export default function RootProduct() {
                           aria-controls="panel2bh-content"
                           id="panel2bh-header"
                         >
-                          <Typography sx={{ width: '50%', flexShrink: 0 }}>SENSÖR İSTASYONU</Typography>
+                          <Typography sx={{ width: '50%', flexShrink: 0 }}>POMPA KONTROL ÜNİTESİ</Typography>
                           <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                          SENSÖR İSTASYONU LoRa protokolünü kullanır. Bir kapiler hareket sensörünün topraktan aldığı
-                            nem değerlerini ve su hareket verilerini, yorumlaması için radyo dalgaları kullanarak HUB’a
-                            ulaştırır.
+                            POMPA KONTROL ÜNİTESİ, LoRa özellikli, pompa su sayacı ve bacınç sensörü kontrolü/denetimi
+                            yapan orta ve büyük ölçekli sulama projelerinde GATEWAY ile senkronize çalışan kontrolördür.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b> Avantajları</b>
                             <br />
                             <br />
-                            ■ Kolay kurulum. 
-                            LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar
-                            uzanabilen erişim 
+                            ■ Kolay kurulum.
                             <br />
                             <br />
-                            ■ Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma
-                            olanağı sağlar)
+                            ■ Enerji tasarrufu(stand by pozisyonunu gerçek zamanlı koruyarak bakım/değişim maliyetini en
+                            aza indirger).
                             <br />
                             <br />
-                            <b>Sensör Kartı için enerji kaynağı</b>
+                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
+                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
                             <br />
                             <br />
-                            ■ DC gerilim ile beslenebilir; 16 V pil / Solar Panel 10W.
+                            <br />
+                            <br />
+                            <b>POMPA KONTROL ÜNİTESİ içine enerji kaynağı</b>
+                            <br />
+                            <br />
+                            - DC gerilim ile beslenebilir:
+                            <br />
+                            <br />
+                            ■ 3.6 V pil.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
                             <br />
                             <br />
-                            ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı
+                            ■ Pompa aç/kapa kontrolünün yanı sıra su sayacı ve basınç sensöründen gerçek zamanlı veri
+                            okuma.
                             <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş çaplı
-                            etkileşim ve daha az maliyetli).
+                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
+                            çaplı etkileşim ve daha az maliyetli).
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>Programlama</b>
+                            <br />
+                            <br />
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk kullanabilir.
+                            <br />
+                            <br />
+                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan sistemler barındırıyor.
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b> Haberleşme yöntemi </b>
                             <br />
                             <br />
-                            ■ HUB ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
+                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
+                            <br />
+                            <b>POMPA KONTROL ÜNİTESİ’nin elde ettiği parametreler</b>
+                            <br />
+                            <br />
+                            ■ Basınç sensörü. &nbsp; ■ Latching Röle kullanımı ile pompa kontrolü I/O. &nbsp; ■ Su
+                            sayacı.
                             <br />
                             <br />
                             <b>Kullanım alanları</b>
                             <br />
-                            ■ Tarla &nbsp; ■ Bahçe &nbsp; ■ Sera &nbsp; ■ Peyzaj
+                            ■ Su kaynakları. &nbsp; ■ Ana vana, alt vanalar. &nbsp; ■ Sulama vanaları.
                             <br />
                             <br />
-                            <b>SENSÖR İSTASYONU’nun elde ettiği parametreler</b>
                             <br />
                             <br />
-                            ■ Kapiler hareket sensörü &nbsp; ■ Nem
+                            <b>Ek İmkanları </b>
                             <br />
-                            <br />
-                            <b>Eklemek istediğimiz hizmetler</b>
-                            <br />
-                            <br />
-                            ■ Yapay zekaya öğretilen sulama süreleri ile sistemin
-                            tarlaya ne kadar hacimde su gerektiğine karar verebilmesi.
+                            <br />■ Basınç sensörü sayesinde pompanın açık/kapalı olma durumunun kontrolü yapılır.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -589,26 +809,6 @@ export default function RootProduct() {
           </Box>
         </Grid>
       )}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       {!isDesktop && (
         <Grid sx={{ my: 5, mx: 'auto' }}>
@@ -640,7 +840,7 @@ export default function RootProduct() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootTab />
+                      <ValvesTab />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}

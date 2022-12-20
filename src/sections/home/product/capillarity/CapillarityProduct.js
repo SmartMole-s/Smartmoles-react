@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { RootWhat } from '../root';
+import { CapillarityTab, CapillarityTab2, CapillarityTab3, CapillarityTab4 } from '../capillarity';
 // hooks
 import useResponsive from '../../../../hooks/useResponsive';
 
@@ -167,7 +167,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <CapillarityTab />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -372,7 +372,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <CapillarityTab2 />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -630,7 +630,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <CapillarityTab3 />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -867,7 +867,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <CapillarityTab4 />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -1163,7 +1163,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <RootWhat />
+                      <CapillarityTab />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}

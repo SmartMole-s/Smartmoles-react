@@ -12,12 +12,16 @@ import {
   Tab,
   ImageList,
   ImageListItem,
+  Button,
+  useTheme
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { MolesWhat } from '../moles';
+import { MolesTab, MolesTab2, MolesTab3, MolesTab4 } from '../moles';
 // hooks
 import useResponsive from '../../../../hooks/useResponsive';
+// components
+import Iconify from '../../../../components/Iconify';
 
 // const RootStyle = styled('div')(({ theme }) => ({
 //   backgroundSize: 'cover',
@@ -121,7 +125,9 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function RecipeReviewCard() {
+export default function MolesProduct() {
+  const theme = useTheme();
+
   // tabs
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
@@ -145,8 +151,13 @@ export default function RecipeReviewCard() {
                 <Tab label="SM-1 CLD &nbsp; |" {...a11yProps(0)} sx={{ fontSize: '1.5rem' }} />
                 <Tab label="SM-2 CLD &nbsp; |" {...a11yProps(1)} sx={{ fontSize: '1.5rem' }} />
                 <Tab label="SM-3 CLD &nbsp; |" {...a11yProps(2)} sx={{ fontSize: '1.5rem' }} />
-                <Tab label="SM-4 CLD &nbsp; +" {...a11yProps(3)} sx={{ fontSize: '1.5rem' }} />
-                <Tab label="Pakete Eklenebilecek Ürünler" {...a11yProps(4)} sx={{ fontSize: '1rem' }} />
+                <Tab label="SM-4 CLD" {...a11yProps(3)} sx={{ fontSize: '1.5rem' }} />
+                <Button
+                sx={{pointerEvents:"none"}}
+                  href="#"
+                  startIcon={<Iconify icon={'material-symbols:add-box-rounded'} width={40} height={40} marginRight={2}/>}
+                />
+                <Tab label="Ek Ürünler" {...a11yProps(4)} sx={{ fontSize: '1.5rem', textShadow: `2px 2px 4px ${theme.palette.primary.light}` }} />
               </Tabs>
             </Box>
 
@@ -169,7 +180,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <MolesWhat />
+                      <MolesTab />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -374,7 +385,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <MolesWhat />
+                      <MolesTab2 />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -558,13 +569,11 @@ export default function RecipeReviewCard() {
                             <b> Avantajları</b>
                             <br />
                             <br />
-                            ■ Kolay kurulum. 
-                            LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar
-                            uzanabilen erişim 
+                            ■ Kolay kurulum. LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar
+                            uzanabilen erişim
                             <br />
                             <br />
-                            ■ Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma
-                            olanağı sağlar)
+                            ■ Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar)
                             <br />
                             <br />
                             <b>Sensör Kartı için enerji kaynağı</b>
@@ -578,8 +587,8 @@ export default function RecipeReviewCard() {
                             <br />
                             ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı
                             <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş çaplı
-                            etkileşim ve daha az maliyetli).
+                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
+                            çaplı etkileşim ve daha az maliyetli).
                             <br />
                             <br />
                             <b> Haberleşme yöntemi </b>
@@ -601,9 +610,8 @@ export default function RecipeReviewCard() {
                             <br />
                             <b>Eklemek istediğimiz hizmetler</b>
                             <br />
-                            <br />
-                            ■ Yapay zekaya öğretilen sulama süreleri ile sistemin
-                            tarlaya ne kadar hacimde su gerektiğine karar verebilmesi.
+                            <br />■ Yapay zekaya öğretilen sulama süreleri ile sistemin tarlaya ne kadar hacimde su
+                            gerektiğine karar verebilmesi.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -632,7 +640,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <MolesWhat />
+                      <MolesTab3 />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -811,36 +819,35 @@ export default function RecipeReviewCard() {
                         <AccordionDetails>
                           <Typography>
                             VANA YÖNETİMİ, HUB kutusu içeriğinde olan bir modüldür. Kullanıcının ihtiyaçlarına paralel
-                            çalışmaktadır. 
-                            <br /> 
-                            <br /> 
-                            Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini
-                            yapay zeka destekli yönetme imkanı sağlar.
+                            çalışmaktadır.
+                            <br />
+                            <br />
+                            Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini yapay zeka
+                            destekli yönetme imkanı sağlar.
                             <br />
                             <br />
                             Her bir vana modülü ilgili tek bir solenoid vanayı kontrol eder(HUB kutusu, size en fazla 6
                             vana modülü imkanı sunar).
                             <br />
                             <br />
-                            <b>Sulama</b> 
-                            <br /> 
-                            <br /> 
+                            <b>Sulama</b>
+                            <br />
+                            <br />
                             ■ Haftanın günlerine veya gün döngüsüne göre sulama imkanı
-                            <br /> 
-                            <br /> 
+                            <br />
+                            <br />
                             ■ Sulama başlangıcını zamana göre, koşula göre veya manuel olarak ayarlar.
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
-                            <br /> 
-                            <br /> 
+                            <br />
+                            <br />
                             ■ HUB ile tümleşik yapıdadır.
                             <br />
-                            <br /> 
+                            <br />
                             <b>Uç birimler</b>
-                            <br /> 
-                            <br /> 
-                            ■ Solenoid vana.12V DC kilitli solenoidler ile Vana Kontrolü I/O.
+                            <br />
+                            <br />■ Solenoid vana.12V DC kilitli solenoidler ile Vana Kontrolü I/O.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -869,7 +876,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <MolesWhat />
+                      <MolesTab4 />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -1059,9 +1066,9 @@ export default function RecipeReviewCard() {
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
-                            ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile
-                            bağlantı imkanı. Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine
-                            göre geniş çaplı etkileşim ve daha az maliyetli).
+                            ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı.
+                            Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş çaplı
+                            etkileşim ve daha az maliyetli).
                             <br />
                             <br />
                             ■ Haberleşme yöntemi: HUB ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
@@ -1092,37 +1099,36 @@ export default function RecipeReviewCard() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                          VANA YÖNETİMİ, HUB kutusu içeriğinde olan bir modüldür. Kullanıcının ihtiyaçlarına paralel
-                            çalışmaktadır. 
-                            <br /> 
-                            <br /> 
-                            Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini
-                            yapay zeka destekli yönetme imkanı sağlar.
+                            VANA YÖNETİMİ, HUB kutusu içeriğinde olan bir modüldür. Kullanıcının ihtiyaçlarına paralel
+                            çalışmaktadır.
+                            <br />
+                            <br />
+                            Topraktaki nem ve su hareketlerine göre yüksek hassasiyette sulama sistemini yapay zeka
+                            destekli yönetme imkanı sağlar.
                             <br />
                             <br />
                             Her bir vana modülü ilgili tek bir solenoid vanayı kontrol eder(HUB kutusu, size en fazla 6
                             vana modülü imkanı sunar).
                             <br />
                             <br />
-                            <b>Sulama</b> 
-                            <br /> 
-                            <br /> 
+                            <b>Sulama</b>
+                            <br />
+                            <br />
                             ■ Haftanın günlerine veya gün döngüsüne göre sulama imkanı
-                            <br /> 
-                            <br /> 
+                            <br />
+                            <br />
                             ■ Sulama başlangıcını zamana göre, koşula göre veya manuel olarak ayarlar.
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
-                            <br /> 
-                            <br /> 
+                            <br />
+                            <br />
                             ■ HUB ile tümleşik yapıdadır.
                             <br />
-                            <br /> 
+                            <br />
                             <b>Uç birimler</b>
-                            <br /> 
-                            <br /> 
-                            ■ Solenoid vana.12V DC kilitli solenoidler ile Vana Kontrolü I/O.
+                            <br />
+                            <br />■ Solenoid vana.12V DC kilitli solenoidler ile Vana Kontrolü I/O.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -1165,7 +1171,7 @@ export default function RecipeReviewCard() {
                 <Grid item md={12} lg={6}>
                   <Box sx={{ width: '100%' }}>
                     <Item>
-                      <MolesWhat />
+                      <MolesTab />
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}

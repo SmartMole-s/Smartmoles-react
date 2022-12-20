@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Divider } from '@mui/material';
 // components
 import Page from '../../../components/Page';
-import { FarmSlider, FarmWhat, FarmImage } from '../../../sections/home/product/farm';
+import { FarmSlider, FarmProduct } from '../../../sections/home/product/farm';
 
 // ----------------------------------------------------------------------
 
@@ -22,9 +22,9 @@ export default function SmartFarm() {
       <RootStyle>
         <FarmSlider />
 
-        <FarmWhat />
+        <FarmProduct />
 
-        <FarmImage />
+        {/* <FarmImage /> */}
 
         <Divider orientation="vertical" sx={{ my: 10, mx: 'auto', width: 2, height: 40 }} />
       </RootStyle>
