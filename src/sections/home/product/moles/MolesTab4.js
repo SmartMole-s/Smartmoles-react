@@ -29,7 +29,7 @@ export default function MolesTab4() {
           <Grid item>
             <MotionInView variants={varFade().inRight}>
               <Typography variant="h2" sx={{ mb: 3 }}>
-                SmartMoles
+                SmartMole's
               </Typography>
             </MotionInView>
 
@@ -39,10 +39,10 @@ export default function MolesTab4() {
                   color: (theme) => (theme.palette.mode === 'light' ? 'text.secondary' : 'common.white'),
                 }}
               >
-                {translate('SmartMolesTab.tab1Desc')}
+                {translate('SmartMolesTab.tab4Desc')}
                 <br></br>
-                <br></br> 
-                {translate('SmartMolesTab.tab4Desc2')}
+                <br></br>
+                {translate('SmartMolesTab.tab1Desc2')}
               </Typography>
             </MotionInView>
           </Grid>

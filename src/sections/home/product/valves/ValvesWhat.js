@@ -42,7 +42,7 @@ export default function FarmWhat() {
             {isDesktop && (
               <MotionInView variants={varFade().inRight}>
                 <Typography variant="h2" sx={{ mb: 3 }}>
-                  SmartValves
+                  SmartValve's
                 </Typography>
               </MotionInView>
             )}

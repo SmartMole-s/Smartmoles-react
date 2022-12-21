@@ -164,9 +164,9 @@
   },
   "SmartCapillarityTab": {
     "tab1Desc": "Sulama sırasında ve sonrasında toprak profilinde su hareketlerini ve nem miktarını birlikte görebileceğiniz Dünya'daki tek patentli teknolojidir. Kapiller su hareketini gerçek zamanlı bir şekilde kullanıcıya ulaştıran Dünya'daki tek teknolojidir.",
-    "tab1Desc2": "Kullanıcının sadece bir sahada(tarla, bahçe, sera) elde etmek istediği nem ve kapiler hareket verileri için ideal bir pakettir. KHAS verileri HUB üzerinden kullanıcıya sunulur.",
+    "tab1Desc2": "Kullanıcının arazide(tarla, bahçe, sera) elde etmek istediği nem ve kapiler hareket verileri için ideal bir pakettir. KHAS verileri HUB üzerinden kullanıcıya sunulur.",
     "tab2Desc2": "Kullanıcının sadece birden fazla  sahada(tarla, bahçe, sera) elde etmek istediği nem ve kapiler hareket verileri için önerilen bir pakettir. KHAS verileri SENSÖR İSTASYONU üzerinden kullanıcıya sunulur.",
-    "tab3Desc2": "Kullanıcının sadece bir sahada(tarla, bahçe, sera) elde etmek istediği nem ve kapiler hareket verilerini baz alarak vana yönetimi istenen projelerde uygulanan bir pakettir. KHAS verileri HUB üzerinden kullanıcıya sunulur ve bu veriler koşullu olarak vana yönetimi hizmeti sağlar.",
+    "tab3Desc2": "Kullanıcının arazide(tarla, bahçe, sera) elde etmek istediği nem ve kapiler hareket verilerini baz alarak vana yönetimi istenen projelerde uygulanan bir pakettir. KHAS verileri HUB üzerinden kullanıcıya sunulur ve bu veriler koşullu olarak vana yönetimi hizmeti sağlar.",
     "tab4Desc2": "Kullanıcının sadece birden fazla  sahada(tarla, bahçe, sera) elde etmek istediği nem ve kapiler hareket verilerini baz alarak vana yönetimi istenen projelerde uygulanan bir pakettir.KHAS verileri SENSÖR İSTASYONU üzerinden kullanıcıya sunulur ve bu veriler koşullu olarak vana yönetimi hizmeti sağlar."
   },
   "SmartRootSlider": {
@@ -191,7 +191,7 @@
   },
   "SmartRootTab": {
     "tab1Desc": "SmartRoot, bitkilerin etkili kök bölgesi adı verilen bölgenin tarla koşullarında tespitinin yapılması için geliştirilmiş yüksek teknolojiye sahip siber fiziksel bir sistemdir.Etkili kök bölgesi, su ve gübrenin %70 - 80 kullanıldığı kök bölgesidir. Bu bölgenin bitkinin diğer kök bölgelerinden ayrımının yapılmasını kolaylaştıran SmartRoot teknolojisi etkili kök bölgesinin yerini kullanıcı ile yüksek doğrulukta paylaşır.",
-    "tab1Desc2": "Kullanıcının sadece bir sahada(tarla,bahçe,sera) elde etmek istediği etkili kök bölgesi verileri için ideal bir pakettir.Kök bölgesi verileri HUB üzerinden kullanıcıya sunulur.",
+    "tab1Desc2": "Kullanıcının arazide(tarla,bahçe,sera) elde etmek istediği etkili kök bölgesi verileri için ideal bir pakettir.Kök bölgesi verileri HUB üzerinden kullanıcıya sunulur.",
     "tab2Desc": "SmartRoot, bitkilerin etkili kök bölgesi adı verilen bölgenin tarla koşullarında tespitinin yapılması için geliştirilmiş yüksek teknolojiye sahip siber fiziksel bir sistemdir.Etkili kök bölgesi, su ve gübrenin %70 - 80 kullanıldığı kök bölgesidir. Bu bölgenin bitkinin diğer kök bölgelerinden ayrımının yapılmasını kolaylaştıran SmartRoot teknolojisi etkili kök bölgesinin yerini kullanıcı ile yüksek doğrulukta paylaşır.",
     "tab2Desc2": "Kullanıcının birden fazla  sahada(tarla,bahçe,sera) elde etmek istediği etkili kök bölgesi verileri için ideal bir pakettir.Kök bölgesi verileri SENSÖR İSTASYONU üzerinden kullanıcıya sunulur."
   },
@@ -280,11 +280,11 @@
     "li7": "Hareketli parçası olmayan sağlam, kompakt, UV stabilize gövdeye sahip"
   },
   "SmartMolesTab": {
-    "tab1Desc": "Bitkilerin etkili kök bölgesi adı verilen bölgenin tarla koşullarında tespitinin yapılması için geliştirilmiş yüksek teknolojiye sahip siber fiziksel bir sistemdir. Etkili kök bölgesi, su ve gübrenin %70 - 80 kullanıldığı kök bölgesidir. Bu bölgenin bitkinin diğer kök bölgelerinden ayrımının yapılmasını kolaylaştıran SmartRoot teknolojisi etkili kök bölgesinin yerini kullanıcı ile yüksek doğrulukta paylaşır.",
-    "tab1Desc2": "Kullanıcının sadece bir sahada(tarla, bahçe, sera) elde etmek istediği nem, kapiler hareket verileri ve bitkinin etkili kök bölgesi için ideal bir pakettir. KHAS verileri HUB üzerinden kullanıcıya sunulur.",
-    "tab2Desc2": "Kullanıcının sadece birden fazla  sahada(tarla, bahçe, sera) elde etmek istediği nem, kapiler hareket verileri ve bitkinin etkili kök bölgesi için önerilen bir pakettir. KHAS verileri SENSÖR İSTASYONU üzerinden kullanıcıya sunulur.",
-    "tab3Desc2": "Kullanıcının sadece bir sahada(tarla, bahçe, sera) elde etmek istediği nem, kapiler hareket verileri ve bitkinin etkili kök bölgesini baz alarak vana yönetimi istenen projelerde uygulanan bir pakettir. KHAS verileri HUB üzerinden kullanıcıya sunulur ve bu veriler koşullu olarak vana yönetimi hizmeti sağlar.",
-    "tab4Desc2": "Kullanıcının sadece birden fazla  sahada(tarla, bahçe, sera) elde etmek istediği nem, kapiler hareket verileri ve bitkinin etkili kök bölgesini baz alarak vana yönetimi istenen projelerde uygulanan bir pakettir. KHAS verileri SENSÖR İSTASYONU üzerinden kullanıcıya sunulur ve bu veriler koşullu olarak vana yönetimi hizmeti sağlar."
+    "tab1Desc": "Kullanıcının arazide(tarla, bahçe, sera) elde etmek istediği nem, kapiler hareket verileri ve bitkinin etkili kök bölgesi için ideal bir pakettir. KHAS verileri HUB üzerinden kullanıcıya sunulur.",
+    "tab1Desc2": "Bitkilerin etkili kök bölgesi adı verilen bölgenin tarla koşullarında tespitinin yapılması için geliştirilmiş yüksek teknolojiye sahip siber fiziksel bir sistemdir. Etkili kök bölgesi, su ve gübrenin %70 - 80 kullanıldığı kök bölgesidir. Bu bölgenin bitkinin diğer kök bölgelerinden ayrımının yapılmasını kolaylaştıran SmartRoot teknolojisi etkili kök bölgesinin yerini kullanıcı ile yüksek doğrulukta paylaşır. Bunlara ek olarak kapiller su hareketini gerçek zamanlı bir şekilde kullanıcıya ulaştıran Dünya'daki tek teknolojidir.",
+    "tab2Desc": "Kullanıcının sadece birden fazla  sahada(tarla, bahçe, sera) elde etmek istediği nem, kapiler hareket verileri ve bitkinin etkili kök bölgesi için önerilen bir pakettir. KHAS verileri SENSÖR İSTASYONU üzerinden kullanıcıya sunulur.",
+    "tab3Desc": "Kullanıcının arazide(tarla, bahçe, sera) elde etmek istediği nem, kapiler hareket verileri ve bitkinin etkili kök bölgesini baz alarak vana yönetimi istenen projelerde uygulanan bir pakettir. KHAS verileri HUB üzerinden kullanıcıya sunulur ve bu veriler koşullu olarak vana yönetimi hizmeti sağlar.",
+    "tab4Desc": "Kullanıcının sadece birden fazla  sahada(tarla, bahçe, sera) elde etmek istediği nem, kapiler hareket verileri ve bitkinin etkili kök bölgesini baz alarak vana yönetimi istenen projelerde uygulanan bir pakettir. KHAS verileri SENSÖR İSTASYONU üzerinden kullanıcıya sunulur ve bu veriler koşullu olarak vana yönetimi hizmeti sağlar."
   },
   "Career": {
     "title": "Kariyer",

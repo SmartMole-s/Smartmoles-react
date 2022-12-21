@@ -38,7 +38,7 @@ export default function RootSlider() {
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
         <ContentStyle>
-          <TextAnimate text="SmartMoles" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
+          <TextAnimate text="SmartMole's" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
             <TextAnimate text={translate('SmartRootSlider.title')} sx={{ mr: 2, typography: 'h4' }} />

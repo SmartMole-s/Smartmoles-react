@@ -38,7 +38,7 @@ export default function ValvesSlider() {
     <RootStyle>
       <Container component={MotionContainer} sx={{ position: 'relative', height: '100%' }}>
         <ContentStyle>
-          <TextAnimate text="SmartValves" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
+          <TextAnimate text="SmartValve's" sx={{ color: 'primary.main' }} variants={varFade().inRight} />
           <br />
           <Box sx={{ display: 'inline-flex', color: 'common.white' }}>
             <TextAnimate text={translate('SmartValveSlider.title')} sx={{ mr: 2, typography: 'h4' }} />

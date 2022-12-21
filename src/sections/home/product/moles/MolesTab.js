@@ -29,7 +29,7 @@ export default function MolesTab() {
           <Grid item>
             <MotionInView variants={varFade().inRight}>
               <Typography variant="h2" sx={{ mb: 3 }}>
-                SmartMoles
+                SmartMole's
               </Typography>
             </MotionInView>
 
