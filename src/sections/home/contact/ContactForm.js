@@ -16,6 +16,7 @@ export default function ContactForm() {
   const form = useRef();
   const { translate } = useLocales();
   const services = new MailService();
+
   const alertState = (title, description, descriptionStrong) => {
     return (
       <SuccessAlert title={`${title}`} description={`${description}`} descriptionStrong={`${descriptionStrong}`} />
@@ -38,6 +39,7 @@ export default function ContactForm() {
   };
 
   const [isSuccess, setIsSuccess] = useState(false);
+  const [keyword, setKeyword] = useState();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -62,6 +64,7 @@ export default function ContactForm() {
         }, 5000);
       }
     });
+    setKeyword("");
   };
 
   return (
@@ -80,6 +83,7 @@ export default function ContactForm() {
               fullWidth
               label={translate('Contact.place1')}
               required
+              value={keyword}
             />
           </MotionInView>
 
@@ -91,6 +95,7 @@ export default function ContactForm() {
               fullWidth
               label={translate('Contact.place2')}
               required
+              value={keyword}
             />
           </MotionInView>
 
@@ -102,6 +107,7 @@ export default function ContactForm() {
               fullWidth
               label={translate('Contact.place3')}
               required
+              value={keyword}
             />
           </MotionInView>
 
@@ -115,6 +121,7 @@ export default function ContactForm() {
               multiline
               rows={4}
               required
+              value={keyword}
             />
           </MotionInView>
 
