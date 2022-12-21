@@ -39,7 +39,10 @@ export default function ContactForm() {
   };
 
   const [isSuccess, setIsSuccess] = useState(false);
-  const [keyword, setKeyword] = useState();
+  const fullnameRef = useRef(null);
+  const mailRef = useRef(null);
+  const subjectsRef = useRef(null);
+  const messageRef = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -64,7 +67,7 @@ export default function ContactForm() {
         }, 5000);
       }
     });
-    setKeyword("");
+    e.target.reset();
   };
 
   return (
@@ -83,7 +86,7 @@ export default function ContactForm() {
               fullWidth
               label={translate('Contact.place1')}
               required
-              value={keyword}
+              ref={fullnameRef}
             />
           </MotionInView>
 
@@ -95,7 +98,7 @@ export default function ContactForm() {
               fullWidth
               label={translate('Contact.place2')}
               required
-              value={keyword}
+              ref={mailRef}
             />
           </MotionInView>
 
@@ -107,7 +110,7 @@ export default function ContactForm() {
               fullWidth
               label={translate('Contact.place3')}
               required
-              value={keyword}
+              ref={subjectsRef}
             />
           </MotionInView>
 
@@ -121,7 +124,7 @@ export default function ContactForm() {
               multiline
               rows={4}
               required
-              value={keyword}
+              ref={messageRef}
             />
           </MotionInView>
 
