@@ -73,20 +73,42 @@ export default function ContactForm() {
       <form ref={form} onSubmit={sendEmail}>
         <Stack spacing={3}>
           <MotionInView variants={varFade().inUp}>
-            <TextField onChange={handleChange} name="fullname" fullWidth label={translate('Contact.place1')} required />
-          </MotionInView>
-
-          <MotionInView variants={varFade().inUp}>
-            <TextField onChange={handleChange} name="email" fullWidth label={translate('Contact.place2')} required />
-          </MotionInView>
-
-          <MotionInView variants={varFade().inUp}>
-            <TextField onChange={handleChange} name="subjects" fullWidth label={translate('Contact.place3')} required />
+            <TextField
+              onChange={handleChange}
+              type="text"
+              name="fullname"
+              fullWidth
+              label={translate('Contact.place1')}
+              required
+            />
           </MotionInView>
 
           <MotionInView variants={varFade().inUp}>
             <TextField
               onChange={handleChange}
+              type="email"
+              name="email"
+              fullWidth
+              label={translate('Contact.place2')}
+              required
+            />
+          </MotionInView>
+
+          <MotionInView variants={varFade().inUp}>
+            <TextField
+              onChange={handleChange}
+              type="text"
+              name="subjects"
+              fullWidth
+              label={translate('Contact.place3')}
+              required
+            />
+          </MotionInView>
+
+          <MotionInView variants={varFade().inUp}>
+            <TextField
+              onChange={handleChange}
+              type="text"
               name="message"
               fullWidth
               label={translate('Contact.place4')}
