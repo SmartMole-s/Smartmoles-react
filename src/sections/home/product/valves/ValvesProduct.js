@@ -45,37 +45,19 @@ function srcset(image, size, rows = 1, cols = 1) {
 
 const itemData = [
   {
-    img: '/static/product/gateway.png',
-    title: 'Gateway',
-    rows: 4,
-    cols: 2,
-  },
-  {
-    img: '/static/product/valves/smartvalves.png',
+    img: '/static/product/valves/smartvalveskolaj.png',
     title: 'SmartValves',
     rows: 4,
-    cols: 2,
-  },
+    cols: 4,
+  }
 ];
 const itemData2 = [
   {
-    img: '/static/product/gateway.png',
-    title: 'Gateway',
-    rows: 4,
-    cols: 2,
-  },
-  {
-    img: '/static/product/valves/smartvalves.png',
+    img: '/static/product/valves/smartvalveskolaj.png',
     title: 'SmartValves',
     rows: 4,
-    cols: 2,
-  },
-  {
-    img: '/static/product/supompasi.jpg',
-    title: 'Su Pompası',
-    rows: 4,
-    cols: 2,
-  },
+    cols: 4,
+  }
 ];
 const itemData3 = [
   {
@@ -178,6 +160,8 @@ export default function ValvesProduct() {
               </Tabs>
             </Box>
 
+
+
             <TabPanel value={value} index={0}>
               <Grid container sx={{ mx: 'auto' }}>
                 <Grid item md={12} lg={6}>
@@ -215,8 +199,19 @@ export default function ValvesProduct() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            GATEWAY, endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve
-                            büyük ölçekli projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır.
+                          GATEWAY, endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve büyük ölçekli projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır. Vanalarınızın yönetiminde akıllı kablosuz çözümlerle yanınızdayız. <b>Zaman ayarlı ya da sensör verilerine göre yapay zeka desteği ile suluyoruz.</b>
+                            <br />
+                            <br />
+                            <b>Tek merkezden kontrol</b>
+                            <br />
+                            <br />
+                            ■ SmartValve’s tek merkezden sahada bulunan vanaların kontrolünü yapay zeka ile yapan bir sistemdir. Arazinin özelliklerine göre lokal ya da bulut tabanlı sistem alternatifleri sunar.
+                            <br />
+                            <br />
+                            ■ Her vana kontrol ünitesi bulunduğu alanın sıcaklığı ve nem bilgilerini değerlendirerek veri ağının oluşmasını sağlar
+                            <br />
+                            <br />
+                            ■ Aynı zamanda vana önlerindeki basınçları kontrol ederek işletme basıncı bilgisini ve hatlarda kaçak olup olmadığını bilmenizi sağlar
                             <br />
                             <br />
                             <br />
@@ -224,15 +219,16 @@ export default function ValvesProduct() {
                             <b>Avantajları</b>
                             <br />
                             <br />
-                            ■ Kolay kurulum.
+                            ■ Kolay kurulum
                             <br />
                             <br />
-                            ■ Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla ulaşılabileceğiniz
-                            internet arayüzü).
+                            ■ Ayarlanabilir süreli iletişim ile yüksek pil tasarrufu sağlar
                             <br />
                             <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
+                            ■ Uzaktan erişim ile hızlı destek sistemi(akıllı telefon, bilgisayar vb. cihazlarla ulaşabileceğiniz internet arayüzü). <b>Kullanıcı istediği konumdan arazi hakkında bilgi sahibi olabilir</b>
+                            <br />
+                            <br />
+                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur. Merkezden 30 km’ye kadar uzanabilen erişim. Wi-Fi ve Bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar
                             <br />
                             <br />
                             <br />
@@ -240,25 +236,61 @@ export default function ValvesProduct() {
                             <b>GATEWAY için enerji kaynağı</b>
                             <br />
                             <br />
-                            - DC gerilim ile beslenebilir;
+                            ■ 5 V Adaptör ile besleme
                             <br />
                             <br />
-                            ■ 5 V / 0.5 Ah besleme.
+                            ■ USB port ile bilgisayarınızdan cihazı besleyebilme
                             <br />
                             <br />
-                            ■ USB port ile PC’den besleme imkanı.
                             <br />
                             <br />
+                            <b>Sulama</b>
+                            <br />
+                            <br />
+                            ■ Haftanın günlerine veya gün döngüsüne göre sulama imkanı vardır
+                            <br />
+                            <br />
+                            ■ Tek döngü veya darbeli sulama yapılır
+                            <br />
+                            <br />
+                            ■ Birden fazla pompa veya jeneratör gibi arazinize su sağlayıcıların otomasyonunu sağlar
+                            <br />
+                            <br />
+                            ■ Birden fazla su kaynağını idare edebilir
+                            <br />
+                            <br />
+                            ■ Sulama başlangıcını zamana göre, koşula göre veya manuel olarak ayarlar
+                            <br />
+                            <br />
+                            ■ Pompanın diğer vanalarla beraber, ayrıksı veya gecikmeli çalışmasını sağlar
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>Gübreleme</b>
+                            <br />
+                            <br />
+                            ■ Gübre tanklarının dolumunda size yardımcı olur
+                            <br />
+                            <br />
+                            ■ Gübre enjeksiyon için sistemin çalışma zamanını otomatik olarak belirleyebilirisiniz
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <b>Merkezi Bağlantı Sistem Güvenliği ve Su Temizliği</b>
+                            <br />
+                            <br />
+                            ■ Doğal kaynaktan(kuyu, gölet) elde edilen suyun sulama kanallarına verilmeden önce suyun zararlı parçacıklardan arındırılması gerekiyor. Suyu bu kaynaklardan sistemlerimize direkt verdiğimizde sulama sistemimiz bu parçacıklar yüzünden zarar görecektir. Bunun için su, kaynağından alındıktan bir süre sonra tekrar doğal kaynağına(göl, dere) geri verilir. Temiz su bize ulaştığında bunu siz profesyonel kullanıcılar için anlayan sistemimiz bize hem temiz su kaynağı sağlayacak hem de sulama sistemlerimizin ömrünü uzatacaktır
                             <br />
                             <br />
                             <b>Bağlantı yapısı</b>
                             <br />
                             <br />
-                            ■ 255 adet cihaza kadar erişim imkanı.
+                            ■ 255 adet cihaza kadar erişim imkanı
                             <br />
                             <br />
-                            ■ 4 farklı kanaldan tüm alt birimleri kontrol eden hızlı Lora sistemi( WiFi/Bluetooth
-                            sistemine göre geniş çaplı etkileşim ve daha az maliyetli).
+                            ■ 4 farklı kanaldan tüm alt birimleri kontrol eden hızlı LoRa sistemi ile geniş uygulama alanı oluşturur. Merkezden 30 km’ye kadar uzanabilen erişim. Wi-Fi ve Bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar
                             <br />
                             <br />
                             <br />
@@ -266,8 +298,7 @@ export default function ValvesProduct() {
                             <b>Opsiyonel uç birimler</b>
                             <br />
                             <br />
-                            ■ Vana Kontrolü 1-200 adet &nbsp; ■ Pompa Kontrolü 1-23 adet &nbsp; ■ Sensör İstasyonu 1-30
-                            adet &nbsp; ■ AirMoles Hava İstasyonu
+                            ■ Vana Kontrolü 1-200 adet &nbsp; ■ Pompa Kontrolü 1-23 adet &nbsp; ■ Sensör İstasyonu 1-30 adet &nbsp; ■ AirMoles Hava İstasyonu
                             <br />
                             <br />
                             <br />
@@ -275,12 +306,10 @@ export default function ValvesProduct() {
                             <b>Programlama</b>
                             <br />
                             <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt
-                            kullanabilir.
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk kullanabilir
                             <br />
                             <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı ve uç birimleriyle kullanıcının ihtiyaçlarını
-                            karşılıyor.
+                            ■ Sürekli geliştirilen gömülü yazılımı ve uç birimleriyle kullanıcının ihtiyaçlarını karşılıyor
                             <br />
                             <br />
                             <br />
@@ -291,15 +320,18 @@ export default function ValvesProduct() {
                             ■ Yerleşik bir hücresel modem kullanılır.
                             <br />
                             <br />
+                            ■ GSM modülü ile yerelden bulut erişimine adaptasyon özelliği vardır
+                            <br />
+                            <br />
                             <br />
                             <br />
                             <b>Teknolojilerimiz</b>
                             <br />
                             <br />
-                            ■ GSM hatlar sayesinde dünyanın her yerinden erişim
+                            ■ GSM hatlar sayesinde Dünya'nın her yerinden erişim
                             <br />
                             <br />
-                            ■ LoRa haberleşmenin sağladığı ara birimlerle uzun mesafeli etkileşim.
+                            ■ LoRa haberleşmenin protokolü sayesinde uç birimlerle uzak mesafeli iletişim
                             <br />
                             <br />
                             ■ Dahili olarak RS485 haberleşme protokolü kullanma olanağı
@@ -313,20 +345,15 @@ export default function ValvesProduct() {
                             ■ Basınç sensörü
                             <br />
                             <br />
-                            ■ Pompa kontrolü I/O,
+                            ■ Pompa kontrolü(aç/kapa)
                             <br />
                             <br />
-                            ■ Vana Kontrolü I/O,
+                            ■ Vana Kontrolü(aç/kapa)
                             <br />
                             <br />
-                            ■ Su sayacı,
+                            ■ Su sayacı
                             <br />
                             <br />
-                            <br />
-                            <br />
-                            <b>Eklemek istediğimiz hizmetler</b>
-                            <br />
-                            <br /> ■ Toprak sıcaklığı &nbsp; ■ Toprak EC(elektriksel geçirgenlik)
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -866,7 +893,6 @@ export default function ValvesProduct() {
               </Grid>
             </TabPanel>
 
-            {/* // Third Panel */}
             <TabPanel value={value} index={3}>
               <Grid container sx={{ mx: 'auto' }}>
                 <Grid item md={12} lg={6}>
@@ -904,61 +930,54 @@ export default function ValvesProduct() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin
-                            takip edeceği su hareketini ve toprağın nem değerini anlık olarak siz kullanıcının hizmetine
-                            sunar.
+                          KAPİLER HAREKET SENSÖRÜ(KHAS) içindeki eşsiz, patentli, gömülü sistemi ile bitki köklerinin takip edeceği su hareketini ve toprağın nem değerini anlık olarak siz kullanıcının hizmetine sunar. <b>Toprak profilinde su hareketlerini ve nem miktarını birlikte görebileceğiniz dünyadaki tek patentli teknolojidir. %97.34 oranında yerli ve milli bir ürün olmakla gurur duyuyoruz.</b>
+                          <br />
+                          <br />
+                           Etkili kök bölgesi, su ve gübrenin %70-80 kullanıldığı bölgesidir. Bu bölgenin bitkinin diğer kök bölgelerinden ayrımının yapılmasını kolaylaştıran teknoloji ile yüksek doğrulukta etkili kök bölgesinin yerini kullanıcı ile paylaşır.
                             <br />
                             <br />
-                            <b> Avantajları </b>
+                            <u>
+                              <b> Avantajları </b>
+                            </u>
                             <br />
                             <br />
-                            ■ Tamamen yerli tasarım/imalat
+                            ■ Toprak altındaki su hareketini ve toprak nem değerini anlık olarak kullanıcıya sunan bir sensördür
                             <br />
                             <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar)
                             <br />
                             <br />
-                            ■ Toprak altındaki su hareketini ve toprak nem değerini anlık olarak kullanıcıya sunan bir
-                            sensördür
-                            <br />
-                            <br />
-                            ■ Bakım maliyetinin olmaması
-                            <br />
-                            <br />
+                            <u>
                             <b>Sensör için enerji kaynağı</b>
+                            </u>
                             <br />
                             <br />
-                            ■ DC gerilim ile beslenebilir; 5 V pil.
+                            ■ 3.6 V uzun ömürlü pil
                             <br />
                             <br />
-                            <b>Bağlantı yapısı</b>
+                            <u><b>Bağlantı yapısı</b></u>
                             <br />
                             <br />
                             ■ Kapiler hareket ve nem sensörünün(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı
                             <br />
                             <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli)
+                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş çaplı etkileşim ve daha az maliyetli)
                             <br />
                             <br />
-                            <b> Programlama</b>
+                            <u><b> Programlama</b></u>
                             <br />
                             <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk
-                            kullanabilir
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt kullanabilir
                             <br />
                             <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan
-                            sistemler barındırıyor.
+                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan sistemler barındırıyor
                             <br />
                             <br />
-                            <b>Kullanım alanları</b>
+                            <u><b>Kullanım alanları</b></u>
                             <br />
                             ■ Tarla &nbsp; ■ Bahçe &nbsp; ■ Sera &nbsp; ■ Peyzaj
                             <br />
                             <br />
-                            <b>KHAS’nün elde ettiği parametreler</b>
+                            <u><b>KHAS’nün elde ettiği parametreler</b></u>
                             <br />
                             <br />
                             ■ Kapiler su hareket sensörü
@@ -967,13 +986,9 @@ export default function ValvesProduct() {
                             ■ Nem sensörü
                             <br />
                             <br />
-                            ■ Etkili kök bölgesini saptama
+                            ■ Etkili kök bölgesi
                             <br />
                             <br />
-                            <b>Eklemek istediğimiz hizmetler</b>
-                            <br />
-                            <br />■ Yapay zekaya öğretilen sulama süreleri ile sistemin tarlaya ne kadar hacimde su
-                            gerektiğine karar verebilmesi.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -1068,91 +1083,82 @@ export default function ValvesProduct() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            SENSÖR KARTI LoRa protokolünü kullanır. Bir kapiler hareket sensörünün topraktan aldığı nem
-                            değerlerini ve su hareket verilerini, yorumlaması için radyo dalgaları kullanarak GATEWAY’e
-                            ulaştırır.
+                          SENSÖR KARTI LoRa(Uzak mesafe haberleşme) özelliklidir.Bir kapiler hareket sensörünün topraktan aldığı nem değerlerini ve su hareket verilerini, yorumlaması için GATEWAY’e ulaştırır.
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b> Avantajları</b>
+                            <u><b>Avantajları</b></u>
                             <br />
                             <br />
                             ■ Kolay kurulum.
                             <br />
                             <br />
-                            ■ Enerji tasarrufu(stand by pozisyonunu gerçek zamanlı koruyarak bakım/değişim maliyetini en
-                            aza indirger).
+                            ■ Ayarlanabilir süreli iletişim ile yüksek pil tasarrufu sağlar
                             <br />
                             <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <b>Sensör Kartı için enerji kaynağı</b>
-                            <br />
-                            <br />
-                            - DC gerilim ile beslenebilir
-                            <br />
-                            <br />
-                            ■ 3.6 V pil.
+                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur. Merkezden 30 km’ye kadar uzanabilen erişim. Wi-Fi ve Bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Bağlantı yapısı</b>
+                            <u><b>Sensör Kartı için enerji kaynağı</b></u>
                             <br />
                             <br />
-                            ■ Kapiler hareket ve nem sensörüne(KHAS) RS485 haberleşme protokolü ile bağlantı imkanı
-                            <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli)
+                            ■ 3.6 V uzun ömürlü pil
                             <br />
                             <br />
-                            <br />
-                            <br />
-                            <b>Programlama</b>
-                            <br />
-                            <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt
-                            kullanabilir.
-                            <br />
-                            <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan
-                            sistemler barındırıyor.
+                            ■ <b>Tarlada elektriğiniz olmasa da pille çalışa özelliği vardır</b>
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b> Haberleşme yöntemi </b>
+                            <u><b>Bağlantı yapısı</b></u>
                             <br />
                             <br />
-                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
+                            ■ Kapiler hareket ve nem sensörüne(KHAS) direkt erişim sağlar
                             <br />
-                            <br />
-                            <br />
-                            <br />
-                            <b>SENSÖR KARTI’nın elde ettiği parametreler</b>
-                            <br />
-                            <br />
-                            ■ Kapiler hareket sensörü. &nbsp; ■ Nem &nbsp; ■ Etkili kök bölgesi sayacı.
+                            ■ LoRa haberleşmenin sayesinde GATEWAY ile uzun mesafeli etkileşim
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Kullanım alanları</b>
+                            <u><b>Programlama</b></u>
+                            <br />
+                            <br />
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk kullanabilir
+                            <br />
+                            <br />
+                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan sistemler barındırıyor
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <u><b> Haberleşme yöntemi </b></u>
+                            <br />
+                            <br />
+                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <u><b>SENSÖR KARTI’nın elde ettiği parametreler</b></u>
+                            <br />
+                            <br />
+                            ■ Kapiler hareket sensörü &nbsp; ■ Nem &nbsp; ■ Etkili kök bölgesi &nbsp; ■ AirMoles Hava İstasyonu
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <u><b>Kullanım alanları</b></u>
+                            <br />
                             <br />
                             ■ Tarla &nbsp; ■ Bahçe &nbsp; ■ Sera &nbsp; ■ Peyzaj
                             <br />
                             <br />
+                            ■ IP68 özellikte koruması sayesinde su geçirmez ve darbelere dayanıklıdır
                             <br />
                             <br />
-                            <b>Eklemek istediğimiz hizmetler </b>
-                            <br />
-                            <br />■ Yapay zekaya öğretilen sulama süreleri ile sistemin tarlaya ne kadar hacimde su
-                            gerektiğine karar verebilmesi
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -1161,6 +1167,9 @@ export default function ValvesProduct() {
                 </Grid>
               </Grid>
             </TabPanel>
+
+
+
           </Box>
         </Grid>
       )}
