@@ -183,7 +183,6 @@ export default function ValvesProduct() {
                     <Item>
                       <ValvesTab />
 
-                      {/* // First Product */}
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -202,7 +201,7 @@ export default function ValvesProduct() {
                           GATEWAY, endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve büyük ölçekli projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır. Vanalarınızın yönetiminde akıllı kablosuz çözümlerle yanınızdayız. <b>Zaman ayarlı ya da sensör verilerine göre yapay zeka desteği ile suluyoruz.</b>
                             <br />
                             <br />
-                            <b>Tek merkezden kontrol</b>
+                            <u><b>Tek merkezden kontrol</b></u>
                             <br />
                             <br />
                             ■ SmartValve’s tek merkezden sahada bulunan vanaların kontrolünü yapay zeka ile yapan bir sistemdir. Arazinin özelliklerine göre lokal ya da bulut tabanlı sistem alternatifleri sunar.
@@ -216,7 +215,7 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>Avantajları</b>
+                           <u> <b>Avantajları</b></u>
                             <br />
                             <br />
                             ■ Kolay kurulum
@@ -233,7 +232,7 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>GATEWAY için enerji kaynağı</b>
+                           <u> <b>GATEWAY için enerji kaynağı</b></u>
                             <br />
                             <br />
                             ■ 5 V Adaptör ile besleme
@@ -244,7 +243,7 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>Sulama</b>
+                           <u><b>Sulama</b></u>
                             <br />
                             <br />
                             ■ Haftanın günlerine veya gün döngüsüne göre sulama imkanı vardır
@@ -267,7 +266,7 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>Gübreleme</b>
+                            <u><b>Gübreleme</b></u>
                             <br />
                             <br />
                             ■ Gübre tanklarının dolumunda size yardımcı olur
@@ -278,13 +277,13 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>Merkezi Bağlantı Sistem Güvenliği ve Su Temizliği</b>
+                           <u> <b>Merkezi Bağlantı Sistem Güvenliği ve Su Temizliği</b></u>
                             <br />
                             <br />
                             ■ Doğal kaynaktan(kuyu, gölet) elde edilen suyun sulama kanallarına verilmeden önce suyun zararlı parçacıklardan arındırılması gerekiyor. Suyu bu kaynaklardan sistemlerimize direkt verdiğimizde sulama sistemimiz bu parçacıklar yüzünden zarar görecektir. Bunun için su, kaynağından alındıktan bir süre sonra tekrar doğal kaynağına(göl, dere) geri verilir. Temiz su bize ulaştığında bunu siz profesyonel kullanıcılar için anlayan sistemimiz bize hem temiz su kaynağı sağlayacak hem de sulama sistemlerimizin ömrünü uzatacaktır
                             <br />
                             <br />
-                            <b>Bağlantı yapısı</b>
+                            <u><b>Bağlantı yapısı</b></u>
                             <br />
                             <br />
                             ■ 255 adet cihaza kadar erişim imkanı
@@ -295,7 +294,7 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>Opsiyonel uç birimler</b>
+                            <u><b>Opsiyonel uç birimler</b></u>
                             <br />
                             <br />
                             ■ Vana Kontrolü 1-200 adet &nbsp; ■ Pompa Kontrolü 1-23 adet &nbsp; ■ Sensör İstasyonu 1-30 adet &nbsp; ■ AirMoles Hava İstasyonu
@@ -303,7 +302,7 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>Programlama</b>
+                            <u><b>Programlama</b></u>
                             <br />
                             <br />
                             ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk kullanabilir
@@ -314,7 +313,7 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>İnternete bağlanma yolumuz</b>
+                            <u><b>İnternete bağlanma yolumuz</b></u>
                             <br />
                             <br />
                             ■ Yerleşik bir hücresel modem kullanılır.
@@ -325,7 +324,7 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>Teknolojilerimiz</b>
+                           <u> <b>Teknolojilerimiz</b></u>
                             <br />
                             <br />
                             ■ GSM hatlar sayesinde Dünya'nın her yerinden erişim
@@ -339,7 +338,7 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>GATEWAY’in ulaşabildiği uç birimler</b>
+                            <u><b>GATEWAY’in ulaşabildiği uç birimler</b></u>
                             <br />
                             <br />
                             ■ Basınç sensörü
@@ -358,7 +357,6 @@ export default function ValvesProduct() {
                         </AccordionDetails>
                       </Accordion>
 
-                      {/* // Second Product */}
                       <Accordion accExpanded={accExpanded === 'panel2'} onChange={accHandleChange('panel2')}>
                         <AccordionSummary
                           expandIcon={<ExpandMoreIcon />}
@@ -370,125 +368,115 @@ export default function ValvesProduct() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            VANA KONTROL ÜNİTESİ, LoRa özellikli , 4 farklı vana kontrol eden orta ve büyük ölçekli
-                            sulama projelerinde GATEWAY ile senkronize çalışan kontrolördür.
+                          VANA KONTROL ÜNİTESİ, LoRa(Uzak mesafe haberleşme) özellikli , 4 farklı vana kontrol eden orta ve büyük ölçekli sulama projelerinde GATEWAY ile senkronize çalışan kontolcüdür.
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Avantajları</b>
+                            <u><b>Avantajları</b></u>
                             <br />
                             <br />
                             ■ Kolay kurulum.
                             <br />
                             <br />
-                            ■ Enerji tasarrufu(stand by pozisyonunu gerçek zamanlı koruyarak bakım/değişim maliyetini en
-                            aza indirger).
+                            ■ Ayarlanabilir süreli iletişim ile yüksek pil tasarrufu sağlar
                             <br />
                             <br />
-                            ■ Merkezi birim sayesinde tüm vana kontrol ünitelerine tekli/çoklu erişim.
+                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur. Merkezden 30 km’ye kadar uzanabilen erişim. Wi-Fi ve Bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar.
                             <br />
                             <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
                             <br />
                             <br />
+                            <u><b>VANA KONTROL ÜNİTESİ içine enerji kaynağı</b></u>
                             <br />
                             <br />
-                            <b>VANA KONTROL ÜNİTESİ içine enerji kaynağı</b>
+                            <b>■ Tarlada elektriğiniz olmasa da pille çalışma özelliği vardır.</b>
                             <br />
                             <br />
-                            - DC gerilim ile beslenebilir
+                            ■ 3.6 V uzun ömürlü pil
                             <br />
                             <br />
-                            ■ 3.6 V pil.
                             <br />
                             <br />
+                           <u><b>Bağlantı yapısı</b></u>
                             <br />
                             <br />
-                            <b>Bağlantı yapısı</b>
+                            ■ 4 farklı vana kontrolü işinin yanında, 4 ayrı basınç sensöründen gerçek zamanlı veri okuma görevini yapar.SV1(vana 1), SV2(vana 2), SV3(vana 3) ve SV4(vana 4) versiyonları vardır
                             <br />
                             <br />
-                            ■ 4 farklı vana kontrolü işinin yanında, 4 ayrı basınç sensöründen gerçek zamanlı veri
-                            okuma.
+                            ■ 4 farklı basınç sensörünün bilgilerine sadece bir kontrol ünitesi ile ulaşabilirsiniz.BS1(basınç sensörü-1), BS2, BS3, BS4 versiyonları vardır
                             <br />
+                            ■ Sulama senaryosunu bellekte tutar
                             <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli).
+                            ■ Bulunduğu konumda nem ve sıcaklık verisini verir
                             <br />
+                            ■ Koordinat kontrolü sağlar(opsiyonel)
                             <br />
                             <br />
                             <br />
-                            <b>Programlama</b>
                             <br />
+                            <u><b>Programlama</b></u>
                             <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt
-                            kullanabilir
                             <br />
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk kullanabilir
                             <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan
-                            sistemler barındırıyor.
                             <br />
+                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan sistemler barındırıyor
                             <br />
                             <br />
                             <br />
-                            <b>Haberleşme yöntemi</b>
                             <br />
+                            <u><b>Haberleşme yöntemi</b></u>
                             <br />
-                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
                             <br />
+                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü
                             <br />
                             <br />
                             <br />
-                            <b>Teknolojilerimiz</b>
                             <br />
+                            <u><b>Teknolojilerimiz</b></u>
                             <br />
-                            ■ Latching röle sayesinde sadece bir pulse akımı ile kontak değiştirme.
                             <br />
+                            ■ Latching röle sayesinde sadece bir pulse akımı ile kontak değiştirme
                             <br />
-                            ■ LoRa haberleşmenin sayesinde GATEWAY ile uzun mesafeli etkileşim.
                             <br />
+                            ■ LoRa haberleşmenin sayesinde GATEWAY ile uzun mesafeli etkileşim
                             <br />
                             <br />
                             <br />
-                            <b>VANA KONTROL ÜNİTESİ’nin elde ettiği parametreler</b>
                             <br />
+                            <u><b>VANA KONTROL ÜNİTESİ’nin elde ettiği parametreler</b></u>
                             <br />
-                            ■ Basınç sensörü,
                             <br />
+                            ■ Basınç sensörü verisi
                             <br />
-                            ■ 12V DC kilitli solenoidler ile Vana Kontrolü I/O,
                             <br />
+                            ■ 12V DC kilitli solenoidler ile Vana Kontrolü(aç/kapa)
                             <br />
-                            ■ Su sayacı.
                             <br />
+                            ■ Su sayacı verisi
                             <br />
-                            ■ Hacimsel gübreleme ve gübre akış kontrolü.
                             <br />
+                            ■ Hacimsel gübreleme ve gübre akış kontrolü(aç/kapa)
                             <br />
                             <br />
                             <br />
-                            <b>Kullanım alanları</b>
                             <br />
+                            <u><b>Kullanım alanları</b></u>
                             <br />
-                            ■ Su kaynakları. &nbsp; ■ Ana vana, alt vanalar. &nbsp; ■ Yerel gübre enjektörü. &nbsp; ■
-                            Yerel filtreler. &nbsp; ■ Merkezi gübre enjektörü. &nbsp; ■ Sulama vanaları.
                             <br />
+                            ■ Su kaynakları &nbsp; ■ Ana vana, alt vanalar &nbsp; ■ Yerel gübre enjektörü &nbsp; ■
+                            Yerel filtreler &nbsp; ■ Merkezi gübre enjektörü &nbsp; ■ Sulama vanaları &nbsp; ■ <b>IP68 özellikte koruması sayesinde su geçirmez ve darbelere dayanıklıdır.</b>
                             <br />
                             <br />
                             <br />
-                            <b> Ek İmkanları</b>
                             <br />
+                           <u><b> Ek İmkanları</b></u>
                             <br />
-                            ■ Basınç sensörü sayesinde vananın açık/kapalı olma durumunun kontrolü yapılır.
                             <br />
+                            ■ Basınç sensörü sayesinde vananın açık/kapalı olma durumunun kontrolü yapılır
                             <br />
                             <br />
-                            <br />
-                            <b>Eklemek istediğimiz hizmetler</b>
-                            <br />
-                            <br />■ Yapay zekaya öğretilen sulama süreleri ile sistemin tarlaya ne kadar hacimde su
-                            gerektiğine karar verebilmesi.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -519,7 +507,6 @@ export default function ValvesProduct() {
                     <Item>
                       <ValvesTab2 />
 
-                      {/* // Third Product */}
                       <Accordion
                         accExpanded={accExpanded === 'panel1'}
                         onChange={accHandleChange('panel1')}
@@ -534,92 +521,140 @@ export default function ValvesProduct() {
                           <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                          <Typography>
-                            GATEWAY, endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve
-                            büyük ölçekli projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır.
+                        <Typography>
+                          GATEWAY, endüstriyel sulama ve gübreleme için çözüm sunan ana kontrol ünitesidir. Orta ve büyük ölçekli projelerde siz profesyonel kullanıcılar için özel tasarlanmıştır. Vanalarınızın yönetiminde akıllı kablosuz çözümlerle yanınızdayız. <b>Zaman ayarlı ya da sensör verilerine göre yapay zeka desteği ile suluyoruz.</b>
+                            <br />
+                            <br />
+                            <u><b>Tek merkezden kontrol</b></u>
+                            <br />
+                            <br />
+                            ■ SmartValve’s tek merkezden sahada bulunan vanaların kontrolünü yapay zeka ile yapan bir sistemdir. Arazinin özelliklerine göre lokal ya da bulut tabanlı sistem alternatifleri sunar.
+                            <br />
+                            <br />
+                            ■ Her vana kontrol ünitesi bulunduğu alanın sıcaklığı ve nem bilgilerini değerlendirerek veri ağının oluşmasını sağlar
+                            <br />
+                            <br />
+                            ■ Aynı zamanda vana önlerindeki basınçları kontrol ederek işletme basıncı bilgisini ve hatlarda kaçak olup olmadığını bilmenizi sağlar
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Avantajları</b>
+                           <u> <b>Avantajları</b></u>
                             <br />
                             <br />
-                            ■ Kolay kurulum.
+                            ■ Kolay kurulum
                             <br />
                             <br />
-                            ■ Uzaktan erişim ile hızlı destek sistemi(mobil cihaz, PC vb. araçlarla ulaşılabileceğiniz
-                            internet arayüzü).
+                            ■ Ayarlanabilir süreli iletişim ile yüksek pil tasarrufu sağlar
                             <br />
                             <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
+                            ■ Uzaktan erişim ile hızlı destek sistemi(akıllı telefon, bilgisayar vb. cihazlarla ulaşabileceğiniz internet arayüzü). <b>Kullanıcı istediği konumdan arazi hakkında bilgi sahibi olabilir</b>
                             <br />
                             <br />
-                            <br />
-                            <br />
-                            <b>GATEWAY için enerji kaynağı</b>
-                            <br />
-                            <br />
-                            - DC gerilim ile beslenebilir;
-                            <br />
-                            <br />
-                            ■ 5 V / 0.5 Ah besleme.
-                            <br />
-                            <br />
-                            ■ USB port ile PC’den besleme imkanı.
+                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur. Merkezden 30 km’ye kadar uzanabilen erişim. Wi-Fi ve Bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Bağlantı yapısı</b>
+                           <u> <b>GATEWAY için enerji kaynağı</b></u>
                             <br />
                             <br />
-                            ■ 255 adet cihaza kadar erişim imkanı.
+                            ■ 5 V Adaptör ile besleme
                             <br />
                             <br />
-                            ■ 4 farklı kanaldan tüm alt birimleri kontrol eden hızlı Lora sistemi( WiFi/Bluetooth
-                            sistemine göre geniş çaplı etkileşim ve daha az maliyetli).
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <b>Opsiyonel uç birimler</b>
-                            <br />
-                            <br />
-                            ■ Vana Kontrolü 1-200 adet &nbsp; ■ Pompa Kontrolü 1-23 adet &nbsp; ■ Sensör İstasyonu 1-30
-                            adet &nbsp; ■ AirMoles Hava İstasyonu
+                            ■ USB port ile bilgisayarınızdan cihazı besleyebilme
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Programlama</b>
+                           <u><b>Sulama</b></u>
                             <br />
                             <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt
-                            kullanabilir.
+                            ■ Haftanın günlerine veya gün döngüsüne göre sulama imkanı vardır
                             <br />
                             <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı ve uç birimleriyle kullanıcının ihtiyaçlarını
-                            karşılıyor.
+                            ■ Tek döngü veya darbeli sulama yapılır
+                            <br />
+                            <br />
+                            ■ Birden fazla pompa veya jeneratör gibi arazinize su sağlayıcıların otomasyonunu sağlar
+                            <br />
+                            <br />
+                            ■ Birden fazla su kaynağını idare edebilir
+                            <br />
+                            <br />
+                            ■ Sulama başlangıcını zamana göre, koşula göre veya manuel olarak ayarlar
+                            <br />
+                            <br />
+                            ■ Pompanın diğer vanalarla beraber, ayrıksı veya gecikmeli çalışmasını sağlar
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>İnternete bağlanma yolumuz</b>
+                            <u><b>Gübreleme</b></u>
+                            <br />
+                            <br />
+                            ■ Gübre tanklarının dolumunda size yardımcı olur
+                            <br />
+                            <br />
+                            ■ Gübre enjeksiyon için sistemin çalışma zamanını otomatik olarak belirleyebilirisiniz
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                           <u> <b>Merkezi Bağlantı Sistem Güvenliği ve Su Temizliği</b></u>
+                            <br />
+                            <br />
+                            ■ Doğal kaynaktan(kuyu, gölet) elde edilen suyun sulama kanallarına verilmeden önce suyun zararlı parçacıklardan arındırılması gerekiyor. Suyu bu kaynaklardan sistemlerimize direkt verdiğimizde sulama sistemimiz bu parçacıklar yüzünden zarar görecektir. Bunun için su, kaynağından alındıktan bir süre sonra tekrar doğal kaynağına(göl, dere) geri verilir. Temiz su bize ulaştığında bunu siz profesyonel kullanıcılar için anlayan sistemimiz bize hem temiz su kaynağı sağlayacak hem de sulama sistemlerimizin ömrünü uzatacaktır
+                            <br />
+                            <br />
+                            <u><b>Bağlantı yapısı</b></u>
+                            <br />
+                            <br />
+                            ■ 255 adet cihaza kadar erişim imkanı
+                            <br />
+                            <br />
+                            ■ 4 farklı kanaldan tüm alt birimleri kontrol eden hızlı LoRa sistemi ile geniş uygulama alanı oluşturur. Merkezden 30 km’ye kadar uzanabilen erişim. Wi-Fi ve Bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <u><b>Opsiyonel uç birimler</b></u>
+                            <br />
+                            <br />
+                            ■ Vana Kontrolü 1-200 adet &nbsp; ■ Pompa Kontrolü 1-23 adet &nbsp; ■ Sensör İstasyonu 1-30 adet &nbsp; ■ AirMoles Hava İstasyonu
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <u><b>Programlama</b></u>
+                            <br />
+                            <br />
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk kullanabilir
+                            <br />
+                            <br />
+                            ■ Sürekli geliştirilen gömülü yazılımı ve uç birimleriyle kullanıcının ihtiyaçlarını karşılıyor
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <u><b>İnternete bağlanma yolumuz</b></u>
                             <br />
                             <br />
                             ■ Yerleşik bir hücresel modem kullanılır.
                             <br />
                             <br />
+                            ■ GSM modülü ile yerelden bulut erişimine adaptasyon özelliği vardır
                             <br />
                             <br />
-                            <b>Teknolojilerimiz</b>
                             <br />
                             <br />
-                            ■ GSM hatlar sayesinde dünyanın her yerinden erişim
+                           <u> <b>Teknolojilerimiz</b></u>
                             <br />
                             <br />
-                            ■ LoRa haberleşmenin sağladığı ara birimlerle uzun mesafeli etkileşim.
+                            ■ GSM hatlar sayesinde Dünya'nın her yerinden erişim
+                            <br />
+                            <br />
+                            ■ LoRa haberleşmenin protokolü sayesinde uç birimlerle uzak mesafeli iletişim
                             <br />
                             <br />
                             ■ Dahili olarak RS485 haberleşme protokolü kullanma olanağı
@@ -627,26 +662,21 @@ export default function ValvesProduct() {
                             <br />
                             <br />
                             <br />
-                            <b>GATEWAY’in ulaşabildiği uç birimler</b>
+                            <u><b>GATEWAY’in ulaşabildiği uç birimler</b></u>
                             <br />
                             <br />
                             ■ Basınç sensörü
                             <br />
                             <br />
-                            ■ Pompa kontrolü I/O,
+                            ■ Pompa kontrolü(aç/kapa)
                             <br />
                             <br />
-                            ■ Vana Kontrolü I/O,
+                            ■ Vana Kontrolü(aç/kapa)
                             <br />
                             <br />
-                            ■ Su sayacı,
+                            ■ Su sayacı
                             <br />
                             <br />
-                            <br />
-                            <br />
-                            <b>Eklemek istediğimiz hizmetler</b>
-                            <br />
-                            <br /> ■ Toprak sıcaklığı &nbsp; ■ Toprak EC(elektriksel geçirgenlik)
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -662,126 +692,116 @@ export default function ValvesProduct() {
                           <Typography sx={{ color: 'text.secondary' }}>Ürün Özellikleri</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                          <Typography>
-                            VANA KONTROL ÜNİTESİ, LoRa özellikli , 4 farklı vana kontrol eden orta ve büyük ölçekli
-                            sulama projelerinde GATEWAY ile senkronize çalışan kontrolördür.
+                        <Typography>
+                          VANA KONTROL ÜNİTESİ, LoRa(Uzak mesafe haberleşme) özellikli , 4 farklı vana kontrol eden orta ve büyük ölçekli sulama projelerinde GATEWAY ile senkronize çalışan kontolcüdür.
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Avantajları</b>
+                            <u><b>Avantajları</b></u>
                             <br />
                             <br />
                             ■ Kolay kurulum.
                             <br />
                             <br />
-                            ■ Enerji tasarrufu(stand by pozisyonunu gerçek zamanlı koruyarak bakım/değişim maliyetini en
-                            aza indirger).
+                            ■ Ayarlanabilir süreli iletişim ile yüksek pil tasarrufu sağlar
                             <br />
                             <br />
-                            ■ Merkezi birim sayesinde tüm vana kontrol ünitelerine tekli/çoklu erişim.
+                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur. Merkezden 30 km’ye kadar uzanabilen erişim. Wi-Fi ve Bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar.
                             <br />
                             <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
                             <br />
                             <br />
+                            <u><b>VANA KONTROL ÜNİTESİ içine enerji kaynağı</b></u>
                             <br />
                             <br />
-                            <b>VANA KONTROL ÜNİTESİ içine enerji kaynağı</b>
+                            <b>■ Tarlada elektriğiniz olmasa da pille çalışma özelliği vardır.</b>
                             <br />
                             <br />
-                            - DC gerilim ile beslenebilir
+                            ■ 3.6 V uzun ömürlü pil
                             <br />
                             <br />
-                            ■ 3.6 V pil.
                             <br />
                             <br />
+                           <u><b>Bağlantı yapısı</b></u>
                             <br />
                             <br />
-                            <b>Bağlantı yapısı</b>
+                            ■ 4 farklı vana kontrolü işinin yanında, 4 ayrı basınç sensöründen gerçek zamanlı veri okuma görevini yapar.SV1(vana 1), SV2(vana 2), SV3(vana 3) ve SV4(vana 4) versiyonları vardır
                             <br />
                             <br />
-                            ■ 4 farklı vana kontrolü işinin yanında, 4 ayrı basınç sensöründen gerçek zamanlı veri
-                            okuma.
+                            ■ 4 farklı basınç sensörünün bilgilerine sadece bir kontrol ünitesi ile ulaşabilirsiniz.BS1(basınç sensörü-1), BS2, BS3, BS4 versiyonları vardır
                             <br />
+                            ■ Sulama senaryosunu bellekte tutar
                             <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli).
+                            ■ Bulunduğu konumda nem ve sıcaklık verisini verir
                             <br />
+                            ■ Koordinat kontrolü sağlar(opsiyonel)
                             <br />
                             <br />
                             <br />
-                            <b>Programlama</b>
                             <br />
+                            <u><b>Programlama</b></u>
                             <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direkt
-                            kullanabilir
                             <br />
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk kullanabilir
                             <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan
-                            sistemler barındırıyor.
                             <br />
+                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan sistemler barındırıyor
                             <br />
                             <br />
                             <br />
-                            <b>Haberleşme yöntemi</b>
                             <br />
+                            <u><b>Haberleşme yöntemi</b></u>
                             <br />
-                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
                             <br />
+                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü
                             <br />
                             <br />
                             <br />
-                            <b>Teknolojilerimiz</b>
                             <br />
+                            <u><b>Teknolojilerimiz</b></u>
                             <br />
-                            ■ Latching röle sayesinde sadece bir pulse akımı ile kontak değiştirme.
                             <br />
+                            ■ Latching röle sayesinde sadece bir pulse akımı ile kontak değiştirme
                             <br />
-                            ■ LoRa haberleşmenin sayesinde GATEWAY ile uzun mesafeli etkileşim.
                             <br />
+                            ■ LoRa haberleşmenin sayesinde GATEWAY ile uzun mesafeli etkileşim
                             <br />
                             <br />
                             <br />
-                            <b>VANA KONTROL ÜNİTESİ’nin elde ettiği parametreler</b>
                             <br />
+                            <u><b>VANA KONTROL ÜNİTESİ’nin elde ettiği parametreler</b></u>
                             <br />
-                            ■ Basınç sensörü,
                             <br />
+                            ■ Basınç sensörü verisi
                             <br />
-                            ■ 12V DC kilitli solenoidler ile Vana Kontrolü I/O,
                             <br />
+                            ■ 12V DC kilitli solenoidler ile Vana Kontrolü(aç/kapa)
                             <br />
-                            ■ Su sayacı.
                             <br />
+                            ■ Su sayacı verisi
                             <br />
-                            ■ Hacimsel gübreleme ve gübre akış kontrolü.
                             <br />
+                            ■ Hacimsel gübreleme ve gübre akış kontrolü(aç/kapa)
                             <br />
                             <br />
                             <br />
-                            <b>Kullanım alanları</b>
                             <br />
+                            <u><b>Kullanım alanları</b></u>
                             <br />
-                            ■ Su kaynakları. &nbsp; ■ Ana vana, alt vanalar. &nbsp; ■ Yerel gübre enjektörü. &nbsp; ■
-                            Yerel filtreler. &nbsp; ■ Merkezi gübre enjektörü. &nbsp; ■ Sulama vanaları.
                             <br />
+                            ■ Su kaynakları &nbsp; ■ Ana vana, alt vanalar &nbsp; ■ Yerel gübre enjektörü &nbsp; ■
+                            Yerel filtreler &nbsp; ■ Merkezi gübre enjektörü &nbsp; ■ Sulama vanaları &nbsp; ■ <b>IP68 özellikte koruması sayesinde su geçirmez ve darbelere dayanıklıdır.</b>
                             <br />
                             <br />
                             <br />
-                            <b> Ek İmkanları</b>
                             <br />
+                           <u><b> Ek İmkanları</b></u>
                             <br />
-                            ■ Basınç sensörü sayesinde vananın açık/kapalı olma durumunun kontrolü yapılır.
                             <br />
+                            ■ Basınç sensörü sayesinde vananın açık/kapalı olma durumunun kontrolü yapılır
                             <br />
                             <br />
-                            <br />
-                            <b>Eklemek istediğimiz hizmetler</b>
-                            <br />
-                            <br />■ Yapay zekaya öğretilen sulama süreleri ile sistemin tarlaya ne kadar hacimde su
-                            gerektiğine karar verebilmesi.
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
@@ -798,92 +818,94 @@ export default function ValvesProduct() {
                         </AccordionSummary>
                         <AccordionDetails>
                           <Typography>
-                            POMPA KONTROL ÜNİTESİ, LoRa özellikli, pompa su sayacı ve bacınç sensörü kontrolü/denetimi
-                            yapan orta ve büyük ölçekli sulama projelerinde GATEWAY ile senkronize çalışan kontrolördür.
+                          POMPA KONTROL ÜNİTESİ LoRa(Uzak mesafe haberleşme) özelliklidir. Su sayacı ve basınç sensörü denetimi yapar. Ayrıca orta ve büyük ölçekli sulama projelerinde GATEWAY ile beraber çalışan kontrolördür. Pompa ve Vana Kontrol Ünitesiyle senkronize çalışır. Hidrolik dengeyi korur. <b>İnternet erişimi olmadan da pompayı ya da jeneratörü çalıştırır</b>
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b> Avantajları</b>
+                            <u><b>Avantajları</b></u>
                             <br />
                             <br />
                             ■ Kolay kurulum.
                             <br />
                             <br />
-                            ■ Enerji tasarrufu(stand by pozisyonunu gerçek zamanlı koruyarak bakım/değişim maliyetini en
-                            aza indirger).
+                            ■ Ayarlanabilir süreli iletişim ile yüksek pil tasarrufu sağlar
                             <br />
                             <br />
-                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur(Merkezden 5 km’ye kadar uzanabilen
-                            erişim.Wi-Fi ve bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar).
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <b>POMPA KONTROL ÜNİTESİ içine enerji kaynağı</b>
-                            <br />
-                            <br />
-                            - DC gerilim ile beslenebilir:
-                            <br />
-                            <br />
-                            ■ 3.6 V pil.
+                            ■ LoRa sistemi ile geniş uygulama alanı oluşturur. Merkezden 30 km’ye kadar uzanabilen erişim. Wi-Fi ve Bluetooth gibi teknolojilere göre daha geniş çaplı çalışma olanağı sağlar
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Bağlantı yapısı</b>
+                            <u><b>POMPA KONTROL ÜNİTESİ içine enerji kaynağı</b></u>
                             <br />
                             <br />
-                            ■ Pompa aç/kapa kontrolünün yanı sıra su sayacı ve basınç sensöründen gerçek zamanlı veri
-                            okuma.
-                            <br />
-                            ■ Yüksek kazançlı antenler ile oluşturulan LoRa ağı(WiFi/Bluetooth sistemine göre geniş
-                            çaplı etkileşim ve daha az maliyetli).
+                            ■ <b>Tarlada elektriğiniz olmasa da pille çalışma özelliği vardır</b>
                             <br />
                             <br />
-                            <br />
-                            <br />
-                            <b>Programlama</b>
-                            <br />
-                            <br />
-                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk
-                            kullanabilir.
-                            <br />
-                            <br />
-                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan
-                            sistemler barındırıyor.
+                            ■ 3.6 V uzun ömürlü pil
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b> Haberleşme yöntemi </b>
+                            <u><b>Bağlantı yapısı</b></u>
                             <br />
                             <br />
-                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü.
+                            ■ 4 farklı pompa kontrol işinin yanında, 4 ayrı basınç sensöründen gerçek zamanlı veri okuma görevini yapar. SP1(pompa 1), SP2(pompa 2), SP3(pompa 3) ve SP4(pompa 4) versiyonları vardır
+                            <br />
+                            ■ 4 farklı basınç sensörünün bilgilerine sadece bir kontrol ünitesi ile ulaşabilirsiniz. BS1(basınç sensörü-1), BS2, BS3, BS4 versiyonları vardır
+                            <br />
+                            ■ Sulama senaryosunu bellekte tutar
+                            <br />
+                            ■ Bulunduğu konumda nem ve sıcaklık verisini verir
+                            <br />
+                            ■ Koordinat kontrolü sağlar(opsiyonel)
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>POMPA KONTROL ÜNİTESİ’nin elde ettiği parametreler</b>
+                            <u><b>Programlama</b></u>
                             <br />
                             <br />
-                            ■ Basınç sensörü. &nbsp; ■ Latching Röle kullanımı ile pompa kontrolü I/O. &nbsp; ■ Su
+                            ■ Tüm ürünler kendine has terminal numarası ile programlanır ve kullanıcı ürünü direk kullanabilir
+                            <br />
+                            <br />
+                            ■ Sürekli geliştirilen gömülü yazılımı sayesinde kullanıcıya çeşitli sulama yöntemi sunan sistemler barındırıyor
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                           <u><b>Haberleşme yöntemi</b></u>
+                            <br />
+                            <br />
+                            ■ GATEWAY ile sağlıklı bir haberleşmeyi sağlayan LoRa protokolü
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                           <u><b>POMPA KONTROL ÜNİTESİ’nin elde ettiği parametreler</b></u>
+                            <br />
+                            <br />
+                            ■ Basınç sensörü. &nbsp; ■ Latching Röle kullanımı ile pompa kontrolü(aç/kapa) &nbsp; ■ Su sayacı
                             sayacı.
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Kullanım alanları</b>
+                           <u><b>Kullanım alanları</b></u>
                             <br />
                             <br />
-                            ■ Su kaynakları. &nbsp; ■ Ana vana, alt vanalar. &nbsp; ■ Sulama vanaları.
+                            ■ Su kaynakları &nbsp; ■ Ana vana, alt vanalar &nbsp; ■ Sulama vanaları &nbsp; ■ Jeneratör kontrolü &nbsp; ■ <b>IP68 özellikte koruması sayesinde su geçirmez ve darbelere dayanıklıdır</b>
                             <br />
                             <br />
                             <br />
                             <br />
-                            <b>Ek İmkanları </b>
+                            <u><b>Ek İmkanları </b></u>
                             <br />
-                            <br />■ Basınç sensörü sayesinde pompanın açık/kapalı olma durumunun kontrolü yapılır.
+                            <br />
+                            ■ Basınç sensörü sayesinde pompanın açık/kapalı olma durumunun kontrolü yapılır
+                            <br />
+                            <br />
                           </Typography>
                         </AccordionDetails>
                       </Accordion>
