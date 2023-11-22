@@ -26,10 +26,15 @@ export default function Video() {
       <RootStyle>
         <VideoSlider />
         <Container sx={{ my: 10 }}>
-        <Typography variant="h3" sx={{ my: 8, textAlign: 'center' }}>
-          {translate('Video.title')}
-        </Typography>
+          <Typography variant="h3" sx={{ my: 8, textAlign: 'center' }}>
+            {translate('Video.title')}
+          </Typography>
           <Grid container spacing={10}>
+            <Grid item xs={12} md={6}>
+              <Card>
+                <VideoMain embedId={'GLtb928gGdA?si=Rp0N4AWkNVIuTncZ'} />
+              </Card>
+            </Grid>
             <Grid item xs={12} md={6}>
               <Card>
                 <VideoMain embedId={'tD4xK6m2R0c'} />
